@@ -1,0 +1,1118 @@
+2014-03-24 08:09:27,607 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = ip-10-234-70-108/10.234.70.108
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 2.2.0
+STARTUP_MSG:   classpath = /home/ubuntu/PatchedDistro/hadoop-2.2.0/etc/hadoop:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-net-3.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-httpclient-3.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jersey-json-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-digester-1.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/hadoop-annotations-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/guava-11.0.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jettison-1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-math-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-configuration-1.6.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jsr305-1.3.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/activation-1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jackson-core-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jackson-xc-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jersey-server-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jersey-core-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-cli-1.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-lang-2.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jsp-api-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/asm-3.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/zookeeper-3.4.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/slf4j-api-1.7.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-collections-3.2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jasper-runtime-5.5.23.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jackson-jaxrs-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/paranamer-2.3.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/junit-4.8.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-codec-1.4.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-el-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/mockito-all-1.8.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jetty-util-6.1.26.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-compress-1.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jsch-0.1.42.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/stax-api-1.0.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/xz-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jasper-compiler-5.5.23.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/servlet-api-2.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/avro-1.7.4.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/xmlenc-0.52.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-logging-1.1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jetty-6.1.26.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/hadoop-auth-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-io-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/netty-3.6.2.Final.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/log4j-1.2.17.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jets3t-0.6.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/hadoop-common-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/hadoop-common-2.2.0-tests.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/hadoop-nfs-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/guava-11.0.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jsr305-1.3.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jackson-core-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-lang-2.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jsp-api-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/asm-3.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jasper-runtime-5.5.23.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-el-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-logging-1.1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-io-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/hadoop-hdfs-2.2.0-tests.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/hadoop-hdfs-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/hadoop-hdfs-nfs-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/hadoop-annotations-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/jackson-core-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/jersey-server-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/jersey-core-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/asm-3.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/snappy-java-1.0.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/paranamer-2.3.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/guice-3.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/hamcrest-core-1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/xz-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/aopalliance-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/junit-4.10.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/avro-1.7.4.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/javax.inject-1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/commons-io-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/log4j-1.2.17.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-site-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-common-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-client-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-tests-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-common-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-api-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/hadoop-annotations-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/jackson-core-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/asm-3.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/guice-3.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/hamcrest-core-1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/xz-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/junit-4.10.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/javax.inject-1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/commons-io-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.2.0-tests.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.2.0.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = Unknown -r Unknown; compiled by 'Joey' on 2014-03-24T00:00Z
+STARTUP_MSG:   java = 1.7.0_51
+************************************************************/
+2014-03-24 08:09:27,632 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2014-03-24 08:09:29,564 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-03-24 08:09:31,822 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2014-03-24 08:09:32,385 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2014-03-24 08:09:32,385 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: DataNode metrics system started
+2014-03-24 08:09:32,402 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Configured hostname is nodea
+2014-03-24 08:09:32,613 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened streaming server at /0.0.0.0:50010
+2014-03-24 08:09:32,624 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+2014-03-24 08:09:32,929 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-03-24 08:09:33,270 INFO org.apache.hadoop.http.HttpServer: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2014-03-24 08:09:33,274 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context datanode
+2014-03-24 08:09:33,274 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2014-03-24 08:09:33,274 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2014-03-24 08:09:33,288 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened info server at 0.0.0.0:50075
+2014-03-24 08:09:33,292 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dfs.webhdfs.enabled = false
+2014-03-24 08:09:33,292 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50075
+2014-03-24 08:09:33,293 INFO org.mortbay.log: jetty-6.1.26
+2014-03-24 08:09:34,779 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50075
+2014-03-24 08:09:35,445 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 50020
+2014-03-24 08:09:35,631 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened IPC server at /0.0.0.0:50020
+2014-03-24 08:09:35,673 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Refresh request received for nameservices: null
+2014-03-24 08:09:35,754 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting BPOfferServices for nameservices: <default>
+2014-03-24 08:09:35,797 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Block pool <registering> (storage id unknown) service to ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310 starting to offer service
+2014-03-24 08:09:35,813 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2014-03-24 08:09:35,827 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 50020: starting
+2014-03-24 08:09:36,579 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /var/hadoop/tmp/dfs/data/in_use.lock acquired by nodename 25240@ip-10-234-70-108
+2014-03-24 08:09:36,596 FATAL org.apache.hadoop.hdfs.server.datanode.DataNode: Initialization failed for block pool Block pool BP-1198471478-10.234.70.108-1395648550675 (storage id DS-348992437-10.234.70.108-50010-1395646773525) service to ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310
+java.io.IOException: Incompatible clusterIDs in /var/hadoop/tmp/dfs/data: namenode clusterID = CID-ace841bf-b1ca-4f8e-bc7d-7c0119f74554; datanode clusterID = CID-6731c423-133f-4f65-9074-d6a83d788d6d
+	at org.apache.hadoop.hdfs.server.datanode.DataStorage.doTransition(DataStorage.java:391)
+	at org.apache.hadoop.hdfs.server.datanode.DataStorage.recoverTransitionRead(DataStorage.java:191)
+	at org.apache.hadoop.hdfs.server.datanode.DataStorage.recoverTransitionRead(DataStorage.java:219)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.initStorage(DataNode.java:837)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.initBlockPool(DataNode.java:808)
+	at org.apache.hadoop.hdfs.server.datanode.BPOfferService.verifyAndSetNamespaceInfo(BPOfferService.java:280)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.connectToNNAndHandshake(BPServiceActor.java:222)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:664)
+	at java.lang.Thread.run(Thread.java:744)
+2014-03-24 08:09:36,606 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: Ending block pool service for: Block pool BP-1198471478-10.234.70.108-1395648550675 (storage id DS-348992437-10.234.70.108-50010-1395646773525) service to ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310
+2014-03-24 08:09:36,615 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Removed Block pool BP-1198471478-10.234.70.108-1395648550675 (storage id DS-348992437-10.234.70.108-50010-1395646773525)
+2014-03-24 08:09:38,615 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: Exiting Datanode
+2014-03-24 08:09:38,618 INFO org.apache.hadoop.util.ExitUtil: Exiting with status 0
+2014-03-24 08:09:38,620 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at ip-10-234-70-108/10.234.70.108
+************************************************************/
+2014-03-24 08:11:20,384 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = ip-10-234-70-108/10.234.70.108
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 2.2.0
+STARTUP_MSG:   classpath = /home/ubuntu/PatchedDistro/hadoop-2.2.0/etc/hadoop:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-net-3.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-httpclient-3.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jersey-json-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-digester-1.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/hadoop-annotations-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/guava-11.0.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jettison-1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-math-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-configuration-1.6.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jsr305-1.3.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/activation-1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jackson-core-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jackson-xc-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jersey-server-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jersey-core-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-cli-1.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-lang-2.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jsp-api-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/asm-3.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/zookeeper-3.4.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/slf4j-api-1.7.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-collections-3.2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jasper-runtime-5.5.23.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jackson-jaxrs-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/paranamer-2.3.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/junit-4.8.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-codec-1.4.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-el-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/mockito-all-1.8.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jetty-util-6.1.26.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-compress-1.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jsch-0.1.42.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/stax-api-1.0.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/xz-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jasper-compiler-5.5.23.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/servlet-api-2.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/avro-1.7.4.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/xmlenc-0.52.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-logging-1.1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jetty-6.1.26.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/hadoop-auth-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-io-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/netty-3.6.2.Final.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/log4j-1.2.17.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jets3t-0.6.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/hadoop-common-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/hadoop-common-2.2.0-tests.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/hadoop-nfs-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/guava-11.0.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jsr305-1.3.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jackson-core-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-lang-2.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jsp-api-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/asm-3.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jasper-runtime-5.5.23.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-el-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-logging-1.1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-io-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/hadoop-hdfs-2.2.0-tests.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/hadoop-hdfs-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/hadoop-hdfs-nfs-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/hadoop-annotations-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/jackson-core-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/jersey-server-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/jersey-core-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/asm-3.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/snappy-java-1.0.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/paranamer-2.3.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/guice-3.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/hamcrest-core-1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/xz-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/aopalliance-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/junit-4.10.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/avro-1.7.4.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/javax.inject-1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/commons-io-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/log4j-1.2.17.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-site-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-common-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-client-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-tests-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-common-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-api-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/hadoop-annotations-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/jackson-core-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/asm-3.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/guice-3.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/hamcrest-core-1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/xz-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/junit-4.10.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/javax.inject-1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/commons-io-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.2.0-tests.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.2.0.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = Unknown -r Unknown; compiled by 'Joey' on 2014-03-24T00:00Z
+STARTUP_MSG:   java = 1.7.0_51
+************************************************************/
+2014-03-24 08:11:20,450 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2014-03-24 08:11:21,647 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-03-24 08:11:23,832 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2014-03-24 08:11:24,590 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2014-03-24 08:11:24,595 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: DataNode metrics system started
+2014-03-24 08:11:24,603 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Configured hostname is nodea
+2014-03-24 08:11:24,877 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened streaming server at /0.0.0.0:50010
+2014-03-24 08:11:24,891 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+2014-03-24 08:11:25,894 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-03-24 08:11:28,835 INFO org.apache.hadoop.http.HttpServer: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2014-03-24 08:11:28,842 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context datanode
+2014-03-24 08:11:28,843 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2014-03-24 08:11:28,843 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2014-03-24 08:11:28,861 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened info server at 0.0.0.0:50075
+2014-03-24 08:11:28,875 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dfs.webhdfs.enabled = false
+2014-03-24 08:11:28,988 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50075
+2014-03-24 08:11:29,007 INFO org.mortbay.log: jetty-6.1.26
+2014-03-24 08:11:51,296 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50075
+2014-03-24 08:11:51,738 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 50020
+2014-03-24 08:11:52,182 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened IPC server at /0.0.0.0:50020
+2014-03-24 08:11:52,239 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Refresh request received for nameservices: null
+2014-03-24 08:11:52,324 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting BPOfferServices for nameservices: <default>
+2014-03-24 08:11:52,381 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Block pool <registering> (storage id unknown) service to ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310 starting to offer service
+2014-03-24 08:11:52,404 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2014-03-24 08:11:52,420 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 50020: starting
+2014-03-24 08:11:53,722 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:11:54,723 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:11:55,723 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:11:56,724 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:11:57,725 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:11:58,726 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:11:59,727 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:00,728 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:01,729 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:02,730 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:02,738 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: Problem connecting to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310
+2014-03-24 08:12:08,740 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:09,741 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:10,742 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:11,743 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:12,743 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:13,744 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:14,745 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:15,746 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:16,747 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:17,748 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:17,750 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: Problem connecting to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310
+2014-03-24 08:12:23,752 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:24,753 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:25,754 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:26,755 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:27,756 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:28,756 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:29,757 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:30,758 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:31,759 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:32,760 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:32,762 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: Problem connecting to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310
+2014-03-24 08:12:38,763 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:39,764 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:40,765 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:41,766 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:42,767 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:43,768 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:44,769 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:45,769 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:46,770 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:47,771 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:47,773 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: Problem connecting to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310
+2014-03-24 08:12:53,776 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:54,777 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:55,778 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:56,779 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:57,779 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:58,780 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:12:59,781 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:00,782 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:01,783 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:02,784 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:02,786 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: Problem connecting to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310
+2014-03-24 08:13:08,787 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:09,788 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:10,789 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:11,790 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:12,791 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:13,792 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:14,792 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:15,793 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:16,794 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:17,795 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:17,798 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: Problem connecting to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310
+2014-03-24 08:13:23,800 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:24,801 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:25,802 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:26,803 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:27,803 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:28,804 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:29,805 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:30,806 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:31,807 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:32,808 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:32,810 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: Problem connecting to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310
+2014-03-24 08:13:38,812 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:39,812 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:40,813 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:41,814 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:42,815 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:43,816 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:44,817 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:45,818 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:46,819 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:47,819 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:13:47,821 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: Problem connecting to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310
+2014-03-24 08:13:50,545 ERROR org.apache.hadoop.hdfs.server.datanode.DataNode: RECEIVED SIGNAL 15: SIGTERM
+2014-03-24 08:13:50,550 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at ip-10-234-70-108/10.234.70.108
+************************************************************/
+2014-03-24 08:17:23,292 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = ip-10-234-70-108/10.234.70.108
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 2.2.0
+STARTUP_MSG:   classpath = /home/ubuntu/PatchedDistro/hadoop-2.2.0/etc/hadoop:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-net-3.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-httpclient-3.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jersey-json-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-digester-1.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/hadoop-annotations-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/guava-11.0.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jettison-1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-math-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-configuration-1.6.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jsr305-1.3.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/activation-1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jackson-core-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jackson-xc-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jersey-server-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jersey-core-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-cli-1.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-lang-2.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jsp-api-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/asm-3.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/zookeeper-3.4.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/slf4j-api-1.7.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-collections-3.2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jasper-runtime-5.5.23.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jackson-jaxrs-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/paranamer-2.3.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/junit-4.8.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-codec-1.4.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-el-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/mockito-all-1.8.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jetty-util-6.1.26.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-compress-1.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jsch-0.1.42.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/stax-api-1.0.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/xz-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jasper-compiler-5.5.23.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/servlet-api-2.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/avro-1.7.4.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/xmlenc-0.52.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-logging-1.1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jetty-6.1.26.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/hadoop-auth-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-io-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/netty-3.6.2.Final.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/log4j-1.2.17.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jets3t-0.6.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/hadoop-common-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/hadoop-common-2.2.0-tests.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/hadoop-nfs-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/guava-11.0.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jsr305-1.3.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jackson-core-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-lang-2.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jsp-api-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/asm-3.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jasper-runtime-5.5.23.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-el-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-logging-1.1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-io-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/hadoop-hdfs-2.2.0-tests.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/hadoop-hdfs-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/hadoop-hdfs-nfs-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/hadoop-annotations-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/jackson-core-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/jersey-server-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/jersey-core-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/asm-3.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/snappy-java-1.0.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/paranamer-2.3.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/guice-3.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/hamcrest-core-1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/xz-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/aopalliance-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/junit-4.10.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/avro-1.7.4.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/javax.inject-1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/commons-io-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/log4j-1.2.17.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-site-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-common-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-client-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-tests-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-common-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-api-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/hadoop-annotations-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/jackson-core-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/asm-3.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/guice-3.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/hamcrest-core-1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/xz-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/junit-4.10.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/javax.inject-1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/commons-io-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.2.0-tests.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.2.0.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = Unknown -r Unknown; compiled by 'Joey' on 2014-03-24T00:00Z
+STARTUP_MSG:   java = 1.7.0_51
+************************************************************/
+2014-03-24 08:17:23,317 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2014-03-24 08:17:25,280 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-03-24 08:17:27,461 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2014-03-24 08:17:28,054 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2014-03-24 08:17:28,054 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: DataNode metrics system started
+2014-03-24 08:17:28,070 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Configured hostname is nodea
+2014-03-24 08:17:28,284 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened streaming server at /0.0.0.0:50010
+2014-03-24 08:17:28,307 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+2014-03-24 08:17:28,607 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-03-24 08:17:28,968 INFO org.apache.hadoop.http.HttpServer: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2014-03-24 08:17:28,978 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context datanode
+2014-03-24 08:17:28,978 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2014-03-24 08:17:28,978 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2014-03-24 08:17:28,991 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened info server at 0.0.0.0:50075
+2014-03-24 08:17:28,999 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dfs.webhdfs.enabled = false
+2014-03-24 08:17:29,000 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50075
+2014-03-24 08:17:29,000 INFO org.mortbay.log: jetty-6.1.26
+2014-03-24 08:17:30,473 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50075
+2014-03-24 08:17:31,113 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 50020
+2014-03-24 08:17:31,279 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened IPC server at /0.0.0.0:50020
+2014-03-24 08:17:31,345 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Refresh request received for nameservices: null
+2014-03-24 08:17:31,425 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting BPOfferServices for nameservices: <default>
+2014-03-24 08:17:31,469 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Block pool <registering> (storage id unknown) service to ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310 starting to offer service
+2014-03-24 08:17:31,474 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2014-03-24 08:17:31,501 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 50020: starting
+2014-03-24 08:17:32,270 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /var/hadoop/tmp/dfs/data/in_use.lock acquired by nodename 27992@ip-10-234-70-108
+2014-03-24 08:17:32,272 INFO org.apache.hadoop.hdfs.server.common.Storage: Storage directory /var/hadoop/tmp/dfs/data is not formatted
+2014-03-24 08:17:32,272 INFO org.apache.hadoop.hdfs.server.common.Storage: Formatting ...
+2014-03-24 08:17:32,688 INFO org.apache.hadoop.hdfs.server.common.Storage: Locking is disabled
+2014-03-24 08:17:32,689 INFO org.apache.hadoop.hdfs.server.common.Storage: Storage directory /var/hadoop/tmp/dfs/data/current/BP-2078736829-10.234.70.108-1395648953045 is not formatted.
+2014-03-24 08:17:32,689 INFO org.apache.hadoop.hdfs.server.common.Storage: Formatting ...
+2014-03-24 08:17:32,689 INFO org.apache.hadoop.hdfs.server.common.Storage: Formatting block pool BP-2078736829-10.234.70.108-1395648953045 directory /var/hadoop/tmp/dfs/data/current/BP-2078736829-10.234.70.108-1395648953045/current
+2014-03-24 08:17:32,721 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Setting up storage: nsid=296983211;bpid=BP-2078736829-10.234.70.108-1395648953045;lv=-47;nsInfo=lv=-47;cid=CID-4e85e06e-598b-4860-9f4e-d9bce8abf0ff;nsid=296983211;c=0;bpid=BP-2078736829-10.234.70.108-1395648953045
+2014-03-24 08:17:32,816 INFO org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl: Added volume - /var/hadoop/tmp/dfs/data/current
+2014-03-24 08:17:32,889 INFO org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl: Registered FSDatasetState MBean
+2014-03-24 08:17:32,924 INFO org.apache.hadoop.hdfs.server.datanode.DirectoryScanner: Periodic Directory Tree Verification scan starting at 1395657456924 with interval 21600000
+2014-03-24 08:17:32,945 INFO org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl: Adding block pool BP-2078736829-10.234.70.108-1395648953045
+2014-03-24 08:17:32,946 INFO org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl: Scanning block pool BP-2078736829-10.234.70.108-1395648953045 on volume /var/hadoop/tmp/dfs/data/current...
+2014-03-24 08:17:33,021 INFO org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl: Time taken to scan block pool BP-2078736829-10.234.70.108-1395648953045 on /var/hadoop/tmp/dfs/data/current: 74ms
+2014-03-24 08:17:33,024 INFO org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl: Total time to scan all replicas for block pool BP-2078736829-10.234.70.108-1395648953045: 78ms
+2014-03-24 08:17:33,024 INFO org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl: Adding replicas to map for block pool BP-2078736829-10.234.70.108-1395648953045 on volume /var/hadoop/tmp/dfs/data/current...
+2014-03-24 08:17:33,024 INFO org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl: Time to add replicas to map for block pool BP-2078736829-10.234.70.108-1395648953045 on volume /var/hadoop/tmp/dfs/data/current: 0ms
+2014-03-24 08:17:33,024 INFO org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl: Total time to add all replicas to map: 0ms
+2014-03-24 08:17:33,033 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Block pool BP-2078736829-10.234.70.108-1395648953045 (storage id DS-737578406-10.234.70.108-50010-1395649052313) service to ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310 beginning handshake with NN
+2014-03-24 08:17:33,206 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Block pool Block pool BP-2078736829-10.234.70.108-1395648953045 (storage id DS-737578406-10.234.70.108-50010-1395649052313) service to ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310 successfully registered with NN
+2014-03-24 08:17:33,206 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: For namenode ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310 using DELETEREPORT_INTERVAL of 300000 msec  BLOCKREPORT_INTERVAL of 21600000msec Initial delay: 0msec; heartBeatInterval=3000
+2014-03-24 08:17:33,624 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Namenode Block pool BP-2078736829-10.234.70.108-1395648953045 (storage id DS-737578406-10.234.70.108-50010-1395649052313) service to ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310 trying to claim ACTIVE state with txid=1
+2014-03-24 08:17:33,624 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Acknowledging ACTIVE Namenode Block pool BP-2078736829-10.234.70.108-1395648953045 (storage id DS-737578406-10.234.70.108-50010-1395649052313) service to ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310
+2014-03-24 08:17:33,983 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 0 blocks took 4 msec to generate and 346 msecs for RPC and NN processing
+2014-03-24 08:17:33,983 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: sent block report, processed command:org.apache.hadoop.hdfs.server.protocol.FinalizeCommand@5db5fbc1
+2014-03-24 08:17:34,023 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlockMap
+2014-03-24 08:17:34,023 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2014-03-24 08:17:34,039 INFO org.apache.hadoop.util.GSet: 0.5% max memory = 966.7 MB
+2014-03-24 08:17:34,039 INFO org.apache.hadoop.util.GSet: capacity      = 2^19 = 524288 entries
+2014-03-24 08:17:34,042 INFO org.apache.hadoop.hdfs.server.datanode.BlockPoolSliceScanner: Periodic Block Verification Scanner initialized with interval 504 hours for block pool BP-2078736829-10.234.70.108-1395648953045
+2014-03-24 08:17:34,082 INFO org.apache.hadoop.hdfs.server.datanode.DataBlockScanner: Added bpid=BP-2078736829-10.234.70.108-1395648953045 to blockPoolScannerMap, new size=1
+2014-03-24 08:19:12,235 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.io.IOException: Failed on local exception: java.io.EOFException; Host Details : local host is: "ip-10-234-70-108/10.234.70.108"; destination host is: "ec2-54-185-107-145.us-west-2.compute.amazonaws.com":54310; 
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:764)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.hadoop.ipc.Client$Connection.receiveRpcResponse(Client.java:995)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:891)
+2014-03-24 08:19:16,214 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:19:17,215 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:19:18,216 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:19:19,217 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:19:20,218 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:19:21,219 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:19:22,220 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:19:23,221 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:19:24,221 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:19:25,222 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:19:26,220 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeCommand action: DNA_REGISTER
+2014-03-24 08:19:26,331 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Block pool BP-2078736829-10.234.70.108-1395648953045 (storage id DS-737578406-10.234.70.108-50010-1395649052313) service to ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310 beginning handshake with NN
+2014-03-24 08:19:26,400 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Block pool Block pool BP-2078736829-10.234.70.108-1395648953045 (storage id DS-737578406-10.234.70.108-50010-1395649052313) service to ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310 successfully registered with NN
+2014-03-24 08:19:26,460 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 0 blocks took 0 msec to generate and 60 msecs for RPC and NN processing
+2014-03-24 08:19:26,460 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: sent block report, processed command:org.apache.hadoop.hdfs.server.protocol.FinalizeCommand@6a81262
+2014-03-24 08:19:57,862 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.io.IOException: Failed on local exception: java.io.EOFException; Host Details : local host is: "ip-10-234-70-108/10.234.70.108"; destination host is: "ec2-54-185-107-145.us-west-2.compute.amazonaws.com":54310; 
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:764)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.hadoop.ipc.Client$Connection.receiveRpcResponse(Client.java:995)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:891)
+2014-03-24 08:20:00,713 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:01,714 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:02,715 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:03,716 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:04,717 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:05,719 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:06,719 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:07,720 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:08,721 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:09,722 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:09,724 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.net.ConnectException: Call From ip-10-234-70-108/10.234.70.108 to ec2-54-185-107-145.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 14 more
+2014-03-24 08:20:10,727 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:11,728 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:12,729 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:13,730 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:14,731 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:15,732 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:16,733 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:17,734 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:18,735 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:19,735 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:19,737 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.net.ConnectException: Call From ip-10-234-70-108/10.234.70.108 to ec2-54-185-107-145.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 14 more
+2014-03-24 08:20:20,740 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:21,741 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:22,742 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:23,743 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:24,744 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:25,745 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:26,746 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:27,747 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:28,748 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:29,749 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:29,751 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.net.ConnectException: Call From ip-10-234-70-108/10.234.70.108 to ec2-54-185-107-145.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 14 more
+2014-03-24 08:20:30,753 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:31,754 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:32,755 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:33,756 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:34,757 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:35,758 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:36,759 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:37,760 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:38,761 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:39,762 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:39,764 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.net.ConnectException: Call From ip-10-234-70-108/10.234.70.108 to ec2-54-185-107-145.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 14 more
+2014-03-24 08:20:40,766 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:41,767 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:42,768 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:43,769 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:44,770 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:45,771 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:46,772 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:47,773 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:48,773 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:49,774 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:49,776 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.net.ConnectException: Call From ip-10-234-70-108/10.234.70.108 to ec2-54-185-107-145.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 14 more
+2014-03-24 08:20:50,779 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:51,780 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:52,781 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:53,781 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:54,782 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:55,783 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:56,784 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:57,785 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:58,786 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:59,787 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:20:59,790 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.net.ConnectException: Call From ip-10-234-70-108/10.234.70.108 to ec2-54-185-107-145.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 14 more
+2014-03-24 08:21:00,792 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:01,793 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:02,794 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:03,795 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:04,796 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:05,797 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:06,798 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:07,799 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:08,800 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:09,806 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:09,808 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.net.ConnectException: Call From ip-10-234-70-108/10.234.70.108 to ec2-54-185-107-145.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 14 more
+2014-03-24 08:21:10,810 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:11,811 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:12,812 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:13,813 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:14,814 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:15,814 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:16,815 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:17,816 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:18,817 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:19,818 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:19,820 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.net.ConnectException: Call From ip-10-234-70-108/10.234.70.108 to ec2-54-185-107-145.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 14 more
+2014-03-24 08:21:20,822 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:21,823 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:22,824 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:23,825 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:24,826 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:25,827 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:26,827 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:27,828 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:28,829 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:29,830 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:29,834 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.net.ConnectException: Call From ip-10-234-70-108/10.234.70.108 to ec2-54-185-107-145.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 14 more
+2014-03-24 08:21:30,837 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:31,838 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:32,839 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:33,840 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:34,841 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:35,842 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:36,843 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:37,844 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:38,845 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:39,846 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:39,848 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.net.ConnectException: Call From ip-10-234-70-108/10.234.70.108 to ec2-54-185-107-145.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 14 more
+2014-03-24 08:21:40,850 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:41,851 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:42,852 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:43,853 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:44,854 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:45,855 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:46,856 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:47,857 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:48,858 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:49,859 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:49,861 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.net.ConnectException: Call From ip-10-234-70-108/10.234.70.108 to ec2-54-185-107-145.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 14 more
+2014-03-24 08:21:50,863 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:51,864 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:52,865 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:53,866 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:54,867 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:55,868 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:56,869 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:57,870 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:58,871 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:59,872 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:21:59,875 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.net.ConnectException: Call From ip-10-234-70-108/10.234.70.108 to ec2-54-185-107-145.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 14 more
+2014-03-24 08:22:00,877 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:01,879 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:02,880 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:03,880 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:04,881 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:05,882 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:06,883 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:07,884 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:08,885 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:09,886 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:09,888 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.net.ConnectException: Call From ip-10-234-70-108/10.234.70.108 to ec2-54-185-107-145.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 14 more
+2014-03-24 08:22:10,890 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:11,892 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:12,893 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:13,894 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:14,895 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:15,896 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:16,897 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:17,898 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:18,900 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:19,901 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:19,903 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.net.ConnectException: Call From ip-10-234-70-108/10.234.70.108 to ec2-54-185-107-145.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 14 more
+2014-03-24 08:22:20,905 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:21,906 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:22,907 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:23,908 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:24,908 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:25,909 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:26,910 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:27,911 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:28,914 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:29,916 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:29,919 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.net.ConnectException: Call From ip-10-234-70-108/10.234.70.108 to ec2-54-185-107-145.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 14 more
+2014-03-24 08:22:30,925 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:31,926 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:32,927 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:33,928 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:34,929 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:35,930 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:36,931 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:37,932 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:38,933 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:39,934 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:39,939 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.net.ConnectException: Call From ip-10-234-70-108/10.234.70.108 to ec2-54-185-107-145.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 14 more
+2014-03-24 08:22:40,943 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:41,944 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:42,945 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:43,946 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:44,947 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:45,948 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:46,949 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:47,950 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:48,950 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:49,951 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:49,958 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.net.ConnectException: Call From ip-10-234-70-108/10.234.70.108 to ec2-54-185-107-145.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.GeneratedConstructorAccessor6.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 14 more
+2014-03-24 08:22:50,970 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:51,971 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:52,972 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:53,973 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:54,974 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:55,975 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:56,976 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:57,977 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:58,978 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:59,979 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:22:59,982 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.net.ConnectException: Call From ip-10-234-70-108/10.234.70.108 to ec2-54-185-107-145.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.GeneratedConstructorAccessor6.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 14 more
+2014-03-24 08:23:00,985 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-03-24 08:23:01,986 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-185-107-145.us-west-2.compute.amazonaws.com/10.234.70.108:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)

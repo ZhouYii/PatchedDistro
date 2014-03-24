@@ -24,6 +24,6 @@
 
 <property>
   <name>fs.default.name</name>
-  <value>hdfs://54.185.107.145:54310</value>
+  <value>hdfs://ec2-54-185-107-145.us-west-2.compute.amazonaws.com:54310</value>
 </property>
 </configuration>
