@@ -53,7 +53,7 @@ nameStartOpt="$nameStartOpt $@"
 # namenodes
 
 NAMENODES=$($HADOOP_PREFIX/bin/hdfs getconf -namenodes)
-
+NAMENODES="ec2-54-214-140-127.us-west-2.compute.amazonaws.com"
 echo "Starting namenodes on [$NAMENODES]"
 
 "$HADOOP_PREFIX/sbin/hadoop-daemons.sh" \
