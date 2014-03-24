@@ -16,7 +16,7 @@
 
 <!-- Site specific YARN configuration properties -->
 <property>
-  <name>yarn.resourcemanager.webapp.address</name>
+  <name>yarn.resourcemanager.hostname</name>
   <value>ec2-54-214-140-127.us-west-2.compute.amazonaws.com</value>
 </property>
 </configuration>

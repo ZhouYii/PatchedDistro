@@ -1,4 +1,4 @@
-2014-03-24 19:34:43,991 INFO  [main] nodemanager.NodeManager (StringUtils.java:startupShutdownMessage(601)) - STARTUP_MSG: 
+2014-03-24 21:56:56,920 INFO  [main] nodemanager.NodeManager (StringUtils.java:startupShutdownMessage(601)) - STARTUP_MSG: 
 /************************************************************
 STARTUP_MSG: Starting NodeManager
 STARTUP_MSG:   host = ip-10-253-25-54/10.253.25.54
@@ -8,539 +8,76 @@ STARTUP_MSG:   classpath = /home/ubuntu/PatchedDistro/hadoop-2.2.0/etc/hadoop:/h
 STARTUP_MSG:   build = Unknown -r Unknown; compiled by 'Joey' on 2014-03-24T00:00Z
 STARTUP_MSG:   java = 1.7.0_51
 ************************************************************/
-2014-03-24 19:34:44,005 INFO  [main] nodemanager.NodeManager (SignalLogger.java:register(91)) - registered UNIX signal handlers for [TERM, HUP, INT]
-2014-03-24 19:34:44,939 WARN  [main] util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2014-03-24 19:34:45,857 INFO  [main] event.AsyncDispatcher (AsyncDispatcher.java:register(157)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl$ContainerEventDispatcher
-2014-03-24 19:34:45,859 INFO  [main] event.AsyncDispatcher (AsyncDispatcher.java:register(157)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl$ApplicationEventDispatcher
-2014-03-24 19:34:45,860 INFO  [main] event.AsyncDispatcher (AsyncDispatcher.java:register(157)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.event.LocalizationEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService
-2014-03-24 19:34:45,861 INFO  [main] event.AsyncDispatcher (AsyncDispatcher.java:register(157)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServicesEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices
-2014-03-24 19:34:45,862 INFO  [main] event.AsyncDispatcher (AsyncDispatcher.java:register(157)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl
-2014-03-24 19:34:45,862 INFO  [main] event.AsyncDispatcher (AsyncDispatcher.java:register(157)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainersLauncherEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainersLauncher
-2014-03-24 19:34:45,899 INFO  [main] event.AsyncDispatcher (AsyncDispatcher.java:register(157)) - Registering class org.apache.hadoop.yarn.server.nodemanager.ContainerManagerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl
-2014-03-24 19:34:45,900 INFO  [main] event.AsyncDispatcher (AsyncDispatcher.java:register(157)) - Registering class org.apache.hadoop.yarn.server.nodemanager.NodeManagerEventType for class org.apache.hadoop.yarn.server.nodemanager.NodeManager
-2014-03-24 19:34:45,940 WARN  [main] impl.MetricsConfig (MetricsConfig.java:loadFirst(124)) - Cannot locate configuration: tried hadoop-metrics2-nodemanager.properties,hadoop-metrics2.properties
-2014-03-24 19:34:46,068 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(344)) - Scheduled snapshot period at 10 second(s).
-2014-03-24 19:34:46,069 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:start(183)) - NodeManager metrics system started
-2014-03-24 19:34:46,104 INFO  [main] event.AsyncDispatcher (AsyncDispatcher.java:register(157)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.event.LogHandlerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.NonAggregatingLogHandler
-2014-03-24 19:34:46,105 INFO  [main] localizer.ResourceLocalizationService (ResourceLocalizationService.java:validateConf(196)) - per directory file limit = 8192
-2014-03-24 19:34:46,142 INFO  [main] event.AsyncDispatcher (AsyncDispatcher.java:register(157)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.event.LocalizerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService$LocalizerTracker
-2014-03-24 19:34:46,156 INFO  [main] monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:serviceInit(98)) -  Using ResourceCalculatorPlugin : org.apache.hadoop.yarn.util.LinuxResourceCalculatorPlugin@58a769d7
-2014-03-24 19:34:46,157 INFO  [main] monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:serviceInit(103)) -  Using ResourceCalculatorProcessTree : null
-2014-03-24 19:34:46,157 INFO  [main] monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:serviceInit(127)) - Physical memory check enabled: true
-2014-03-24 19:34:46,157 INFO  [main] monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:serviceInit(128)) - Virtual memory check enabled: true
-2014-03-24 19:34:46,162 WARN  [main] monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:serviceInit(145)) - NodeManager configured with 8 G physical memory allocated to containers, which is more than 80% of the total physical memory available (7.3 G). Thrashing might happen.
-2014-03-24 19:34:46,169 INFO  [main] nodemanager.NodeStatusUpdaterImpl (NodeStatusUpdaterImpl.java:serviceInit(160)) - Initialized nodemanager for null: physical-memory=8192 virtual-memory=17204 virtual-cores=8
-2014-03-24 19:34:46,257 INFO  [Socket Reader #1 for port 35495] ipc.Server (Server.java:run(564)) - Starting Socket Reader #1 for port 35495
-2014-03-24 19:34:46,333 INFO  [main] pb.RpcServerFactoryPBImpl (RpcServerFactoryPBImpl.java:createServer(174)) - Adding protocol org.apache.hadoop.yarn.api.ContainerManagementProtocolPB to the server
-2014-03-24 19:34:46,334 INFO  [main] containermanager.ContainerManagerImpl (ContainerManagerImpl.java:serviceStart(281)) - Blocking new container-requests as container manager rpc server is still starting.
-2014-03-24 19:34:46,334 INFO  [IPC Server Responder] ipc.Server (Server.java:run(861)) - IPC Server Responder: starting
-2014-03-24 19:34:46,336 INFO  [IPC Server listener on 35495] ipc.Server (Server.java:run(688)) - IPC Server listener on 35495: starting
-2014-03-24 19:34:46,349 INFO  [main] security.NMContainerTokenSecretManager (NMContainerTokenSecretManager.java:setNodeId(189)) - Updating node address : nodea:35495
-2014-03-24 19:34:46,349 INFO  [main] containermanager.ContainerManagerImpl (ContainerManagerImpl.java:serviceStart(292)) - ContainerManager started at ip-10-253-25-54/10.253.25.54:35495
-2014-03-24 19:34:46,362 INFO  [Socket Reader #1 for port 8040] ipc.Server (Server.java:run(564)) - Starting Socket Reader #1 for port 8040
-2014-03-24 19:34:46,367 INFO  [main] pb.RpcServerFactoryPBImpl (RpcServerFactoryPBImpl.java:createServer(174)) - Adding protocol org.apache.hadoop.yarn.server.nodemanager.api.LocalizationProtocolPB to the server
-2014-03-24 19:34:46,367 INFO  [IPC Server Responder] ipc.Server (Server.java:run(861)) - IPC Server Responder: starting
-2014-03-24 19:34:46,368 INFO  [IPC Server listener on 8040] ipc.Server (Server.java:run(688)) - IPC Server listener on 8040: starting
-2014-03-24 19:34:46,369 INFO  [main] localizer.ResourceLocalizationService (ResourceLocalizationService.java:serviceStart(263)) - Localizer started on port 8040
-2014-03-24 19:34:46,373 INFO  [main] webapp.WebServer (WebServer.java:serviceStart(60)) - Instantiating NMWebApp at 0.0.0.0:8042
-2014-03-24 19:34:46,426 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2014-03-24 19:34:46,508 INFO  [main] http.HttpServer (HttpServer.java:addGlobalFilter(525)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
-2014-03-24 19:34:46,512 INFO  [main] http.HttpServer (HttpServer.java:addFilter(503)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context node
-2014-03-24 19:34:46,512 INFO  [main] http.HttpServer (HttpServer.java:addFilter(510)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
-2014-03-24 19:34:46,513 INFO  [main] http.HttpServer (HttpServer.java:addFilter(510)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
-2014-03-24 19:34:46,519 INFO  [main] http.HttpServer (HttpServer.java:<init>(280)) - adding path spec: /node/*
-2014-03-24 19:34:46,519 INFO  [main] http.HttpServer (HttpServer.java:<init>(280)) - adding path spec: /ws/*
-2014-03-24 19:34:46,522 INFO  [main] http.HttpServer (HttpServer.java:start(687)) - Jetty bound to port 8042
-2014-03-24 19:34:46,523 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - jetty-6.1.26
-2014-03-24 19:34:46,571 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - Extract jar:file:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-common-2.2.0.jar!/webapps/node to /tmp/Jetty_0_0_0_0_8042_node____19tj0x/webapp
-2014-03-24 19:34:47,005 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - Started SelectChannelConnector@0.0.0.0:8042
-2014-03-24 19:34:47,006 INFO  [main] webapp.WebApps (WebApps.java:start(258)) - Web app /node started at 8042
-2014-03-24 19:34:48,049 INFO  [main] webapp.WebApps (WebApps.java:start(272)) - Registered webapp guice modules
-2014-03-24 19:34:48,099 INFO  [main] client.RMProxy (RMProxy.java:createRMProxy(56)) - Connecting to ResourceManager at /0.0.0.0:8031
-2014-03-24 19:34:49,149 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:34:50,151 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:34:51,152 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:34:52,154 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:34:53,155 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:34:54,156 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:34:55,159 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:34:56,160 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:34:57,161 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:34:58,162 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:35:29,174 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:35:30,175 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:35:31,176 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:35:32,177 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:35:33,178 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:35:34,181 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:35:35,182 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:35:36,183 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:35:37,184 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:35:38,186 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:36:09,190 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:36:10,191 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:36:11,192 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:36:12,193 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:36:13,195 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:36:14,197 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:36:15,198 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:36:16,199 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:36:17,200 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:36:18,202 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:36:49,207 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:36:50,208 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:36:51,209 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:36:52,210 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:36:53,211 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:36:54,214 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:36:55,215 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:36:56,216 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:36:57,217 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:36:58,218 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:37:29,223 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:37:30,224 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:37:31,225 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:37:32,227 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:37:33,228 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:37:34,230 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:37:35,232 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:37:36,233 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:37:37,234 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:37:38,235 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:38:09,240 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:38:10,241 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:38:11,243 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:38:12,244 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:38:13,245 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:38:14,248 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:38:15,249 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:38:16,250 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:38:17,251 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:38:18,252 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:38:49,259 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:38:50,260 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:38:51,261 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:38:52,262 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:38:53,264 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:38:54,266 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:38:55,267 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:38:56,268 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:38:57,270 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:38:58,271 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:39:29,276 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:39:30,277 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:39:31,279 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:39:32,280 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:39:33,281 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:39:34,283 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:39:35,284 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:39:36,285 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:39:37,286 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:39:38,287 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:40:09,292 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:40:10,294 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:40:11,295 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:40:12,296 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:40:13,298 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:40:14,300 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:40:15,301 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:40:16,303 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:40:17,309 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:40:18,310 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:40:49,315 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:40:50,316 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:40:51,317 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:40:52,318 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:40:53,319 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:40:54,322 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:40:55,323 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:40:56,324 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:40:57,325 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:40:58,326 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:41:29,332 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:41:30,333 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:41:31,334 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:41:32,335 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:41:33,336 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:41:34,339 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:41:35,340 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:41:36,341 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:41:37,342 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:41:38,343 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:42:09,348 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:42:10,350 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:42:11,351 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:42:12,352 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:42:13,353 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:42:14,356 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:42:15,357 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:42:16,358 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:42:17,360 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:42:18,361 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:42:49,366 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:42:50,368 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:42:51,369 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:42:52,370 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:42:53,371 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:42:54,374 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:42:55,375 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:42:56,376 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:42:57,378 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:42:58,379 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:43:29,384 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:43:30,386 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:43:31,387 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:43:32,388 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:43:33,389 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:43:34,392 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:43:35,393 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:43:36,394 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:43:37,395 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:43:38,397 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:44:09,402 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:44:10,403 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:44:11,404 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:44:12,406 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:44:13,407 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:44:14,410 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:44:15,411 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:44:16,412 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:44:17,413 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:44:18,414 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:44:49,421 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:44:50,422 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:44:51,423 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:44:52,424 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:44:53,425 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:44:54,428 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:44:55,429 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:44:56,431 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:44:57,432 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:44:58,433 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:45:29,439 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:45:30,440 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:45:31,441 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:45:32,443 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:45:33,444 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:45:34,446 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:45:35,448 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:45:36,449 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:45:37,450 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:45:38,451 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:46:09,457 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:46:10,458 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:46:11,459 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:46:12,460 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:46:13,461 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:46:14,464 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:46:15,465 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:46:16,466 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:46:17,467 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:46:18,469 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:46:49,474 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:46:50,475 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:46:51,476 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:46:52,477 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:46:53,478 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:46:54,481 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:46:55,482 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:46:56,483 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:46:57,484 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:46:58,486 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:47:29,492 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:47:30,493 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:47:31,494 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:47:32,495 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:47:33,497 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:47:34,499 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:47:35,500 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:47:36,502 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:47:37,503 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:47:38,504 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:48:09,510 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:48:10,511 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:48:11,512 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:48:12,514 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:48:13,515 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:48:14,517 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:48:15,519 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:48:16,520 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:48:17,521 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:48:18,522 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:48:49,527 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:48:50,529 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:48:51,530 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:48:52,531 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:48:53,532 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:48:54,535 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:48:55,536 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:48:56,537 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:48:57,538 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:48:58,540 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:49:29,545 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:49:30,546 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:49:31,548 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:49:32,549 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:49:33,550 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:49:34,552 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:49:35,553 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:49:36,555 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:49:37,556 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:49:38,557 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:50:09,562 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:50:10,564 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:50:11,565 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:50:12,566 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:50:13,567 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:50:14,570 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:50:15,571 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:50:16,572 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:50:17,573 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:50:18,574 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:50:49,579 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:50:50,580 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:50:51,582 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:50:52,583 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:50:53,584 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:50:54,586 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:50:55,588 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:50:56,589 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:50:57,590 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:50:58,591 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:51:29,597 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:51:30,598 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:51:31,599 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:51:32,601 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:51:33,602 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:51:34,604 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:51:35,605 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:51:36,607 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:51:37,608 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:51:38,609 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:52:09,614 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:52:10,615 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:52:11,616 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:52:12,617 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:52:13,619 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:52:14,621 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:52:15,622 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:52:16,623 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:52:17,625 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:52:18,626 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:52:49,631 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:52:50,632 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:52:51,633 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:52:52,635 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:52:53,636 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:52:54,638 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:52:55,640 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:52:56,641 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:52:57,642 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:52:58,643 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:53:29,650 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:53:30,651 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:53:31,652 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:53:32,654 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:53:33,655 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:53:34,657 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:53:35,658 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:53:36,660 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:53:37,661 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:53:38,662 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:09,667 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:10,669 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:11,670 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:12,671 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:13,672 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:14,675 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:15,676 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:16,677 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:17,678 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:18,679 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:49,685 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:50,686 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:51,687 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:52,688 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:53,689 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:54,692 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:55,693 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:56,694 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:57,695 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:58,697 INFO  [main] ipc.Client (Client.java:handleConnectionFailure(783)) - Retrying connect to server: 0.0.0.0/0.0.0.0:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
-2014-03-24 19:54:58,701 ERROR [main] nodemanager.NodeStatusUpdaterImpl (NodeStatusUpdaterImpl.java:serviceStart(180)) - Unexpected error starting NodeStatusUpdater
-java.net.ConnectException: Call From ip-10-253-25-54/10.253.25.54 to 0.0.0.0:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
-	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
-	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
-	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
-	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
-	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
-	at com.sun.proxy.$Proxy23.registerNodeManager(Unknown Source)
-	at org.apache.hadoop.yarn.server.api.impl.pb.client.ResourceTrackerPBClientImpl.registerNodeManager(ResourceTrackerPBClientImpl.java:68)
-	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
-	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
-	at com.sun.proxy.$Proxy24.registerNodeManager(Unknown Source)
-	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.registerWithRM(NodeStatusUpdaterImpl.java:238)
-	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.serviceStart(NodeStatusUpdaterImpl.java:175)
-	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
-	at org.apache.hadoop.service.CompositeService.serviceStart(CompositeService.java:121)
-	at org.apache.hadoop.yarn.server.nodemanager.NodeManager.serviceStart(NodeManager.java:199)
-	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
-	at org.apache.hadoop.yarn.server.nodemanager.NodeManager.initAndStartNodeManager(NodeManager.java:339)
-	at org.apache.hadoop.yarn.server.nodemanager.NodeManager.main(NodeManager.java:386)
-Caused by: java.net.ConnectException: Connection refused
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
-	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
-	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
-	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
-	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
-	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
-	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
-	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
-	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
-	... 18 more
-2014-03-24 19:54:58,705 INFO  [main] service.AbstractService (AbstractService.java:noteFailure(272)) - Service org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl failed in state STARTED; cause: org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.ConnectException: Call From ip-10-253-25-54/10.253.25.54 to 0.0.0.0:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
-org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.ConnectException: Call From ip-10-253-25-54/10.253.25.54 to 0.0.0.0:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
-	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.serviceStart(NodeStatusUpdaterImpl.java:181)
-	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
-	at org.apache.hadoop.service.CompositeService.serviceStart(CompositeService.java:121)
-	at org.apache.hadoop.yarn.server.nodemanager.NodeManager.serviceStart(NodeManager.java:199)
-	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
-	at org.apache.hadoop.yarn.server.nodemanager.NodeManager.initAndStartNodeManager(NodeManager.java:339)
-	at org.apache.hadoop.yarn.server.nodemanager.NodeManager.main(NodeManager.java:386)
-Caused by: java.net.ConnectException: Call From ip-10-253-25-54/10.253.25.54 to 0.0.0.0:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
-	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
-	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
-	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
-	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
-	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
-	at com.sun.proxy.$Proxy23.registerNodeManager(Unknown Source)
-	at org.apache.hadoop.yarn.server.api.impl.pb.client.ResourceTrackerPBClientImpl.registerNodeManager(ResourceTrackerPBClientImpl.java:68)
-	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
-	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
-	at com.sun.proxy.$Proxy24.registerNodeManager(Unknown Source)
-	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.registerWithRM(NodeStatusUpdaterImpl.java:238)
-	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.serviceStart(NodeStatusUpdaterImpl.java:175)
-	... 6 more
-Caused by: java.net.ConnectException: Connection refused
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
-	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
-	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
-	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
-	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
-	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
-	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
-	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
-	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
-	... 18 more
-2014-03-24 19:54:58,723 INFO  [main] service.AbstractService (AbstractService.java:noteFailure(272)) - Service NodeManager failed in state STARTED; cause: org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.ConnectException: Call From ip-10-253-25-54/10.253.25.54 to 0.0.0.0:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
-org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.ConnectException: Call From ip-10-253-25-54/10.253.25.54 to 0.0.0.0:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
-	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.serviceStart(NodeStatusUpdaterImpl.java:181)
-	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
-	at org.apache.hadoop.service.CompositeService.serviceStart(CompositeService.java:121)
-	at org.apache.hadoop.yarn.server.nodemanager.NodeManager.serviceStart(NodeManager.java:199)
-	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
-	at org.apache.hadoop.yarn.server.nodemanager.NodeManager.initAndStartNodeManager(NodeManager.java:339)
-	at org.apache.hadoop.yarn.server.nodemanager.NodeManager.main(NodeManager.java:386)
-Caused by: java.net.ConnectException: Call From ip-10-253-25-54/10.253.25.54 to 0.0.0.0:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
-	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
-	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
-	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
-	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
-	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
-	at com.sun.proxy.$Proxy23.registerNodeManager(Unknown Source)
-	at org.apache.hadoop.yarn.server.api.impl.pb.client.ResourceTrackerPBClientImpl.registerNodeManager(ResourceTrackerPBClientImpl.java:68)
-	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
-	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
-	at com.sun.proxy.$Proxy24.registerNodeManager(Unknown Source)
-	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.registerWithRM(NodeStatusUpdaterImpl.java:238)
-	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.serviceStart(NodeStatusUpdaterImpl.java:175)
-	... 6 more
-Caused by: java.net.ConnectException: Connection refused
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
-	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
-	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
-	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
-	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
-	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
-	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
-	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
-	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
-	... 18 more
-2014-03-24 19:54:58,728 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - Stopped SelectChannelConnector@0.0.0.0:8042
-2014-03-24 19:54:58,729 INFO  [main] ipc.Server (Server.java:stop(2437)) - Stopping server on 35495
-2014-03-24 19:54:58,731 INFO  [IPC Server listener on 35495] ipc.Server (Server.java:run(720)) - Stopping IPC Server listener on 35495
-2014-03-24 19:54:58,731 INFO  [IPC Server Responder] ipc.Server (Server.java:run(866)) - Stopping IPC Server Responder
-2014-03-24 19:54:58,732 WARN  [Container Monitor] monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:run(463)) - org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl is interrupted. Exiting.
-2014-03-24 19:54:58,733 INFO  [main] ipc.Server (Server.java:stop(2437)) - Stopping server on 8040
-2014-03-24 19:54:58,734 INFO  [IPC Server listener on 8040] ipc.Server (Server.java:run(720)) - Stopping IPC Server listener on 8040
-2014-03-24 19:54:58,734 INFO  [IPC Server Responder] ipc.Server (Server.java:run(866)) - Stopping IPC Server Responder
-2014-03-24 19:54:58,735 INFO  [Public Localizer] localizer.ResourceLocalizationService (ResourceLocalizationService.java:run(728)) - Public cache exiting
-2014-03-24 19:54:58,735 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:stop(200)) - Stopping NodeManager metrics system...
-2014-03-24 19:54:58,736 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:stop(206)) - NodeManager metrics system stopped.
-2014-03-24 19:54:58,736 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:shutdown(572)) - NodeManager metrics system shutdown complete.
-2014-03-24 19:54:58,737 FATAL [main] nodemanager.NodeManager (NodeManager.java:initAndStartNodeManager(341)) - Error starting NodeManager
-org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.ConnectException: Call From ip-10-253-25-54/10.253.25.54 to 0.0.0.0:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
-	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.serviceStart(NodeStatusUpdaterImpl.java:181)
-	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
-	at org.apache.hadoop.service.CompositeService.serviceStart(CompositeService.java:121)
-	at org.apache.hadoop.yarn.server.nodemanager.NodeManager.serviceStart(NodeManager.java:199)
-	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
-	at org.apache.hadoop.yarn.server.nodemanager.NodeManager.initAndStartNodeManager(NodeManager.java:339)
-	at org.apache.hadoop.yarn.server.nodemanager.NodeManager.main(NodeManager.java:386)
-Caused by: java.net.ConnectException: Call From ip-10-253-25-54/10.253.25.54 to 0.0.0.0:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
-	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
-	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
-	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
-	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
-	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
-	at com.sun.proxy.$Proxy23.registerNodeManager(Unknown Source)
-	at org.apache.hadoop.yarn.server.api.impl.pb.client.ResourceTrackerPBClientImpl.registerNodeManager(ResourceTrackerPBClientImpl.java:68)
-	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
-	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
-	at com.sun.proxy.$Proxy24.registerNodeManager(Unknown Source)
-	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.registerWithRM(NodeStatusUpdaterImpl.java:238)
-	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.serviceStart(NodeStatusUpdaterImpl.java:175)
-	... 6 more
-Caused by: java.net.ConnectException: Connection refused
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
-	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
-	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
-	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
-	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
-	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
-	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
-	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
-	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
-	... 18 more
-2014-03-24 19:54:58,740 INFO  [Thread-1] nodemanager.NodeManager (StringUtils.java:run(627)) - SHUTDOWN_MSG: 
+2014-03-24 21:56:56,956 INFO  [main] nodemanager.NodeManager (SignalLogger.java:register(91)) - registered UNIX signal handlers for [TERM, HUP, INT]
+2014-03-24 21:57:00,252 INFO  [main] event.AsyncDispatcher (AsyncDispatcher.java:register(157)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl$ContainerEventDispatcher
+2014-03-24 21:57:00,254 INFO  [main] event.AsyncDispatcher (AsyncDispatcher.java:register(157)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl$ApplicationEventDispatcher
+2014-03-24 21:57:00,256 INFO  [main] event.AsyncDispatcher (AsyncDispatcher.java:register(157)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.event.LocalizationEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService
+2014-03-24 21:57:00,257 INFO  [main] event.AsyncDispatcher (AsyncDispatcher.java:register(157)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServicesEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices
+2014-03-24 21:57:00,269 INFO  [main] event.AsyncDispatcher (AsyncDispatcher.java:register(157)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl
+2014-03-24 21:57:00,270 INFO  [main] event.AsyncDispatcher (AsyncDispatcher.java:register(157)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainersLauncherEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainersLauncher
+2014-03-24 21:57:00,346 INFO  [main] event.AsyncDispatcher (AsyncDispatcher.java:register(157)) - Registering class org.apache.hadoop.yarn.server.nodemanager.ContainerManagerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl
+2014-03-24 21:57:00,347 INFO  [main] event.AsyncDispatcher (AsyncDispatcher.java:register(157)) - Registering class org.apache.hadoop.yarn.server.nodemanager.NodeManagerEventType for class org.apache.hadoop.yarn.server.nodemanager.NodeManager
+2014-03-24 21:57:00,414 WARN  [main] impl.MetricsConfig (MetricsConfig.java:loadFirst(124)) - Cannot locate configuration: tried hadoop-metrics2-nodemanager.properties,hadoop-metrics2.properties
+2014-03-24 21:57:00,585 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(344)) - Scheduled snapshot period at 10 second(s).
+2014-03-24 21:57:00,585 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:start(183)) - NodeManager metrics system started
+2014-03-24 21:57:00,611 INFO  [main] event.AsyncDispatcher (AsyncDispatcher.java:register(157)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.event.LogHandlerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.NonAggregatingLogHandler
+2014-03-24 21:57:00,612 INFO  [main] localizer.ResourceLocalizationService (ResourceLocalizationService.java:validateConf(196)) - per directory file limit = 8192
+2014-03-24 21:57:00,677 INFO  [main] localizer.ResourceLocalizationService (ResourceLocalizationService.java:deleteLocalDir(1096)) - usercache path : file:/var/hadoop/tmp/nm-local-dir/usercache_DEL_1395697076808
+2014-03-24 21:57:00,681 INFO  [main] localizer.ResourceLocalizationService (ResourceLocalizationService.java:deleteLocalDir(1096)) - usercache path : file:/var/hadoop/tmp/nm-local-dir/usercache_DEL_1395690964793
+2014-03-24 21:57:00,682 INFO  [main] localizer.ResourceLocalizationService (ResourceLocalizationService.java:deleteLocalDir(1096)) - usercache path : file:/var/hadoop/tmp/nm-local-dir/usercache_DEL_1395697641558
+2014-03-24 21:57:00,683 INFO  [main] localizer.ResourceLocalizationService (ResourceLocalizationService.java:deleteLocalDir(1096)) - usercache path : file:/var/hadoop/tmp/nm-local-dir/usercache_DEL_1395698220614
+2014-03-24 21:57:00,728 INFO  [main] event.AsyncDispatcher (AsyncDispatcher.java:register(157)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.event.LocalizerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService$LocalizerTracker
+2014-03-24 21:57:00,746 INFO  [main] monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:serviceInit(98)) -  Using ResourceCalculatorPlugin : org.apache.hadoop.yarn.util.LinuxResourceCalculatorPlugin@150519c6
+2014-03-24 21:57:00,746 INFO  [main] monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:serviceInit(103)) -  Using ResourceCalculatorProcessTree : null
+2014-03-24 21:57:00,747 INFO  [main] monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:serviceInit(127)) - Physical memory check enabled: true
+2014-03-24 21:57:00,747 INFO  [main] monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:serviceInit(128)) - Virtual memory check enabled: true
+2014-03-24 21:57:00,752 WARN  [main] monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:serviceInit(145)) - NodeManager configured with 8 G physical memory allocated to containers, which is more than 80% of the total physical memory available (7.3 G). Thrashing might happen.
+2014-03-24 21:57:00,759 INFO  [main] nodemanager.NodeStatusUpdaterImpl (NodeStatusUpdaterImpl.java:serviceInit(160)) - Initialized nodemanager for null: physical-memory=8192 virtual-memory=17204 virtual-cores=8
+2014-03-24 21:57:00,846 INFO  [Socket Reader #1 for port 53150] ipc.Server (Server.java:run(564)) - Starting Socket Reader #1 for port 53150
+2014-03-24 21:57:00,924 INFO  [main] pb.RpcServerFactoryPBImpl (RpcServerFactoryPBImpl.java:createServer(174)) - Adding protocol org.apache.hadoop.yarn.api.ContainerManagementProtocolPB to the server
+2014-03-24 21:57:00,924 INFO  [main] containermanager.ContainerManagerImpl (ContainerManagerImpl.java:serviceStart(281)) - Blocking new container-requests as container manager rpc server is still starting.
+2014-03-24 21:57:00,925 INFO  [IPC Server Responder] ipc.Server (Server.java:run(861)) - IPC Server Responder: starting
+2014-03-24 21:57:00,930 INFO  [IPC Server listener on 53150] ipc.Server (Server.java:run(688)) - IPC Server listener on 53150: starting
+2014-03-24 21:57:00,945 INFO  [main] security.NMContainerTokenSecretManager (NMContainerTokenSecretManager.java:setNodeId(189)) - Updating node address : nodea:53150
+2014-03-24 21:57:00,945 INFO  [main] containermanager.ContainerManagerImpl (ContainerManagerImpl.java:serviceStart(292)) - ContainerManager started at ip-10-253-25-54/10.253.25.54:53150
+2014-03-24 21:57:00,956 INFO  [Socket Reader #1 for port 8040] ipc.Server (Server.java:run(564)) - Starting Socket Reader #1 for port 8040
+2014-03-24 21:57:00,962 INFO  [main] pb.RpcServerFactoryPBImpl (RpcServerFactoryPBImpl.java:createServer(174)) - Adding protocol org.apache.hadoop.yarn.server.nodemanager.api.LocalizationProtocolPB to the server
+2014-03-24 21:57:00,962 INFO  [IPC Server Responder] ipc.Server (Server.java:run(861)) - IPC Server Responder: starting
+2014-03-24 21:57:00,967 INFO  [IPC Server listener on 8040] ipc.Server (Server.java:run(688)) - IPC Server listener on 8040: starting
+2014-03-24 21:57:00,971 INFO  [main] localizer.ResourceLocalizationService (ResourceLocalizationService.java:serviceStart(263)) - Localizer started on port 8040
+2014-03-24 21:57:00,974 INFO  [main] webapp.WebServer (WebServer.java:serviceStart(60)) - Instantiating NMWebApp at 0.0.0.0:8042
+2014-03-24 21:57:01,027 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-03-24 21:57:01,124 INFO  [main] http.HttpServer (HttpServer.java:addGlobalFilter(525)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2014-03-24 21:57:01,127 INFO  [main] http.HttpServer (HttpServer.java:addFilter(503)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context node
+2014-03-24 21:57:01,128 INFO  [main] http.HttpServer (HttpServer.java:addFilter(510)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2014-03-24 21:57:01,128 INFO  [main] http.HttpServer (HttpServer.java:addFilter(510)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2014-03-24 21:57:01,133 INFO  [main] http.HttpServer (HttpServer.java:<init>(280)) - adding path spec: /node/*
+2014-03-24 21:57:01,133 INFO  [main] http.HttpServer (HttpServer.java:<init>(280)) - adding path spec: /ws/*
+2014-03-24 21:57:01,137 INFO  [main] http.HttpServer (HttpServer.java:start(687)) - Jetty bound to port 8042
+2014-03-24 21:57:01,137 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - jetty-6.1.26
+2014-03-24 21:57:01,180 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - Extract jar:file:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-common-2.2.0.jar!/webapps/node to /tmp/Jetty_0_0_0_0_8042_node____19tj0x/webapp
+2014-03-24 21:57:01,562 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - Started SelectChannelConnector@0.0.0.0:8042
+2014-03-24 21:57:01,564 INFO  [main] webapp.WebApps (WebApps.java:start(258)) - Web app /node started at 8042
+2014-03-24 21:57:02,186 INFO  [main] webapp.WebApps (WebApps.java:start(272)) - Registered webapp guice modules
+2014-03-24 21:57:02,240 INFO  [main] client.RMProxy (RMProxy.java:createRMProxy(56)) - Connecting to ResourceManager at ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:8031
+2014-03-24 21:57:02,544 INFO  [main] security.NMContainerTokenSecretManager (NMContainerTokenSecretManager.java:setMasterKey(71)) - Rolling master-key for container-tokens, got key with id -650087691
+2014-03-24 21:57:02,549 INFO  [main] security.NMTokenSecretManagerInNM (NMTokenSecretManagerInNM.java:setMasterKey(65)) - Rolling master-key for nm-tokens, got key with id :1761267300
+2014-03-24 21:57:02,550 INFO  [main] nodemanager.NodeStatusUpdaterImpl (NodeStatusUpdaterImpl.java:registerWithRM(265)) - Registered with ResourceManager as nodea:53150 with total resource of <memory:8192, vCores:8>
+2014-03-24 21:57:02,550 INFO  [main] nodemanager.NodeStatusUpdaterImpl (NodeStatusUpdaterImpl.java:registerWithRM(267)) - Notifying ContainerManager to unblock new container-requests
+2014-03-24 22:03:25,479 ERROR [SIGTERM handler] nodemanager.NodeManager (SignalLogger.java:handle(60)) - RECEIVED SIGNAL 15: SIGTERM
+2014-03-24 22:03:25,520 INFO  [Thread-1] mortbay.log (Slf4jLog.java:info(67)) - Stopped SelectChannelConnector@0.0.0.0:8042
+2014-03-24 22:03:25,622 INFO  [Thread-1] ipc.Server (Server.java:stop(2437)) - Stopping server on 53150
+2014-03-24 22:03:25,627 INFO  [IPC Server listener on 53150] ipc.Server (Server.java:run(720)) - Stopping IPC Server listener on 53150
+2014-03-24 22:03:25,628 INFO  [IPC Server Responder] ipc.Server (Server.java:run(866)) - Stopping IPC Server Responder
+2014-03-24 22:03:25,629 WARN  [Container Monitor] monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:run(463)) - org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl is interrupted. Exiting.
+2014-03-24 22:03:25,629 INFO  [Thread-1] ipc.Server (Server.java:stop(2437)) - Stopping server on 8040
+2014-03-24 22:03:25,631 INFO  [IPC Server listener on 8040] ipc.Server (Server.java:run(720)) - Stopping IPC Server listener on 8040
+2014-03-24 22:03:25,632 INFO  [IPC Server Responder] ipc.Server (Server.java:run(866)) - Stopping IPC Server Responder
+2014-03-24 22:03:25,632 INFO  [Public Localizer] localizer.ResourceLocalizationService (ResourceLocalizationService.java:run(728)) - Public cache exiting
+2014-03-24 22:03:25,633 INFO  [Thread-1] impl.MetricsSystemImpl (MetricsSystemImpl.java:stop(200)) - Stopping NodeManager metrics system...
+2014-03-24 22:03:25,636 INFO  [Thread-1] impl.MetricsSystemImpl (MetricsSystemImpl.java:stop(206)) - NodeManager metrics system stopped.
+2014-03-24 22:03:25,636 INFO  [Thread-1] impl.MetricsSystemImpl (MetricsSystemImpl.java:shutdown(572)) - NodeManager metrics system shutdown complete.
+2014-03-24 22:03:25,636 INFO  [Thread-1] nodemanager.NodeManager (StringUtils.java:run(627)) - SHUTDOWN_MSG: 
 /************************************************************
 SHUTDOWN_MSG: Shutting down NodeManager at ip-10-253-25-54/10.253.25.54
 ************************************************************/

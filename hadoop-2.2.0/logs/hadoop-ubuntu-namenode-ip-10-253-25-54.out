@@ -1,4 +1,4 @@
-2014-03-24 19:52:35,680 INFO  [main] namenode.NameNode (StringUtils.java:startupShutdownMessage(601)) - STARTUP_MSG: 
+2014-03-24 22:03:34,124 INFO  [main] namenode.NameNode (StringUtils.java:startupShutdownMessage(601)) - STARTUP_MSG: 
 /************************************************************
 STARTUP_MSG: Starting NameNode
 STARTUP_MSG:   host = ip-10-253-25-54/10.253.25.54
@@ -8,107 +8,119 @@ STARTUP_MSG:   classpath = /home/ubuntu/PatchedDistro/hadoop-2.2.0/etc/hadoop:/h
 STARTUP_MSG:   build = Unknown -r Unknown; compiled by 'Joey' on 2014-03-24T00:00Z
 STARTUP_MSG:   java = 1.7.0_51
 ************************************************************/
-2014-03-24 19:52:35,693 INFO  [main] namenode.NameNode (SignalLogger.java:register(91)) - registered UNIX signal handlers for [TERM, HUP, INT]
-2014-03-24 19:52:36,064 WARN  [main] impl.MetricsConfig (MetricsConfig.java:loadFirst(124)) - Cannot locate configuration: tried hadoop-metrics2-namenode.properties,hadoop-metrics2.properties
-2014-03-24 19:52:36,226 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(344)) - Scheduled snapshot period at 10 second(s).
-2014-03-24 19:52:36,226 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:start(183)) - NameNode metrics system started
-2014-03-24 19:52:36,631 WARN  [main] util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2014-03-24 19:52:36,892 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2014-03-24 19:52:36,973 INFO  [main] http.HttpServer (HttpServer.java:addGlobalFilter(525)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
-2014-03-24 19:52:36,977 INFO  [main] http.HttpServer (HttpServer.java:addFilter(503)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context hdfs
-2014-03-24 19:52:36,978 INFO  [main] http.HttpServer (HttpServer.java:addFilter(510)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
-2014-03-24 19:52:36,978 INFO  [main] http.HttpServer (HttpServer.java:addFilter(510)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
-2014-03-24 19:52:36,999 INFO  [main] http.HttpServer (WebHdfsFileSystem.java:isEnabled(157)) - dfs.webhdfs.enabled = false
-2014-03-24 19:52:37,050 INFO  [main] http.HttpServer (HttpServer.java:start(687)) - Jetty bound to port 50070
-2014-03-24 19:52:37,051 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - jetty-6.1.26
-2014-03-24 19:52:37,560 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - Started SelectChannelConnector@ec2-54-214-140-127.us-west-2.compute.amazonaws.com:50070
-2014-03-24 19:52:37,560 INFO  [main] namenode.NameNode (NameNode.java:setHttpServerAddress(439)) - Web-server up at: ec2-54-214-140-127.us-west-2.compute.amazonaws.com:50070
-2014-03-24 19:52:37,602 WARN  [main] namenode.FSNamesystem (FSNamesystem.java:checkConfiguration(533)) - Only one image storage directory (dfs.namenode.name.dir) configured. Beware of dataloss due to lack of redundant storage directories!
-2014-03-24 19:52:37,602 WARN  [main] namenode.FSNamesystem (FSNamesystem.java:checkConfiguration(538)) - Only one namespace edits storage directory (dfs.namenode.edits.dir) configured. Beware of dataloss due to lack of redundant storage directories!
-2014-03-24 19:52:37,690 INFO  [main] namenode.HostFileManager (HostFileManager.java:refresh(304)) - read includes:
+2014-03-24 22:03:34,144 INFO  [main] namenode.NameNode (SignalLogger.java:register(91)) - registered UNIX signal handlers for [TERM, HUP, INT]
+2014-03-24 22:03:34,521 WARN  [main] impl.MetricsConfig (MetricsConfig.java:loadFirst(124)) - Cannot locate configuration: tried hadoop-metrics2-namenode.properties,hadoop-metrics2.properties
+2014-03-24 22:03:34,682 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(344)) - Scheduled snapshot period at 10 second(s).
+2014-03-24 22:03:34,682 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:start(183)) - NameNode metrics system started
+2014-03-24 22:03:35,429 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-03-24 22:03:35,510 INFO  [main] http.HttpServer (HttpServer.java:addGlobalFilter(525)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2014-03-24 22:03:35,515 INFO  [main] http.HttpServer (HttpServer.java:addFilter(503)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context hdfs
+2014-03-24 22:03:35,520 INFO  [main] http.HttpServer (HttpServer.java:addFilter(510)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2014-03-24 22:03:35,520 INFO  [main] http.HttpServer (HttpServer.java:addFilter(510)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2014-03-24 22:03:35,542 INFO  [main] http.HttpServer (WebHdfsFileSystem.java:isEnabled(157)) - dfs.webhdfs.enabled = false
+2014-03-24 22:03:35,569 INFO  [main] http.HttpServer (HttpServer.java:start(687)) - Jetty bound to port 50070
+2014-03-24 22:03:35,569 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - jetty-6.1.26
+2014-03-24 22:03:36,084 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - Started SelectChannelConnector@ec2-54-214-140-127.us-west-2.compute.amazonaws.com:50070
+2014-03-24 22:03:36,085 INFO  [main] namenode.NameNode (NameNode.java:setHttpServerAddress(439)) - Web-server up at: ec2-54-214-140-127.us-west-2.compute.amazonaws.com:50070
+2014-03-24 22:03:36,138 WARN  [main] namenode.FSNamesystem (FSNamesystem.java:checkConfiguration(533)) - Only one image storage directory (dfs.namenode.name.dir) configured. Beware of dataloss due to lack of redundant storage directories!
+2014-03-24 22:03:36,144 WARN  [main] namenode.FSNamesystem (FSNamesystem.java:checkConfiguration(538)) - Only one namespace edits storage directory (dfs.namenode.edits.dir) configured. Beware of dataloss due to lack of redundant storage directories!
+2014-03-24 22:03:36,233 INFO  [main] namenode.HostFileManager (HostFileManager.java:refresh(304)) - read includes:
 HostSet(
 )
-2014-03-24 19:52:37,691 INFO  [main] namenode.HostFileManager (HostFileManager.java:refresh(311)) - read excludes:
+2014-03-24 22:03:36,233 INFO  [main] namenode.HostFileManager (HostFileManager.java:refresh(311)) - read excludes:
 HostSet(
 )
-2014-03-24 19:52:37,695 INFO  [main] blockmanagement.DatanodeManager (DatanodeManager.java:<init>(210)) - dfs.block.invalidate.limit=1000
-2014-03-24 19:52:37,699 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(328)) - Computing capacity for map BlocksMap
-2014-03-24 19:52:37,699 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(329)) - VM type       = 64-bit
-2014-03-24 19:52:37,700 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(330)) - 2.0% max memory = 889 MB
-2014-03-24 19:52:37,701 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(332)) - capacity      = 2^21 = 2097152 entries
-2014-03-24 19:52:37,708 INFO  [main] blockmanagement.BlockManager (BlockManager.java:createBlockTokenSecretManager(314)) - dfs.block.access.token.enable=false
-2014-03-24 19:52:37,709 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(300)) - defaultReplication         = 2
-2014-03-24 19:52:37,709 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(301)) - maxReplication             = 512
-2014-03-24 19:52:37,709 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(302)) - minReplication             = 1
-2014-03-24 19:52:37,709 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(303)) - maxReplicationStreams      = 2
-2014-03-24 19:52:37,710 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(304)) - shouldCheckForEnoughRacks  = false
-2014-03-24 19:52:37,710 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(305)) - replicationRecheckInterval = 3000
-2014-03-24 19:52:37,710 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(306)) - encryptDataTransfer        = false
-2014-03-24 19:52:37,721 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(612)) - fsOwner             = ubuntu (auth:SIMPLE)
-2014-03-24 19:52:37,721 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(613)) - supergroup          = supergroup
-2014-03-24 19:52:37,721 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(614)) - isPermissionEnabled = true
-2014-03-24 19:52:37,722 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(628)) - HA Enabled: false
-2014-03-24 19:52:37,724 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(665)) - Append Enabled: true
-2014-03-24 19:52:37,792 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(328)) - Computing capacity for map INodeMap
-2014-03-24 19:52:37,792 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(329)) - VM type       = 64-bit
-2014-03-24 19:52:37,793 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(330)) - 1.0% max memory = 889 MB
-2014-03-24 19:52:37,793 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(332)) - capacity      = 2^20 = 1048576 entries
-2014-03-24 19:52:37,794 INFO  [main] namenode.NameNode (FSDirectory.java:<init>(173)) - Caching file names occuring more than 10 times
-2014-03-24 19:52:37,799 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(4362)) - dfs.namenode.safemode.threshold-pct = 0.9990000128746033
-2014-03-24 19:52:37,799 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(4363)) - dfs.namenode.safemode.min.datanodes = 0
-2014-03-24 19:52:37,799 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(4364)) - dfs.namenode.safemode.extension     = 30000
-2014-03-24 19:52:37,801 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:initRetryCache(725)) - Retry cache on namenode is enabled
-2014-03-24 19:52:37,801 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:initRetryCache(733)) - Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
-2014-03-24 19:52:37,805 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(328)) - Computing capacity for map Namenode Retry Cache
-2014-03-24 19:52:37,805 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(329)) - VM type       = 64-bit
-2014-03-24 19:52:37,805 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(330)) - 0.029999999329447746% max memory = 889 MB
-2014-03-24 19:52:37,805 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(332)) - capacity      = 2^15 = 32768 entries
-2014-03-24 19:52:37,826 INFO  [main] common.Storage (Storage.java:tryLock(665)) - Lock on /var/hadoop/tmp/dfs/name/in_use.lock acquired by nodename 8452@ip-10-253-25-54
-2014-03-24 19:52:37,944 INFO  [main] namenode.FileJournalManager (FileJournalManager.java:recoverUnfinalizedSegments(305)) - Recovering unfinalized segments in /var/hadoop/tmp/dfs/name/current
-2014-03-24 19:52:37,948 INFO  [main] namenode.FSImage (FSImage.java:loadFSImage(627)) - No edit log streams selected.
-2014-03-24 19:52:37,993 INFO  [main] namenode.FSImage (FSImageFormat.java:load(330)) - Loading image file /var/hadoop/tmp/dfs/name/current/fsimage_0000000000000000000 using no compression
-2014-03-24 19:52:37,993 INFO  [main] namenode.FSImage (FSImageFormat.java:load(333)) - Number of files = 1
-2014-03-24 19:52:38,001 INFO  [main] namenode.FSImage (FSImageFormat.java:loadFilesUnderConstruction(815)) - Number of files under construction = 0
-2014-03-24 19:52:38,001 INFO  [main] namenode.FSImage (FSImageFormat.java:load(365)) - Image file /var/hadoop/tmp/dfs/name/current/fsimage_0000000000000000000 of size 198 bytes loaded in 0 seconds.
-2014-03-24 19:52:38,002 INFO  [main] namenode.FSImage (FSImage.java:loadFSImage(837)) - Loaded image for txid 0 from /var/hadoop/tmp/dfs/name/current/fsimage_0000000000000000000
-2014-03-24 19:52:38,011 INFO  [main] namenode.FSEditLog (FSEditLog.java:startLogSegment(1010)) - Starting log segment at 1
-2014-03-24 19:52:38,169 INFO  [main] namenode.NameCache (NameCache.java:initialized(143)) - initialized with 0 entries 0 lookups
-2014-03-24 19:52:38,169 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:loadFromDisk(571)) - Finished loading FSImage in 362 msecs
-2014-03-24 19:52:38,534 INFO  [main] namenode.NameNode (NameNodeRpcServer.java:<init>(271)) - RPC server is binding to ec2-54-214-140-127.us-west-2.compute.amazonaws.com:54310
-2014-03-24 19:52:38,563 INFO  [Socket Reader #1 for port 54310] ipc.Server (Server.java:run(564)) - Starting Socket Reader #1 for port 54310
-2014-03-24 19:52:38,645 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:registerMBean(5310)) - Registered FSNamesystemState MBean
-2014-03-24 19:52:38,661 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:getCompleteBlocksTotal(4965)) - Number of blocks under construction: 0
-2014-03-24 19:52:38,661 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:getCompleteBlocksTotal(4965)) - Number of blocks under construction: 0
-2014-03-24 19:52:38,662 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:initializeReplQueues(4475)) - initializing replication queues
-2014-03-24 19:52:38,673 INFO  [main] blockmanagement.BlockManager (BlockManager.java:processMisReplicatedBlocks(2316)) - Total number of blocks            = 0
-2014-03-24 19:52:38,673 INFO  [main] blockmanagement.BlockManager (BlockManager.java:processMisReplicatedBlocks(2317)) - Number of invalid blocks          = 0
-2014-03-24 19:52:38,674 INFO  [main] blockmanagement.BlockManager (BlockManager.java:processMisReplicatedBlocks(2318)) - Number of under-replicated blocks = 0
-2014-03-24 19:52:38,674 INFO  [main] blockmanagement.BlockManager (BlockManager.java:processMisReplicatedBlocks(2319)) - Number of  over-replicated blocks = 0
-2014-03-24 19:52:38,674 INFO  [main] blockmanagement.BlockManager (BlockManager.java:processMisReplicatedBlocks(2321)) - Number of blocks being written    = 0
-2014-03-24 19:52:38,674 INFO  [main] hdfs.StateChange (FSNamesystem.java:initializeReplQueues(4480)) - STATE* Replication Queue initialization scan for invalid, over- and under-replicated blocks completed in 12 msec
-2014-03-24 19:52:38,674 INFO  [main] hdfs.StateChange (FSNamesystem.java:leave(4444)) - STATE* Leaving safe mode after 1 secs
-2014-03-24 19:52:38,675 INFO  [main] hdfs.StateChange (FSNamesystem.java:leave(4455)) - STATE* Network topology has 0 racks and 0 datanodes
-2014-03-24 19:52:38,675 INFO  [main] hdfs.StateChange (FSNamesystem.java:leave(4458)) - STATE* UnderReplicatedBlocks has 0 blocks
-2014-03-24 19:52:38,716 INFO  [IPC Server Responder] ipc.Server (Server.java:run(861)) - IPC Server Responder: starting
-2014-03-24 19:52:38,717 INFO  [IPC Server listener on 54310] ipc.Server (Server.java:run(688)) - IPC Server listener on 54310: starting
-2014-03-24 19:52:38,722 INFO  [main] namenode.NameNode (NameNode.java:startCommonServices(570)) - NameNode RPC up at: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-2014-03-24 19:52:38,725 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:startActiveServices(886)) - Starting services required for active state
-2014-03-24 19:52:40,170 INFO  [IPC Server handler 1 on 54310] hdfs.StateChange (DatanodeManager.java:registerDatanode(755)) - BLOCK* registerDatanode: from DatanodeRegistration(10.253.25.54, storageID=DS-36584262-10.253.25.54-50010-1395690759534, infoPort=50075, ipcPort=50020, storageInfo=lv=-47;cid=CID-da6532cc-1ff5-4b3e-80f3-61bc8a3c48e9;nsid=509141945;c=0) storage DS-36584262-10.253.25.54-50010-1395690759534
-2014-03-24 19:52:40,173 INFO  [IPC Server handler 1 on 54310] net.NetworkTopology (NetworkTopology.java:add(413)) - Adding a new node: /default-rack/10.253.25.54:50010
-2014-03-24 19:52:40,347 INFO  [IPC Server handler 3 on 54310] blockmanagement.BlockManager (BlockManager.java:processReport(1631)) - BLOCK* processReport: Received first block report from 10.253.25.54:50010 after starting up or becoming active. Its block contents are no longer considered stale
-2014-03-24 19:52:40,347 INFO  [IPC Server handler 3 on 54310] BlockStateChange (BlockManager.java:processReport(1647)) - BLOCK* processReport: from DatanodeRegistration(10.253.25.54, storageID=DS-36584262-10.253.25.54-50010-1395690759534, infoPort=50075, ipcPort=50020, storageInfo=lv=-47;cid=CID-da6532cc-1ff5-4b3e-80f3-61bc8a3c48e9;nsid=509141945;c=0), blocks: 0, processing time: 2 msecs
-2014-03-24 19:53:08,132 INFO  [IPC Server handler 4 on 54310] namenode.FSNamesystem (FSNamesystem.java:rollEditLog(5049)) - Roll Edit Log from 10.253.25.54
-2014-03-24 19:53:08,133 INFO  [IPC Server handler 4 on 54310] namenode.FSEditLog (FSEditLog.java:rollEditLog(994)) - Rolling edit logs
-2014-03-24 19:53:08,133 INFO  [IPC Server handler 4 on 54310] namenode.FSEditLog (FSEditLog.java:endCurrentLogSegment(1050)) - Ending log segment 1
-2014-03-24 19:53:08,136 INFO  [IPC Server handler 4 on 54310] namenode.FSEditLog (FSEditLog.java:printStatistics(663)) - Number of transactions: 2 Total time for transactions(ms): 1 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 66 
-2014-03-24 19:53:08,137 INFO  [IPC Server handler 4 on 54310] namenode.FileJournalManager (FileJournalManager.java:finalizeLogSegment(128)) - Finalizing edits file /var/hadoop/tmp/dfs/name/current/edits_inprogress_0000000000000000001 -> /var/hadoop/tmp/dfs/name/current/edits_0000000000000000001-0000000000000000002
-2014-03-24 19:53:08,138 INFO  [IPC Server handler 4 on 54310] namenode.FSEditLog (FSEditLog.java:startLogSegment(1010)) - Starting log segment at 3
-2014-03-24 19:53:09,012 INFO  [845465638@qtp-27609986-0] namenode.TransferFsImage (TransferFsImage.java:getFileClient(242)) - Opening connection to http://nodea:50090/getimage?getimage=1&txid=2&storageInfo=-47:509141945:0:CID-da6532cc-1ff5-4b3e-80f3-61bc8a3c48e9
-2014-03-24 19:53:09,228 INFO  [845465638@qtp-27609986-0] namenode.TransferFsImage (TransferFsImage.java:doGetUrl(373)) - Transfer took 0.21s at 0.00 KB/s
-2014-03-24 19:53:09,229 INFO  [845465638@qtp-27609986-0] namenode.TransferFsImage (TransferFsImage.java:downloadImageToStorage(89)) - Downloaded file fsimage.ckpt_0000000000000000002 size 198 bytes.
-2014-03-24 19:53:09,244 INFO  [845465638@qtp-27609986-0] namenode.NNStorageRetentionManager (NNStorageRetentionManager.java:getImageTxIdToRetain(177)) - Going to retain 2 images with txid >= 0
-2014-03-24 19:58:36,141 ERROR [SIGTERM handler] namenode.NameNode (SignalLogger.java:handle(60)) - RECEIVED SIGNAL 15: SIGTERM
-2014-03-24 19:58:36,144 INFO  [Thread-1] namenode.NameNode (StringUtils.java:run(627)) - SHUTDOWN_MSG: 
-/************************************************************
-SHUTDOWN_MSG: Shutting down NameNode at ip-10-253-25-54/10.253.25.54
-************************************************************/
+2014-03-24 22:03:36,237 INFO  [main] blockmanagement.DatanodeManager (DatanodeManager.java:<init>(210)) - dfs.block.invalidate.limit=1000
+2014-03-24 22:03:36,241 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(328)) - Computing capacity for map BlocksMap
+2014-03-24 22:03:36,242 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(329)) - VM type       = 64-bit
+2014-03-24 22:03:36,243 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(330)) - 2.0% max memory = 889 MB
+2014-03-24 22:03:36,243 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(332)) - capacity      = 2^21 = 2097152 entries
+2014-03-24 22:03:36,250 INFO  [main] blockmanagement.BlockManager (BlockManager.java:createBlockTokenSecretManager(314)) - dfs.block.access.token.enable=false
+2014-03-24 22:03:36,251 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(300)) - defaultReplication         = 2
+2014-03-24 22:03:36,251 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(301)) - maxReplication             = 512
+2014-03-24 22:03:36,251 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(302)) - minReplication             = 1
+2014-03-24 22:03:36,251 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(303)) - maxReplicationStreams      = 2
+2014-03-24 22:03:36,251 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(304)) - shouldCheckForEnoughRacks  = false
+2014-03-24 22:03:36,252 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(305)) - replicationRecheckInterval = 3000
+2014-03-24 22:03:36,252 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(306)) - encryptDataTransfer        = false
+2014-03-24 22:03:36,263 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(612)) - fsOwner             = ubuntu (auth:SIMPLE)
+2014-03-24 22:03:36,263 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(613)) - supergroup          = supergroup
+2014-03-24 22:03:36,263 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(614)) - isPermissionEnabled = true
+2014-03-24 22:03:36,264 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(628)) - HA Enabled: false
+2014-03-24 22:03:36,266 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(665)) - Append Enabled: true
+2014-03-24 22:03:36,335 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(328)) - Computing capacity for map INodeMap
+2014-03-24 22:03:36,336 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(329)) - VM type       = 64-bit
+2014-03-24 22:03:36,336 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(330)) - 1.0% max memory = 889 MB
+2014-03-24 22:03:36,336 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(332)) - capacity      = 2^20 = 1048576 entries
+2014-03-24 22:03:36,366 INFO  [main] namenode.NameNode (FSDirectory.java:<init>(173)) - Caching file names occuring more than 10 times
+2014-03-24 22:03:36,372 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(4362)) - dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2014-03-24 22:03:36,372 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(4363)) - dfs.namenode.safemode.min.datanodes = 0
+2014-03-24 22:03:36,372 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(4364)) - dfs.namenode.safemode.extension     = 30000
+2014-03-24 22:03:36,374 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:initRetryCache(725)) - Retry cache on namenode is enabled
+2014-03-24 22:03:36,375 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:initRetryCache(733)) - Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2014-03-24 22:03:36,378 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(328)) - Computing capacity for map Namenode Retry Cache
+2014-03-24 22:03:36,378 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(329)) - VM type       = 64-bit
+2014-03-24 22:03:36,379 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(330)) - 0.029999999329447746% max memory = 889 MB
+2014-03-24 22:03:36,379 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(332)) - capacity      = 2^15 = 32768 entries
+2014-03-24 22:03:36,404 INFO  [main] common.Storage (Storage.java:tryLock(665)) - Lock on /var/hadoop/tmp/dfs/name/in_use.lock acquired by nodename 6683@ip-10-253-25-54
+2014-03-24 22:03:36,500 INFO  [main] namenode.FileJournalManager (FileJournalManager.java:recoverUnfinalizedSegments(305)) - Recovering unfinalized segments in /var/hadoop/tmp/dfs/name/current
+2014-03-24 22:03:36,599 INFO  [main] namenode.FileJournalManager (FileJournalManager.java:finalizeLogSegment(128)) - Finalizing edits file /var/hadoop/tmp/dfs/name/current/edits_inprogress_0000000000000000012 -> /var/hadoop/tmp/dfs/name/current/edits_0000000000000000012-0000000000000000012
+2014-03-24 22:03:36,622 INFO  [main] namenode.FSImage (FSImageFormat.java:load(330)) - Loading image file /var/hadoop/tmp/dfs/name/current/fsimage_0000000000000000011 using no compression
+2014-03-24 22:03:36,623 INFO  [main] namenode.FSImage (FSImageFormat.java:load(333)) - Number of files = 1
+2014-03-24 22:03:36,629 INFO  [main] namenode.FSImage (FSImageFormat.java:loadFilesUnderConstruction(815)) - Number of files under construction = 0
+2014-03-24 22:03:36,630 INFO  [main] namenode.FSImage (FSImageFormat.java:load(365)) - Image file /var/hadoop/tmp/dfs/name/current/fsimage_0000000000000000011 of size 198 bytes loaded in 0 seconds.
+2014-03-24 22:03:36,630 INFO  [main] namenode.FSImage (FSImage.java:loadFSImage(837)) - Loaded image for txid 11 from /var/hadoop/tmp/dfs/name/current/fsimage_0000000000000000011
+2014-03-24 22:03:36,630 INFO  [main] namenode.FSImage (FSImage.java:loadEdits(730)) - Reading org.apache.hadoop.hdfs.server.namenode.RedundantEditLogInputStream@5fdd737b expecting start txid #12
+2014-03-24 22:03:36,631 INFO  [main] namenode.FSImage (FSEditLogLoader.java:loadFSEdits(111)) - Start loading edits file /var/hadoop/tmp/dfs/name/current/edits_0000000000000000012-0000000000000000012
+2014-03-24 22:03:36,633 INFO  [main] namenode.EditLogInputStream (RedundantEditLogInputStream.java:nextOp(176)) - Fast-forwarding stream '/var/hadoop/tmp/dfs/name/current/edits_0000000000000000012-0000000000000000012' to transaction ID 12
+2014-03-24 22:03:36,638 INFO  [main] namenode.FSImage (FSEditLogLoader.java:loadFSEdits(114)) - Edits file /var/hadoop/tmp/dfs/name/current/edits_0000000000000000012-0000000000000000012 of size 1048576 edits # 1 loaded in 0 seconds
+2014-03-24 22:03:36,644 INFO  [main] namenode.FSEditLog (FSEditLog.java:startLogSegment(1010)) - Starting log segment at 13
+2014-03-24 22:03:36,806 INFO  [main] namenode.NameCache (NameCache.java:initialized(143)) - initialized with 0 entries 0 lookups
+2014-03-24 22:03:36,807 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:loadFromDisk(571)) - Finished loading FSImage in 426 msecs
+2014-03-24 22:03:37,108 INFO  [main] namenode.NameNode (NameNodeRpcServer.java:<init>(271)) - RPC server is binding to ec2-54-214-140-127.us-west-2.compute.amazonaws.com:54310
+2014-03-24 22:03:37,138 INFO  [Socket Reader #1 for port 54310] ipc.Server (Server.java:run(564)) - Starting Socket Reader #1 for port 54310
+2014-03-24 22:03:37,224 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:registerMBean(5310)) - Registered FSNamesystemState MBean
+2014-03-24 22:03:37,240 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:getCompleteBlocksTotal(4965)) - Number of blocks under construction: 0
+2014-03-24 22:03:37,240 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:getCompleteBlocksTotal(4965)) - Number of blocks under construction: 0
+2014-03-24 22:03:37,240 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:initializeReplQueues(4475)) - initializing replication queues
+2014-03-24 22:03:37,252 INFO  [main] blockmanagement.BlockManager (BlockManager.java:processMisReplicatedBlocks(2316)) - Total number of blocks            = 0
+2014-03-24 22:03:37,252 INFO  [main] blockmanagement.BlockManager (BlockManager.java:processMisReplicatedBlocks(2317)) - Number of invalid blocks          = 0
+2014-03-24 22:03:37,252 INFO  [main] blockmanagement.BlockManager (BlockManager.java:processMisReplicatedBlocks(2318)) - Number of under-replicated blocks = 0
+2014-03-24 22:03:37,253 INFO  [main] blockmanagement.BlockManager (BlockManager.java:processMisReplicatedBlocks(2319)) - Number of  over-replicated blocks = 0
+2014-03-24 22:03:37,253 INFO  [main] blockmanagement.BlockManager (BlockManager.java:processMisReplicatedBlocks(2321)) - Number of blocks being written    = 0
+2014-03-24 22:03:37,253 INFO  [main] hdfs.StateChange (FSNamesystem.java:initializeReplQueues(4480)) - STATE* Replication Queue initialization scan for invalid, over- and under-replicated blocks completed in 12 msec
+2014-03-24 22:03:37,253 INFO  [main] hdfs.StateChange (FSNamesystem.java:leave(4444)) - STATE* Leaving safe mode after 1 secs
+2014-03-24 22:03:37,254 INFO  [main] hdfs.StateChange (FSNamesystem.java:leave(4455)) - STATE* Network topology has 0 racks and 0 datanodes
+2014-03-24 22:03:37,254 INFO  [main] hdfs.StateChange (FSNamesystem.java:leave(4458)) - STATE* UnderReplicatedBlocks has 0 blocks
+2014-03-24 22:03:37,304 INFO  [IPC Server Responder] ipc.Server (Server.java:run(861)) - IPC Server Responder: starting
+2014-03-24 22:03:37,304 INFO  [IPC Server listener on 54310] ipc.Server (Server.java:run(688)) - IPC Server listener on 54310: starting
+2014-03-24 22:03:37,309 INFO  [main] namenode.NameNode (NameNode.java:startCommonServices(570)) - NameNode RPC up at: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+2014-03-24 22:03:37,309 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:startActiveServices(886)) - Starting services required for active state
+2014-03-24 22:03:41,739 INFO  [IPC Server handler 5 on 54310] hdfs.StateChange (DatanodeManager.java:registerDatanode(755)) - BLOCK* registerDatanode: from DatanodeRegistration(10.255.0.222, storageID=DS-866238588-10.255.0.222-50010-1395698039003, infoPort=50075, ipcPort=50020, storageInfo=lv=-47;cid=CID-da6532cc-1ff5-4b3e-80f3-61bc8a3c48e9;nsid=509141945;c=0) storage DS-866238588-10.255.0.222-50010-1395698039003
+2014-03-24 22:03:41,747 INFO  [IPC Server handler 5 on 54310] net.NetworkTopology (NetworkTopology.java:add(413)) - Adding a new node: /default-rack/10.255.0.222:50010
+2014-03-24 22:03:41,748 INFO  [IPC Server handler 4 on 54310] hdfs.StateChange (DatanodeManager.java:registerDatanode(755)) - BLOCK* registerDatanode: from DatanodeRegistration(10.254.0.178, storageID=DS-2037177646-10.254.0.178-50010-1395697575940, infoPort=50075, ipcPort=50020, storageInfo=lv=-47;cid=CID-da6532cc-1ff5-4b3e-80f3-61bc8a3c48e9;nsid=509141945;c=0) storage DS-2037177646-10.254.0.178-50010-1395697575940
+2014-03-24 22:03:41,749 INFO  [IPC Server handler 4 on 54310] net.NetworkTopology (NetworkTopology.java:add(413)) - Adding a new node: /default-rack/10.254.0.178:50010
+2014-03-24 22:03:41,768 INFO  [IPC Server handler 6 on 54310] hdfs.StateChange (DatanodeManager.java:registerDatanode(755)) - BLOCK* registerDatanode: from DatanodeRegistration(10.232.24.179, storageID=DS-46015225-10.232.24.179-50010-1395697571220, infoPort=50075, ipcPort=50020, storageInfo=lv=-47;cid=CID-da6532cc-1ff5-4b3e-80f3-61bc8a3c48e9;nsid=509141945;c=0) storage DS-46015225-10.232.24.179-50010-1395697571220
+2014-03-24 22:03:41,777 INFO  [IPC Server handler 6 on 54310] net.NetworkTopology (NetworkTopology.java:add(413)) - Adding a new node: /default-rack/10.232.24.179:50010
+2014-03-24 22:03:41,973 INFO  [IPC Server handler 2 on 54310] blockmanagement.BlockManager (BlockManager.java:processReport(1631)) - BLOCK* processReport: Received first block report from 10.255.0.222:50010 after starting up or becoming active. Its block contents are no longer considered stale
+2014-03-24 22:03:41,973 INFO  [IPC Server handler 2 on 54310] BlockStateChange (BlockManager.java:processReport(1647)) - BLOCK* processReport: from DatanodeRegistration(10.255.0.222, storageID=DS-866238588-10.255.0.222-50010-1395698039003, infoPort=50075, ipcPort=50020, storageInfo=lv=-47;cid=CID-da6532cc-1ff5-4b3e-80f3-61bc8a3c48e9;nsid=509141945;c=0), blocks: 0, processing time: 3 msecs
+2014-03-24 22:03:41,977 INFO  [IPC Server handler 0 on 54310] blockmanagement.BlockManager (BlockManager.java:processReport(1631)) - BLOCK* processReport: Received first block report from 10.232.24.179:50010 after starting up or becoming active. Its block contents are no longer considered stale
+2014-03-24 22:03:41,978 INFO  [IPC Server handler 0 on 54310] BlockStateChange (BlockManager.java:processReport(1647)) - BLOCK* processReport: from DatanodeRegistration(10.232.24.179, storageID=DS-46015225-10.232.24.179-50010-1395697571220, infoPort=50075, ipcPort=50020, storageInfo=lv=-47;cid=CID-da6532cc-1ff5-4b3e-80f3-61bc8a3c48e9;nsid=509141945;c=0), blocks: 0, processing time: 0 msecs
+2014-03-24 22:03:41,985 INFO  [IPC Server handler 1 on 54310] blockmanagement.BlockManager (BlockManager.java:processReport(1631)) - BLOCK* processReport: Received first block report from 10.254.0.178:50010 after starting up or becoming active. Its block contents are no longer considered stale
+2014-03-24 22:03:41,985 INFO  [IPC Server handler 1 on 54310] BlockStateChange (BlockManager.java:processReport(1647)) - BLOCK* processReport: from DatanodeRegistration(10.254.0.178, storageID=DS-2037177646-10.254.0.178-50010-1395697575940, infoPort=50075, ipcPort=50020, storageInfo=lv=-47;cid=CID-da6532cc-1ff5-4b3e-80f3-61bc8a3c48e9;nsid=509141945;c=0), blocks: 0, processing time: 0 msecs
+2014-03-24 22:03:42,034 INFO  [IPC Server handler 3 on 54310] hdfs.StateChange (DatanodeManager.java:registerDatanode(755)) - BLOCK* registerDatanode: from DatanodeRegistration(10.253.25.54, storageID=DS-36584262-10.253.25.54-50010-1395690759534, infoPort=50075, ipcPort=50020, storageInfo=lv=-47;cid=CID-da6532cc-1ff5-4b3e-80f3-61bc8a3c48e9;nsid=509141945;c=0) storage DS-36584262-10.253.25.54-50010-1395690759534
+2014-03-24 22:03:42,037 INFO  [IPC Server handler 3 on 54310] net.NetworkTopology (NetworkTopology.java:add(413)) - Adding a new node: /default-rack/10.253.25.54:50010
+2014-03-24 22:03:42,164 INFO  [IPC Server handler 4 on 54310] blockmanagement.BlockManager (BlockManager.java:processReport(1631)) - BLOCK* processReport: Received first block report from 10.253.25.54:50010 after starting up or becoming active. Its block contents are no longer considered stale
+2014-03-24 22:03:42,164 INFO  [IPC Server handler 4 on 54310] BlockStateChange (BlockManager.java:processReport(1647)) - BLOCK* processReport: from DatanodeRegistration(10.253.25.54, storageID=DS-36584262-10.253.25.54-50010-1395690759534, infoPort=50075, ipcPort=50020, storageInfo=lv=-47;cid=CID-da6532cc-1ff5-4b3e-80f3-61bc8a3c48e9;nsid=509141945;c=0), blocks: 0, processing time: 0 msecs
+2014-03-24 22:04:48,127 INFO  [IPC Server handler 4 on 54310] namenode.FSNamesystem (FSNamesystem.java:rollEditLog(5049)) - Roll Edit Log from 10.253.25.54
+2014-03-24 22:04:48,127 INFO  [IPC Server handler 4 on 54310] namenode.FSEditLog (FSEditLog.java:rollEditLog(994)) - Rolling edit logs
+2014-03-24 22:04:48,128 INFO  [IPC Server handler 4 on 54310] namenode.FSEditLog (FSEditLog.java:endCurrentLogSegment(1050)) - Ending log segment 13
+2014-03-24 22:04:48,128 INFO  [IPC Server handler 4 on 54310] namenode.FSEditLog (FSEditLog.java:printStatistics(663)) - Number of transactions: 2 Total time for transactions(ms): 1 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 68 
+2014-03-24 22:04:48,130 INFO  [IPC Server handler 4 on 54310] namenode.FSEditLog (FSEditLog.java:printStatistics(663)) - Number of transactions: 2 Total time for transactions(ms): 1 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 70 
+2014-03-24 22:04:48,132 INFO  [IPC Server handler 4 on 54310] namenode.FileJournalManager (FileJournalManager.java:finalizeLogSegment(128)) - Finalizing edits file /var/hadoop/tmp/dfs/name/current/edits_inprogress_0000000000000000013 -> /var/hadoop/tmp/dfs/name/current/edits_0000000000000000013-0000000000000000014
+2014-03-24 22:04:48,132 INFO  [IPC Server handler 4 on 54310] namenode.FSEditLog (FSEditLog.java:startLogSegment(1010)) - Starting log segment at 15
+2014-03-24 22:04:48,937 INFO  [1289949267@qtp-2127009398-0] namenode.TransferFsImage (TransferFsImage.java:getFileClient(242)) - Opening connection to http://nodea:50090/getimage?getimage=1&txid=14&storageInfo=-47:509141945:0:CID-da6532cc-1ff5-4b3e-80f3-61bc8a3c48e9
+2014-03-24 22:04:49,141 INFO  [1289949267@qtp-2127009398-0] namenode.TransferFsImage (TransferFsImage.java:doGetUrl(373)) - Transfer took 0.20s at 0.00 KB/s
+2014-03-24 22:04:49,142 INFO  [1289949267@qtp-2127009398-0] namenode.TransferFsImage (TransferFsImage.java:downloadImageToStorage(89)) - Downloaded file fsimage.ckpt_0000000000000000014 size 198 bytes.
+2014-03-24 22:04:49,153 INFO  [1289949267@qtp-2127009398-0] namenode.NNStorageRetentionManager (NNStorageRetentionManager.java:getImageTxIdToRetain(177)) - Going to retain 2 images with txid >= 11
+2014-03-24 22:04:49,153 INFO  [1289949267@qtp-2127009398-0] namenode.NNStorageRetentionManager (NNStorageRetentionManager.java:purgeImage(199)) - Purging old image FSImageFile(file=/var/hadoop/tmp/dfs/name/current/fsimage_0000000000000000008, cpktTxId=0000000000000000008)

@@ -26,7 +26,6 @@ HADOOP_LIBEXEC_DIR=${HADOOP_LIBEXEC_DIR:-$DEFAULT_LIBEXEC_DIR}
 # namenodes
 
 NAMENODES=$($HADOOP_PREFIX/bin/hdfs getconf -namenodes)
-NAMENODES="ec2-54-214-140-127.us-west-2.compute.amazonaws.com"
 
 echo "Stopping namenodes on [$NAMENODES]"
 
