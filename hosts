@@ -1,8 +1,8 @@
 127.0.0.1 localhost
-10.234.70.108 nodea
-10.197.138.68 nodeb
-10.197.134.107 nodec
-10.235.39.15 noded
+10.253.25.54 nodea
+10.254.0.178 nodeb
+10.232.24.179 nodec
+10.255.0.222 noded
 
 # The following lines are desirable for IPv6 capable hosts
 ::1 ip6-localhost ip6-loopback
