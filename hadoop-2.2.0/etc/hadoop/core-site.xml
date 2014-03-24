@@ -17,4 +17,13 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
+<property>
+  <name>hadoop.tmp.dir</name>
+  <value>/var/hadoop/tmp</value>
+</property>
+
+<property>
+  <name>fs.default.name</name>
+  <value>hdfs://54.185.107.145:54310</value>
+</property>
 </configuration>
