@@ -19,6 +19,6 @@
 <configuration>
 <property>
   <name>mapred.job.tracker</name>
-  <value>ec2-54-185-107-145.us-west-2.compute.amazonaws.com:54311</value>
+  <value>ec2-54-214-140-127.us-west-2.compute.amazonaws.com:54311</value>
 </property>
 </configuration>

@@ -1,8 +1,8 @@
 127.0.0.1 localhost
-ec2-54-185-107-145.us-west-2.compute.amazonaws.com nodea
-ec2-54-185-181-210.us-west-2.compute.amazonaws.com nodeb
-ec2-54-203-2-238.us-west-2.compute.amazonaws.com nodec
-ec2-54-203-119-118.us-west-2.compute.amazonaws.com noded
+ec2-54-214-140-127.us-west-2.compute.amazonaws.com nodea
+ec2-54-218-243-62.us-west-2.compute.amazonaws.com nodeb
+ec2-54-244-197-189.us-west-2.compute.amazonaws.com nodec
+ec2-54-218-202-186.us-west-2.compute.amazonaws.com noded
 
 # The following lines are desirable for IPv6 capable hosts
 ::1 ip6-localhost ip6-loopback
