@@ -15,5 +15,8 @@
 <configuration>
 
 <!-- Site specific YARN configuration properties -->
-
+<property>
+  <name>yarn.resourceman­ager.webapp.address</name>
+  <value>ec2-54-185-181-210.us-west-2.compute.amazonaws.com</value>
+</property>
 </configuration>

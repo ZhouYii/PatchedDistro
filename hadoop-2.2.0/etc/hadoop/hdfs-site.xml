@@ -21,4 +21,8 @@
   <name>dfs.replication</name>
   <value>2</value>
 </property>
+<property>
+  <name>dfs.namenode.http-address</name>
+  <value>ec2-54-185-107-145.us-west-2.compute.amazonaws.com:50070</value>
+</property>
 </configuration>
