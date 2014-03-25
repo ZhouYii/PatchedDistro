@@ -21,4 +21,8 @@
   <name>mapred.job.tracker</name>
   <value>ec2-54-214-140-127.us-west-2.compute.amazonaws.com:54311</value>
 </property>
+<property>
+  <name>mapreduce.framework.name</name>
+  <value>yarn</value>
+</property>
 </configuration>

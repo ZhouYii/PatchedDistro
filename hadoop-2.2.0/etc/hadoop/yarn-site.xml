@@ -19,4 +19,12 @@
   <name>yarn.resourcemanager.hostname</name>
   <value>ec2-54-214-140-127.us-west-2.compute.amazonaws.com</value>
 </property>
+<property>  
+<property>
+   <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>
+   <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+</property>
+  <name>yarn.nodemanager.aux-Services</name>  
+  <value>mapreduce_shuffle</value>  
+</property>
 </configuration>

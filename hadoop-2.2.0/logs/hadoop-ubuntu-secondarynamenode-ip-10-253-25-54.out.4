@@ -1,4 +1,4 @@
-2014-03-25 02:34:46,288 INFO  [main] namenode.SecondaryNameNode (StringUtils.java:startupShutdownMessage(601)) - STARTUP_MSG: 
+2014-03-24 21:56:46,809 INFO  [main] namenode.SecondaryNameNode (StringUtils.java:startupShutdownMessage(601)) - STARTUP_MSG: 
 /************************************************************
 STARTUP_MSG: Starting SecondaryNameNode
 STARTUP_MSG:   host = ip-10-253-25-54/10.253.25.54
@@ -8,286 +8,291 @@ STARTUP_MSG:   classpath = /home/ubuntu/PatchedDistro/hadoop-2.2.0/etc/hadoop:/h
 STARTUP_MSG:   build = Unknown -r Unknown; compiled by 'Joey' on 2014-03-24T00:00Z
 STARTUP_MSG:   java = 1.7.0_51
 ************************************************************/
-2014-03-25 02:34:46,302 INFO  [main] namenode.SecondaryNameNode (SignalLogger.java:register(91)) - registered UNIX signal handlers for [TERM, HUP, INT]
-2014-03-25 02:34:47,544 WARN  [main] impl.MetricsConfig (MetricsConfig.java:loadFirst(124)) - Cannot locate configuration: tried hadoop-metrics2-secondarynamenode.properties,hadoop-metrics2.properties
-2014-03-25 02:34:47,670 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(344)) - Scheduled snapshot period at 10 second(s).
-2014-03-25 02:34:47,670 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:start(183)) - SecondaryNameNode metrics system started
-2014-03-25 02:34:48,008 INFO  [main] common.Storage (Storage.java:tryLock(665)) - Lock on /var/hadoop/tmp/dfs/namesecondary/in_use.lock acquired by nodename 23998@ip-10-253-25-54
-2014-03-25 02:34:48,157 INFO  [main] namenode.HostFileManager (HostFileManager.java:refresh(304)) - read includes:
+2014-03-24 21:56:46,827 INFO  [main] namenode.SecondaryNameNode (SignalLogger.java:register(91)) - registered UNIX signal handlers for [TERM, HUP, INT]
+2014-03-24 21:56:48,033 WARN  [main] impl.MetricsConfig (MetricsConfig.java:loadFirst(124)) - Cannot locate configuration: tried hadoop-metrics2-secondarynamenode.properties,hadoop-metrics2.properties
+2014-03-24 21:56:48,156 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(344)) - Scheduled snapshot period at 10 second(s).
+2014-03-24 21:56:48,156 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:start(183)) - SecondaryNameNode metrics system started
+2014-03-24 21:56:48,496 INFO  [main] common.Storage (Storage.java:tryLock(665)) - Lock on /var/hadoop/tmp/dfs/namesecondary/in_use.lock acquired by nodename 4952@ip-10-253-25-54
+2014-03-24 21:56:48,633 INFO  [main] namenode.HostFileManager (HostFileManager.java:refresh(304)) - read includes:
 HostSet(
 )
-2014-03-25 02:34:48,157 INFO  [main] namenode.HostFileManager (HostFileManager.java:refresh(311)) - read excludes:
+2014-03-24 21:56:48,633 INFO  [main] namenode.HostFileManager (HostFileManager.java:refresh(311)) - read excludes:
 HostSet(
 )
-2014-03-25 02:34:48,161 INFO  [main] blockmanagement.DatanodeManager (DatanodeManager.java:<init>(210)) - dfs.block.invalidate.limit=1000
-2014-03-25 02:34:48,165 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(328)) - Computing capacity for map BlocksMap
-2014-03-25 02:34:48,165 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(329)) - VM type       = 64-bit
-2014-03-25 02:34:48,167 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(330)) - 2.0% max memory = 889 MB
-2014-03-25 02:34:48,167 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(332)) - capacity      = 2^21 = 2097152 entries
-2014-03-25 02:34:48,174 INFO  [main] blockmanagement.BlockManager (BlockManager.java:createBlockTokenSecretManager(314)) - dfs.block.access.token.enable=false
-2014-03-25 02:34:48,175 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(300)) - defaultReplication         = 2
-2014-03-25 02:34:48,175 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(301)) - maxReplication             = 512
-2014-03-25 02:34:48,178 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(302)) - minReplication             = 1
-2014-03-25 02:34:48,178 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(303)) - maxReplicationStreams      = 2
-2014-03-25 02:34:48,179 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(304)) - shouldCheckForEnoughRacks  = false
-2014-03-25 02:34:48,179 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(305)) - replicationRecheckInterval = 3000
-2014-03-25 02:34:48,179 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(306)) - encryptDataTransfer        = false
-2014-03-25 02:34:48,180 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(612)) - fsOwner             = ubuntu (auth:SIMPLE)
-2014-03-25 02:34:48,180 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(613)) - supergroup          = supergroup
-2014-03-25 02:34:48,180 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(614)) - isPermissionEnabled = true
-2014-03-25 02:34:48,181 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(628)) - HA Enabled: false
-2014-03-25 02:34:48,184 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(665)) - Append Enabled: true
-2014-03-25 02:34:48,254 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(328)) - Computing capacity for map INodeMap
-2014-03-25 02:34:48,255 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(329)) - VM type       = 64-bit
-2014-03-25 02:34:48,255 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(330)) - 1.0% max memory = 889 MB
-2014-03-25 02:34:48,255 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(332)) - capacity      = 2^20 = 1048576 entries
-2014-03-25 02:34:48,256 INFO  [main] namenode.NameNode (FSDirectory.java:<init>(173)) - Caching file names occuring more than 10 times
-2014-03-25 02:34:48,261 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(4362)) - dfs.namenode.safemode.threshold-pct = 0.9990000128746033
-2014-03-25 02:34:48,261 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(4363)) - dfs.namenode.safemode.min.datanodes = 0
-2014-03-25 02:34:48,261 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(4364)) - dfs.namenode.safemode.extension     = 30000
-2014-03-25 02:34:48,337 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2014-03-25 02:34:48,416 INFO  [main] http.HttpServer (HttpServer.java:addGlobalFilter(525)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
-2014-03-25 02:34:48,420 INFO  [main] http.HttpServer (HttpServer.java:addFilter(503)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context secondary
-2014-03-25 02:34:48,420 INFO  [main] http.HttpServer (HttpServer.java:addFilter(510)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
-2014-03-25 02:34:48,421 INFO  [main] http.HttpServer (HttpServer.java:addFilter(510)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
-2014-03-25 02:34:48,438 INFO  [main] http.HttpServer (HttpServer.java:start(687)) - Jetty bound to port 50090
-2014-03-25 02:34:48,438 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - jetty-6.1.26
-2014-03-25 02:34:48,869 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - Started SelectChannelConnector@0.0.0.0:50090
-2014-03-25 02:34:48,869 INFO  [main] namenode.SecondaryNameNode (SecondaryNameNode.java:initialize(279)) - Web server init done
-2014-03-25 02:34:48,869 INFO  [main] namenode.SecondaryNameNode (SecondaryNameNode.java:initialize(285)) - Secondary Web-server up at: 0.0.0.0:50090
-2014-03-25 02:34:48,869 INFO  [main] namenode.SecondaryNameNode (SecondaryNameNode.java:initialize(286)) - Checkpoint Period   :3600 secs (60 min)
-2014-03-25 02:34:48,870 INFO  [main] namenode.SecondaryNameNode (SecondaryNameNode.java:initialize(288)) - Log Size Trigger    :1000000 txns
-2014-03-25 02:35:49,186 INFO  [SecondaryNameNode Status
+2014-03-24 21:56:48,637 INFO  [main] blockmanagement.DatanodeManager (DatanodeManager.java:<init>(210)) - dfs.block.invalidate.limit=1000
+2014-03-24 21:56:48,641 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(328)) - Computing capacity for map BlocksMap
+2014-03-24 21:56:48,641 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(329)) - VM type       = 64-bit
+2014-03-24 21:56:48,642 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(330)) - 2.0% max memory = 889 MB
+2014-03-24 21:56:48,642 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(332)) - capacity      = 2^21 = 2097152 entries
+2014-03-24 21:56:48,650 INFO  [main] blockmanagement.BlockManager (BlockManager.java:createBlockTokenSecretManager(314)) - dfs.block.access.token.enable=false
+2014-03-24 21:56:48,651 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(300)) - defaultReplication         = 2
+2014-03-24 21:56:48,651 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(301)) - maxReplication             = 512
+2014-03-24 21:56:48,654 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(302)) - minReplication             = 1
+2014-03-24 21:56:48,654 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(303)) - maxReplicationStreams      = 2
+2014-03-24 21:56:48,655 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(304)) - shouldCheckForEnoughRacks  = false
+2014-03-24 21:56:48,655 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(305)) - replicationRecheckInterval = 3000
+2014-03-24 21:56:48,655 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(306)) - encryptDataTransfer        = false
+2014-03-24 21:56:48,656 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(612)) - fsOwner             = ubuntu (auth:SIMPLE)
+2014-03-24 21:56:48,656 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(613)) - supergroup          = supergroup
+2014-03-24 21:56:48,656 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(614)) - isPermissionEnabled = true
+2014-03-24 21:56:48,657 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(628)) - HA Enabled: false
+2014-03-24 21:56:48,660 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(665)) - Append Enabled: true
+2014-03-24 21:56:48,730 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(328)) - Computing capacity for map INodeMap
+2014-03-24 21:56:48,730 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(329)) - VM type       = 64-bit
+2014-03-24 21:56:48,730 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(330)) - 1.0% max memory = 889 MB
+2014-03-24 21:56:48,731 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(332)) - capacity      = 2^20 = 1048576 entries
+2014-03-24 21:56:48,732 INFO  [main] namenode.NameNode (FSDirectory.java:<init>(173)) - Caching file names occuring more than 10 times
+2014-03-24 21:56:48,736 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(4362)) - dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2014-03-24 21:56:48,736 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(4363)) - dfs.namenode.safemode.min.datanodes = 0
+2014-03-24 21:56:48,737 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(4364)) - dfs.namenode.safemode.extension     = 30000
+2014-03-24 21:56:48,794 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-03-24 21:56:48,870 INFO  [main] http.HttpServer (HttpServer.java:addGlobalFilter(525)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2014-03-24 21:56:48,874 INFO  [main] http.HttpServer (HttpServer.java:addFilter(503)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context secondary
+2014-03-24 21:56:48,874 INFO  [main] http.HttpServer (HttpServer.java:addFilter(510)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2014-03-24 21:56:48,874 INFO  [main] http.HttpServer (HttpServer.java:addFilter(510)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2014-03-24 21:56:48,892 INFO  [main] http.HttpServer (HttpServer.java:start(687)) - Jetty bound to port 50090
+2014-03-24 21:56:48,892 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - jetty-6.1.26
+2014-03-24 21:56:49,360 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - Started SelectChannelConnector@0.0.0.0:50090
+2014-03-24 21:56:49,361 INFO  [main] namenode.SecondaryNameNode (SecondaryNameNode.java:initialize(279)) - Web server init done
+2014-03-24 21:56:49,361 INFO  [main] namenode.SecondaryNameNode (SecondaryNameNode.java:initialize(285)) - Secondary Web-server up at: 0.0.0.0:50090
+2014-03-24 21:56:49,361 INFO  [main] namenode.SecondaryNameNode (SecondaryNameNode.java:initialize(286)) - Checkpoint Period   :3600 secs (60 min)
+2014-03-24 21:56:49,361 INFO  [main] namenode.SecondaryNameNode (SecondaryNameNode.java:initialize(288)) - Log Size Trigger    :1000000 txns
+2014-03-24 21:57:49,679 INFO  [SecondaryNameNode Status
 Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
 Last Checkpoint Time : --
 Checkpoint Period    : 3600 seconds
 Checkpoint Size      : 976.56 KB (= 1000000 bytes)
 Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
 Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.SecondaryNameNode (SecondaryNameNode.java:run(440)) - Image has changed. Downloading updated image from NN.
-2014-03-25 02:35:49,191 INFO  [SecondaryNameNode Status
+2014-03-24 21:57:49,684 INFO  [SecondaryNameNode Status
 Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
 Last Checkpoint Time : --
 Checkpoint Period    : 3600 seconds
 Checkpoint Size      : 976.56 KB (= 1000000 bytes)
 Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:getFileClient(242)) - Opening connection to http://ec2-54-214-140-127.us-west-2.compute.amazonaws.com:50070/getimage?getimage=1&txid=493&storageInfo=-47:509141945:0:CID-da6532cc-1ff5-4b3e-80f3-61bc8a3c48e9
-2014-03-25 02:35:49,508 INFO  [SecondaryNameNode Status
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:getFileClient(242)) - Opening connection to http://ec2-54-214-140-127.us-west-2.compute.amazonaws.com:50070/getimage?getimage=1&txid=8&storageInfo=-47:509141945:0:CID-da6532cc-1ff5-4b3e-80f3-61bc8a3c48e9
+2014-03-24 21:57:49,915 INFO  [SecondaryNameNode Status
 Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:doGetUrl(373)) - Transfer took 0.32s at 12.66 KB/s
-2014-03-25 02:35:49,508 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:downloadImageToStorage(89)) - Downloaded file fsimage.ckpt_0000000000000000493 size 4891 bytes.
-2014-03-25 02:35:49,530 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:getFileClient(242)) - Opening connection to http://ec2-54-214-140-127.us-west-2.compute.amazonaws.com:50070/getimage?getedit=1&startTxId=494&endTxId=518&storageInfo=-47:509141945:0:CID-da6532cc-1ff5-4b3e-80f3-61bc8a3c48e9
-2014-03-25 02:35:49,610 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:doGetUrl(373)) - Transfer took 0.08s at 12962.03 KB/s
-2014-03-25 02:35:49,610 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:downloadEditsToStorage(123)) - Downloaded file edits_tmp_0000000000000000494-0000000000000000518_0000001395714949530 size 0 bytes.
-2014-03-25 02:35:49,612 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:getFileClient(242)) - Opening connection to http://ec2-54-214-140-127.us-west-2.compute.amazonaws.com:50070/getimage?getedit=1&startTxId=519&endTxId=520&storageInfo=-47:509141945:0:CID-da6532cc-1ff5-4b3e-80f3-61bc8a3c48e9
-2014-03-25 02:35:49,622 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:doGetUrl(373)) - Transfer took 0.01s at 0.00 KB/s
-2014-03-25 02:35:49,622 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:downloadEditsToStorage(123)) - Downloaded file edits_tmp_0000000000000000519-0000000000000000520_0000001395714949611 size 0 bytes.
-2014-03-25 02:35:49,702 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSImageFormat.java:load(330)) - Loading image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000493 using no compression
-2014-03-25 02:35:49,702 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSImageFormat.java:load(333)) - Number of files = 36
-2014-03-25 02:35:49,725 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSImageFormat.java:loadFilesUnderConstruction(815)) - Number of files under construction = 1
-2014-03-25 02:35:49,742 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSImageFormat.java:load(365)) - Image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000493 of size 4891 bytes loaded in 0 seconds.
-2014-03-25 02:35:49,742 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSImage.java:loadFSImage(837)) - Loaded image for txid 493 from /var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000493
-2014-03-25 02:35:49,742 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.NameCache (NameCache.java:initialized(143)) - initialized with 0 entries 0 lookups
-2014-03-25 02:35:49,752 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.Checkpointer (Checkpointer.java:rollForwardByApplyingLogs(298)) - Checkpointer about to load edits from 2 stream(s).
-2014-03-25 02:35:49,757 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSImage.java:loadEdits(730)) - Reading /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000494-0000000000000000518 expecting start txid #494
-2014-03-25 02:35:49,757 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSEditLogLoader.java:loadFSEdits(111)) - Start loading edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000494-0000000000000000518
-2014-03-25 02:35:49,814 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSEditLogLoader.java:loadFSEdits(114)) - Edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000494-0000000000000000518 of size 1048576 edits # 25 loaded in 0 seconds
-2014-03-25 02:35:49,814 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSImage.java:loadEdits(730)) - Reading /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000519-0000000000000000520 expecting start txid #519
-2014-03-25 02:35:49,815 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSEditLogLoader.java:loadFSEdits(111)) - Start loading edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000519-0000000000000000520
-2014-03-25 02:35:49,815 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSEditLogLoader.java:loadFSEdits(114)) - Edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000519-0000000000000000520 of size 30 edits # 2 loaded in 0 seconds
-2014-03-25 02:35:49,829 INFO  [FSImageSaver for /var/hadoop/tmp/dfs/namesecondary of type IMAGE_AND_EDITS] namenode.FSImage (FSImageFormat.java:save(976)) - Saving image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage.ckpt_0000000000000000520 using no compression
-2014-03-25 02:35:49,848 INFO  [FSImageSaver for /var/hadoop/tmp/dfs/namesecondary of type IMAGE_AND_EDITS] namenode.FSImage (FSImageFormat.java:save(1004)) - Image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage.ckpt_0000000000000000520 of size 4350 bytes saved in 0 seconds.
-2014-03-25 02:35:49,863 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.NNStorageRetentionManager (NNStorageRetentionManager.java:getImageTxIdToRetain(177)) - Going to retain 2 images with txid >= 493
-2014-03-25 02:35:49,863 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.NNStorageRetentionManager (NNStorageRetentionManager.java:purgeImage(199)) - Purging old image FSImageFile(file=/var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000368, cpktTxId=0000000000000000368)
-2014-03-25 02:35:49,897 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
-Last Checkpoint Time : --
-Checkpoint Period    : 3600 seconds
-Checkpoint Size      : 976.56 KB (= 1000000 bytes)
-Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:getFileClient(242)) - Opening connection to http://ec2-54-214-140-127.us-west-2.compute.amazonaws.com:50070/getimage?putimage=1&txid=520&port=50090&storageInfo=-47:509141945:0:CID-da6532cc-1ff5-4b3e-80f3-61bc8a3c48e9
-2014-03-25 02:35:50,131 INFO  [SecondaryNameNode Status
-Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
 Last Checkpoint Time : --
 Checkpoint Period    : 3600 seconds
 Checkpoint Size      : 976.56 KB (= 1000000 bytes)
 Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
 Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:doGetUrl(373)) - Transfer took 0.23s at 0.00 KB/s
-2014-03-25 02:35:50,131 INFO  [SecondaryNameNode Status
+2014-03-24 21:57:49,915 INFO  [SecondaryNameNode Status
 Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
 Last Checkpoint Time : --
 Checkpoint Period    : 3600 seconds
 Checkpoint Size      : 976.56 KB (= 1000000 bytes)
 Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:uploadImageFromStorage(175)) - Uploaded image with txid 520 to namenode at ec2-54-214-140-127.us-west-2.compute.amazonaws.com:50070
-2014-03-25 02:35:50,132 WARN  [SecondaryNameNode Status
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:downloadImageToStorage(89)) - Downloaded file fsimage.ckpt_0000000000000000008 size 198 bytes.
+2014-03-24 21:57:49,935 INFO  [SecondaryNameNode Status
 Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
-Start Time           : Tue Mar 25 02:34:46 UTC 2014
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
 Last Checkpoint Time : --
 Checkpoint Period    : 3600 seconds
 Checkpoint Size      : 976.56 KB (= 1000000 bytes)
 Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
-Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.SecondaryNameNode (SecondaryNameNode.java:doCheckpoint(554)) - Checkpoint done. New Image Size: 4350
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:getFileClient(242)) - Opening connection to http://ec2-54-214-140-127.us-west-2.compute.amazonaws.com:50070/getimage?getedit=1&startTxId=9&endTxId=9&storageInfo=-47:509141945:0:CID-da6532cc-1ff5-4b3e-80f3-61bc8a3c48e9
+2014-03-24 21:57:50,042 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:doGetUrl(373)) - Transfer took 0.11s at 9570.09 KB/s
+2014-03-24 21:57:50,042 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:downloadEditsToStorage(123)) - Downloaded file edits_tmp_0000000000000000009-0000000000000000009_0000001395698269934 size 0 bytes.
+2014-03-24 21:57:50,043 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:getFileClient(242)) - Opening connection to http://ec2-54-214-140-127.us-west-2.compute.amazonaws.com:50070/getimage?getedit=1&startTxId=10&endTxId=11&storageInfo=-47:509141945:0:CID-da6532cc-1ff5-4b3e-80f3-61bc8a3c48e9
+2014-03-24 21:57:50,054 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:doGetUrl(373)) - Transfer took 0.01s at 0.00 KB/s
+2014-03-24 21:57:50,054 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:downloadEditsToStorage(123)) - Downloaded file edits_tmp_0000000000000000010-0000000000000000011_0000001395698270043 size 0 bytes.
+2014-03-24 21:57:50,077 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSImageFormat.java:load(330)) - Loading image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000008 using no compression
+2014-03-24 21:57:50,077 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSImageFormat.java:load(333)) - Number of files = 1
+2014-03-24 21:57:50,083 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSImageFormat.java:loadFilesUnderConstruction(815)) - Number of files under construction = 0
+2014-03-24 21:57:50,084 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSImageFormat.java:load(365)) - Image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000008 of size 198 bytes loaded in 0 seconds.
+2014-03-24 21:57:50,084 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSImage.java:loadFSImage(837)) - Loaded image for txid 8 from /var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000008
+2014-03-24 21:57:50,084 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.NameCache (NameCache.java:initialized(143)) - initialized with 0 entries 0 lookups
+2014-03-24 21:57:50,101 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.Checkpointer (Checkpointer.java:rollForwardByApplyingLogs(298)) - Checkpointer about to load edits from 2 stream(s).
+2014-03-24 21:57:50,107 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSImage.java:loadEdits(730)) - Reading /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000009-0000000000000000009 expecting start txid #9
+2014-03-24 21:57:50,107 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSEditLogLoader.java:loadFSEdits(111)) - Start loading edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000009-0000000000000000009
+2014-03-24 21:57:50,151 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSEditLogLoader.java:loadFSEdits(114)) - Edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000009-0000000000000000009 of size 1048576 edits # 1 loaded in 0 seconds
+2014-03-24 21:57:50,152 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSImage.java:loadEdits(730)) - Reading /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000010-0000000000000000011 expecting start txid #10
+2014-03-24 21:57:50,152 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSEditLogLoader.java:loadFSEdits(111)) - Start loading edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000010-0000000000000000011
+2014-03-24 21:57:50,153 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSEditLogLoader.java:loadFSEdits(114)) - Edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000010-0000000000000000011 of size 30 edits # 2 loaded in 0 seconds
+2014-03-24 21:57:50,173 INFO  [FSImageSaver for /var/hadoop/tmp/dfs/namesecondary of type IMAGE_AND_EDITS] namenode.FSImage (FSImageFormat.java:save(976)) - Saving image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage.ckpt_0000000000000000011 using no compression
+2014-03-24 21:57:50,194 INFO  [FSImageSaver for /var/hadoop/tmp/dfs/namesecondary of type IMAGE_AND_EDITS] namenode.FSImage (FSImageFormat.java:save(1004)) - Image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage.ckpt_0000000000000000011 of size 198 bytes saved in 0 seconds.
+2014-03-24 21:57:50,207 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.NNStorageRetentionManager (NNStorageRetentionManager.java:getImageTxIdToRetain(177)) - Going to retain 2 images with txid >= 8
+2014-03-24 21:57:50,207 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.NNStorageRetentionManager (NNStorageRetentionManager.java:purgeImage(199)) - Purging old image FSImageFile(file=/var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000005, cpktTxId=0000000000000000005)
+2014-03-24 21:57:50,231 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:getFileClient(242)) - Opening connection to http://ec2-54-214-140-127.us-west-2.compute.amazonaws.com:50070/getimage?putimage=1&txid=11&port=50090&storageInfo=-47:509141945:0:CID-da6532cc-1ff5-4b3e-80f3-61bc8a3c48e9
+2014-03-24 21:57:50,460 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:doGetUrl(373)) - Transfer took 0.23s at 0.00 KB/s
+2014-03-24 21:57:50,460 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:uploadImageFromStorage(175)) - Uploaded image with txid 11 to namenode at ec2-54-214-140-127.us-west-2.compute.amazonaws.com:50070
+2014-03-24 21:57:50,460 WARN  [SecondaryNameNode Status
+Name Node Address    : ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310
+Start Time           : Mon Mar 24 21:56:46 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.SecondaryNameNode (SecondaryNameNode.java:doCheckpoint(554)) - Checkpoint done. New Image Size: 198
+2014-03-24 22:03:10,736 ERROR [SIGTERM handler] namenode.SecondaryNameNode (SignalLogger.java:handle(60)) - RECEIVED SIGNAL 15: SIGTERM
+2014-03-24 22:03:10,739 INFO  [Thread-1] namenode.SecondaryNameNode (StringUtils.java:run(627)) - SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at ip-10-253-25-54/10.253.25.54
+************************************************************/
