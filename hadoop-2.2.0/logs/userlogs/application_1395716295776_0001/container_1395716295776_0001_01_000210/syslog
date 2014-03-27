@@ -1,0 +1,35 @@
+2014-03-25 03:03:30,955 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-03-25 03:03:30,984 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-03-25 03:03:33,005 WARN [main] org.apache.hadoop.metrics2.impl.MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-maptask.properties,hadoop-metrics2.properties
+2014-03-25 03:03:33,856 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2014-03-25 03:03:33,856 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system started
+2014-03-25 03:03:33,911 INFO [main] org.apache.hadoop.mapred.YarnChild: Executing with tokens:
+2014-03-25 03:03:33,911 INFO [main] org.apache.hadoop.mapred.YarnChild: Kind: mapreduce.job, Service: job_1395716295776_0001, Ident: (org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier@623bbf83)
+2014-03-25 03:03:34,331 INFO [main] org.apache.hadoop.mapred.YarnChild: Sleeping for 0ms before retrying again. Got null now.
+2014-03-25 03:03:36,674 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-03-25 03:03:36,675 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-03-25 03:03:37,672 INFO [main] org.apache.hadoop.mapred.YarnChild: mapreduce.cluster.local.dir for child: /var/hadoop/tmp/nm-local-dir/usercache/ubuntu/appcache/application_1395716295776_0001
+2014-03-25 03:03:38,820 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-03-25 03:03:38,820 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-03-25 03:03:39,480 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+2014-03-25 03:03:39,480 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+2014-03-25 03:03:39,481 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+2014-03-25 03:03:39,482 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+2014-03-25 03:03:39,483 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.local.dir is deprecated. Instead, use mapreduce.cluster.local.dir
+2014-03-25 03:03:39,504 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: job.local.dir is deprecated. Instead, use mapreduce.job.local.dir
+2014-03-25 03:03:39,505 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+2014-03-25 03:03:41,796 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-03-25 03:03:43,174 INFO [main] org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-03-25 03:03:43,811 INFO [main] org.apache.hadoop.mapred.MapTask: Processing split: ColumnFamilySplit((6968430077401688662, '6980697063813651092] @[noded])
+2014-03-25 03:03:43,877 INFO [main] org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2014-03-25 03:03:44,185 INFO [main] org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2014-03-25 03:03:44,185 INFO [main] org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2014-03-25 03:03:44,185 INFO [main] org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2014-03-25 03:03:44,185 INFO [main] org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2014-03-25 03:03:44,185 INFO [main] org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2014-03-25 03:03:45,704 INFO [main] org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2014-03-25 03:03:45,757 INFO [main] org.apache.hadoop.mapred.Task: Task:attempt_1395716295776_0001_m_000190_0 is done. And is in the process of committing
+2014-03-25 03:03:46,023 INFO [main] org.apache.hadoop.mapred.Task: Task 'attempt_1395716295776_0001_m_000190_0' done.
+2014-03-25 03:03:46,030 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping MapTask metrics system...
+2014-03-25 03:03:46,052 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system stopped.
+2014-03-25 03:03:46,053 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system shutdown complete.

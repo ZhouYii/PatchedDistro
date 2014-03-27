@@ -23,6 +23,6 @@
 </property>
 <property>
   <name>dfs.namenode.http-address</name>
-  <value>ec2-54-214-140-127.us-west-2.compute.amazonaws.com:50070</value>
+  <value>ec2-54-202-62-170.us-west-2.compute.amazonaws.com:50070</value>
 </property>
 </configuration>
