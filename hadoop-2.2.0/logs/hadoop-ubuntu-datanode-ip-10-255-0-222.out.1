@@ -1,4 +1,4 @@
-2014-03-24 19:26:05,051 INFO  [main] datanode.DataNode (StringUtils.java:startupShutdownMessage(601)) - STARTUP_MSG: 
+2014-03-25 02:42:17,839 INFO  [main] datanode.DataNode (StringUtils.java:startupShutdownMessage(601)) - STARTUP_MSG: 
 /************************************************************
 STARTUP_MSG: Starting DataNode
 STARTUP_MSG:   host = ip-10-255-0-222/10.255.0.222
@@ -8,52 +8,55 @@ STARTUP_MSG:   classpath = /home/ubuntu/PatchedDistro/hadoop-2.2.0/etc/hadoop:/h
 STARTUP_MSG:   build = Unknown -r Unknown; compiled by 'Joey' on 2014-03-24T00:00Z
 STARTUP_MSG:   java = 1.7.0_51
 ************************************************************/
-2014-03-24 19:26:05,102 INFO  [main] datanode.DataNode (SignalLogger.java:register(91)) - registered UNIX signal handlers for [TERM, HUP, INT]
-2014-03-24 19:26:06,286 WARN  [main] util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2014-03-24 19:26:06,923 WARN  [main] impl.MetricsConfig (MetricsConfig.java:loadFirst(124)) - Cannot locate configuration: tried hadoop-metrics2-datanode.properties,hadoop-metrics2.properties
-2014-03-24 19:26:07,202 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(344)) - Scheduled snapshot period at 10 second(s).
-2014-03-24 19:26:07,203 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:start(183)) - DataNode metrics system started
-2014-03-24 19:26:07,207 INFO  [main] datanode.DataNode (DataNode.java:<init>(258)) - Configured hostname is noded
-2014-03-24 19:26:07,264 INFO  [main] datanode.DataNode (DataNode.java:initDataXceiver(482)) - Opened streaming server at /0.0.0.0:50010
-2014-03-24 19:26:07,269 INFO  [main] datanode.DataNode (DataXceiverServer.java:<init>(73)) - Balancing bandwith is 1048576 bytes/s
-2014-03-24 19:26:07,356 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2014-03-24 19:26:07,446 INFO  [main] http.HttpServer (HttpServer.java:addGlobalFilter(525)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
-2014-03-24 19:26:07,450 INFO  [main] http.HttpServer (HttpServer.java:addFilter(503)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context datanode
-2014-03-24 19:26:07,450 INFO  [main] http.HttpServer (HttpServer.java:addFilter(510)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
-2014-03-24 19:26:07,450 INFO  [main] http.HttpServer (HttpServer.java:addFilter(510)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
-2014-03-24 19:26:07,457 INFO  [main] datanode.DataNode (DataNode.java:startInfoServer(312)) - Opened info server at 0.0.0.0:50075
-2014-03-24 19:26:07,464 INFO  [main] datanode.DataNode (WebHdfsFileSystem.java:isEnabled(157)) - dfs.webhdfs.enabled = false
-2014-03-24 19:26:07,468 INFO  [main] http.HttpServer (HttpServer.java:start(687)) - Jetty bound to port 50075
-2014-03-24 19:26:07,468 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - jetty-6.1.26
-2014-03-24 19:26:07,978 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - Started SelectChannelConnector@0.0.0.0:50075
-2014-03-24 19:26:08,141 INFO  [Socket Reader #1 for port 50020] ipc.Server (Server.java:run(564)) - Starting Socket Reader #1 for port 50020
-2014-03-24 19:26:08,454 INFO  [main] datanode.DataNode (DataNode.java:initIpcServer(384)) - Opened IPC server at /0.0.0.0:50020
-2014-03-24 19:26:08,475 INFO  [main] datanode.DataNode (BlockPoolManager.java:refreshNamenodes(148)) - Refresh request received for nameservices: null
-2014-03-24 19:26:08,522 INFO  [main] datanode.DataNode (BlockPoolManager.java:doRefreshNamenodes(193)) - Starting BPOfferServices for nameservices: <default>
-2014-03-24 19:26:08,545 INFO  [DataNode: [file:///var/hadoop/tmp/dfs/data]  heartbeating to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310] datanode.DataNode (BPServiceActor.java:run(658)) - Block pool <registering> (storage id unknown) service to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310 starting to offer service
-2014-03-24 19:26:08,550 INFO  [IPC Server Responder] ipc.Server (Server.java:run(861)) - IPC Server Responder: starting
-2014-03-24 19:26:08,550 INFO  [IPC Server listener on 50020] ipc.Server (Server.java:run(688)) - IPC Server listener on 50020: starting
-2014-03-24 19:26:28,794 INFO  [DataNode: [file:///var/hadoop/tmp/dfs/data]  heartbeating to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310. Already tried 0 time(s); maxRetries=45
-2014-03-24 19:26:48,799 INFO  [DataNode: [file:///var/hadoop/tmp/dfs/data]  heartbeating to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310. Already tried 1 time(s); maxRetries=45
-2014-03-24 19:27:08,820 INFO  [DataNode: [file:///var/hadoop/tmp/dfs/data]  heartbeating to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310. Already tried 2 time(s); maxRetries=45
-2014-03-24 19:27:28,843 INFO  [DataNode: [file:///var/hadoop/tmp/dfs/data]  heartbeating to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310. Already tried 3 time(s); maxRetries=45
-2014-03-24 19:27:48,853 INFO  [DataNode: [file:///var/hadoop/tmp/dfs/data]  heartbeating to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310. Already tried 4 time(s); maxRetries=45
-2014-03-24 19:28:08,875 INFO  [DataNode: [file:///var/hadoop/tmp/dfs/data]  heartbeating to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310. Already tried 5 time(s); maxRetries=45
-2014-03-24 19:28:28,896 INFO  [DataNode: [file:///var/hadoop/tmp/dfs/data]  heartbeating to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310. Already tried 6 time(s); maxRetries=45
-2014-03-24 19:28:48,915 INFO  [DataNode: [file:///var/hadoop/tmp/dfs/data]  heartbeating to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310. Already tried 7 time(s); maxRetries=45
-2014-03-24 19:29:08,935 INFO  [DataNode: [file:///var/hadoop/tmp/dfs/data]  heartbeating to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310. Already tried 8 time(s); maxRetries=45
-2014-03-24 19:29:28,957 INFO  [DataNode: [file:///var/hadoop/tmp/dfs/data]  heartbeating to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310. Already tried 9 time(s); maxRetries=45
-2014-03-24 19:29:48,978 INFO  [DataNode: [file:///var/hadoop/tmp/dfs/data]  heartbeating to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310. Already tried 10 time(s); maxRetries=45
-2014-03-24 19:30:09,000 INFO  [DataNode: [file:///var/hadoop/tmp/dfs/data]  heartbeating to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310. Already tried 11 time(s); maxRetries=45
-2014-03-24 19:30:29,021 INFO  [DataNode: [file:///var/hadoop/tmp/dfs/data]  heartbeating to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310. Already tried 12 time(s); maxRetries=45
-2014-03-24 19:30:49,043 INFO  [DataNode: [file:///var/hadoop/tmp/dfs/data]  heartbeating to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310. Already tried 13 time(s); maxRetries=45
-2014-03-24 19:31:09,064 INFO  [DataNode: [file:///var/hadoop/tmp/dfs/data]  heartbeating to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310. Already tried 14 time(s); maxRetries=45
-2014-03-24 19:31:29,086 INFO  [DataNode: [file:///var/hadoop/tmp/dfs/data]  heartbeating to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310. Already tried 15 time(s); maxRetries=45
-2014-03-24 19:31:49,107 INFO  [DataNode: [file:///var/hadoop/tmp/dfs/data]  heartbeating to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310. Already tried 16 time(s); maxRetries=45
-2014-03-24 19:32:09,129 INFO  [DataNode: [file:///var/hadoop/tmp/dfs/data]  heartbeating to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310. Already tried 17 time(s); maxRetries=45
-2014-03-24 19:32:29,150 INFO  [DataNode: [file:///var/hadoop/tmp/dfs/data]  heartbeating to ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-214-140-127.us-west-2.compute.amazonaws.com/10.253.25.54:54310. Already tried 18 time(s); maxRetries=45
-2014-03-24 19:32:41,867 ERROR [SIGTERM handler] datanode.DataNode (SignalLogger.java:handle(60)) - RECEIVED SIGNAL 15: SIGTERM
-2014-03-24 19:32:41,874 INFO  [Thread-1] datanode.DataNode (StringUtils.java:run(627)) - SHUTDOWN_MSG: 
+2014-03-25 02:42:17,851 INFO  [main] datanode.DataNode (SignalLogger.java:register(91)) - registered UNIX signal handlers for [TERM, HUP, INT]
+[Fatal Error] yarn-site.xml:30:3: The element type "configuration" must be terminated by the matching end-tag "</configuration>".
+2014-03-25 02:42:18,941 FATAL [main] conf.Configuration (Configuration.java:loadResource(2151)) - error parsing conf yarn-site.xml
+org.xml.sax.SAXParseException; systemId: file:/home/ubuntu/PatchedDistro/hadoop-2.2.0/etc/hadoop/yarn-site.xml; lineNumber: 30; columnNumber: 3; The element type "configuration" must be terminated by the matching end-tag "</configuration>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:257)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2048)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2001)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:721)
+	at org.apache.hadoop.conf.Configuration.getTrimmed(Configuration.java:740)
+	at org.apache.hadoop.conf.Configuration.getLong(Configuration.java:965)
+	at org.apache.hadoop.security.Groups.<init>(Groups.java:62)
+	at org.apache.hadoop.security.Groups.getUserToGroupsMappingService(Groups.java:182)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:235)
+	at org.apache.hadoop.security.UserGroupInformation.setConfiguration(UserGroupInformation.java:249)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.instantiateDataNode(DataNode.java:1639)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.createDataNode(DataNode.java:1665)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.secureMain(DataNode.java:1837)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.main(DataNode.java:1858)
+2014-03-25 02:42:18,946 FATAL [main] datanode.DataNode (DataNode.java:secureMain(1841)) - Exception in secureMain
+java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/home/ubuntu/PatchedDistro/hadoop-2.2.0/etc/hadoop/yarn-site.xml; lineNumber: 30; columnNumber: 3; The element type "configuration" must be terminated by the matching end-tag "</configuration>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2001)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:721)
+	at org.apache.hadoop.conf.Configuration.getTrimmed(Configuration.java:740)
+	at org.apache.hadoop.conf.Configuration.getLong(Configuration.java:965)
+	at org.apache.hadoop.security.Groups.<init>(Groups.java:62)
+	at org.apache.hadoop.security.Groups.getUserToGroupsMappingService(Groups.java:182)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:235)
+	at org.apache.hadoop.security.UserGroupInformation.setConfiguration(UserGroupInformation.java:249)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.instantiateDataNode(DataNode.java:1639)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.createDataNode(DataNode.java:1665)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.secureMain(DataNode.java:1837)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.main(DataNode.java:1858)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/home/ubuntu/PatchedDistro/hadoop-2.2.0/etc/hadoop/yarn-site.xml; lineNumber: 30; columnNumber: 3; The element type "configuration" must be terminated by the matching end-tag "</configuration>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:257)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2048)
+	... 13 more
+2014-03-25 02:42:18,949 INFO  [main] util.ExitUtil (ExitUtil.java:terminate(124)) - Exiting with status 1
+2014-03-25 02:42:18,962 INFO  [Thread-1] datanode.DataNode (StringUtils.java:run(627)) - SHUTDOWN_MSG: 
 /************************************************************
 SHUTDOWN_MSG: Shutting down DataNode at ip-10-255-0-222/10.255.0.222
 ************************************************************/
