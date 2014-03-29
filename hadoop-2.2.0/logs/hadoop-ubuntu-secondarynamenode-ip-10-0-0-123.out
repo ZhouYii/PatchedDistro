@@ -2259,3 +2259,117 @@ Checkpoint Period    : 3600 seconds
 Checkpoint Size      : 976.56 KB (= 1000000 bytes)
 Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
 Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.SecondaryNameNode (SecondaryNameNode.java:doCheckpoint(554)) - Checkpoint done. New Image Size: 198
+2014-03-29 09:09:04,273 INFO  [SecondaryNameNode Status
+Name Node Address    : /10.0.0.123:54310
+Start Time           : Sat Mar 29 04:07:28 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.SecondaryNameNode (SecondaryNameNode.java:run(438)) - Image has not changed. Will not download image.
+2014-03-29 09:09:04,274 INFO  [SecondaryNameNode Status
+Name Node Address    : /10.0.0.123:54310
+Start Time           : Sat Mar 29 04:07:28 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:getFileClient(242)) - Opening connection to http://10.0.0.123:50070/getimage?getedit=1&startTxId=13&endTxId=14&storageInfo=-47:2088353086:0:CID-1ae6dc5b-4fcf-4de1-a253-09cbbe40a4dc
+2014-03-29 09:09:04,286 INFO  [SecondaryNameNode Status
+Name Node Address    : /10.0.0.123:54310
+Start Time           : Sat Mar 29 04:07:28 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:doGetUrl(373)) - Transfer took 0.01s at 0.00 KB/s
+2014-03-29 09:09:04,286 INFO  [SecondaryNameNode Status
+Name Node Address    : /10.0.0.123:54310
+Start Time           : Sat Mar 29 04:07:28 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:downloadEditsToStorage(123)) - Downloaded file edits_tmp_0000000000000000013-0000000000000000014_0000001396084144274 size 0 bytes.
+2014-03-29 09:09:04,287 INFO  [SecondaryNameNode Status
+Name Node Address    : /10.0.0.123:54310
+Start Time           : Sat Mar 29 04:07:28 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.Checkpointer (Checkpointer.java:rollForwardByApplyingLogs(298)) - Checkpointer about to load edits from 1 stream(s).
+2014-03-29 09:09:04,287 INFO  [SecondaryNameNode Status
+Name Node Address    : /10.0.0.123:54310
+Start Time           : Sat Mar 29 04:07:28 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSImage.java:loadEdits(730)) - Reading /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000013-0000000000000000014 expecting start txid #13
+2014-03-29 09:09:04,287 INFO  [SecondaryNameNode Status
+Name Node Address    : /10.0.0.123:54310
+Start Time           : Sat Mar 29 04:07:28 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSEditLogLoader.java:loadFSEdits(111)) - Start loading edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000013-0000000000000000014
+2014-03-29 09:09:04,288 INFO  [SecondaryNameNode Status
+Name Node Address    : /10.0.0.123:54310
+Start Time           : Sat Mar 29 04:07:28 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.FSImage (FSEditLogLoader.java:loadFSEdits(114)) - Edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000013-0000000000000000014 of size 30 edits # 2 loaded in 0 seconds
+2014-03-29 09:09:04,289 INFO  [FSImageSaver for /var/hadoop/tmp/dfs/namesecondary of type IMAGE_AND_EDITS] namenode.FSImage (FSImageFormat.java:save(976)) - Saving image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage.ckpt_0000000000000000014 using no compression
+2014-03-29 09:09:04,295 INFO  [FSImageSaver for /var/hadoop/tmp/dfs/namesecondary of type IMAGE_AND_EDITS] namenode.FSImage (FSImageFormat.java:save(1004)) - Image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage.ckpt_0000000000000000014 of size 198 bytes saved in 0 seconds.
+2014-03-29 09:09:04,302 INFO  [SecondaryNameNode Status
+Name Node Address    : /10.0.0.123:54310
+Start Time           : Sat Mar 29 04:07:28 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.NNStorageRetentionManager (NNStorageRetentionManager.java:getImageTxIdToRetain(177)) - Going to retain 2 images with txid >= 12
+2014-03-29 09:09:04,303 INFO  [SecondaryNameNode Status
+Name Node Address    : /10.0.0.123:54310
+Start Time           : Sat Mar 29 04:07:28 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.NNStorageRetentionManager (NNStorageRetentionManager.java:purgeImage(199)) - Purging old image FSImageFile(file=/var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000010, cpktTxId=0000000000000000010)
+2014-03-29 09:09:04,313 INFO  [SecondaryNameNode Status
+Name Node Address    : /10.0.0.123:54310
+Start Time           : Sat Mar 29 04:07:28 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:getFileClient(242)) - Opening connection to http://10.0.0.123:50070/getimage?putimage=1&txid=14&port=50090&storageInfo=-47:2088353086:0:CID-1ae6dc5b-4fcf-4de1-a253-09cbbe40a4dc
+2014-03-29 09:09:04,338 INFO  [SecondaryNameNode Status
+Name Node Address    : /10.0.0.123:54310
+Start Time           : Sat Mar 29 04:07:28 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:doGetUrl(373)) - Transfer took 0.03s at 0.00 KB/s
+2014-03-29 09:09:04,338 INFO  [SecondaryNameNode Status
+Name Node Address    : /10.0.0.123:54310
+Start Time           : Sat Mar 29 04:07:28 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.TransferFsImage (TransferFsImage.java:uploadImageFromStorage(175)) - Uploaded image with txid 14 to namenode at 10.0.0.123:50070
+2014-03-29 09:09:04,338 WARN  [SecondaryNameNode Status
+Name Node Address    : /10.0.0.123:54310
+Start Time           : Sat Mar 29 04:07:28 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] namenode.SecondaryNameNode (SecondaryNameNode.java:doCheckpoint(554)) - Checkpoint done. New Image Size: 198
