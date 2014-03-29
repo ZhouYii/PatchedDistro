@@ -19,7 +19,7 @@
 <configuration>
 <property>
   <name>mapred.job.tracker</name>
-  <value>10.0.0.123:54311</value>
+  <value>ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54311</value>
 </property>
 <property>
   <name>mapreduce.framework.name</name>

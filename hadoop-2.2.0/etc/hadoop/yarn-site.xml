@@ -17,7 +17,7 @@
 <!-- Site specific YARN configuration properties -->
 <property>
   <name>yarn.resourcemanager.hostname</name>
-  <value>10.0.0.123</value>
+  <value>ec2-54-186-230-200.us-west-2.compute.amazonaws.com</value>
 </property>
 <property>
    <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>
