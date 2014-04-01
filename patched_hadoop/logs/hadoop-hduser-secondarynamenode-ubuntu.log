@@ -217,3 +217,35 @@ HostSet(
 2014-03-31 20:05:26,787 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.13s at 0.00 KB/s
 2014-03-31 20:05:26,787 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 6512 to namenode at localhost:50070
 2014-03-31 20:05:26,787 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 43485
+2014-03-31 21:05:27,260 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2014-03-31 21:05:27,260 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50070/getimage?getedit=1&startTxId=6513&endTxId=6579&storageInfo=-47:833617026:0:CID-064fb2ea-3ab7-4dcf-82a2-e166e9cd8855
+2014-03-31 21:05:27,264 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.00s at 2666.67 KB/s
+2014-03-31 21:05:27,264 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000006513-0000000000000006579_0000001396325127260 size 0 bytes.
+2014-03-31 21:05:27,264 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2014-03-31 21:05:27,264 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /tmp/hadoop-hduser/dfs/namesecondary/current/edits_0000000000000006513-0000000000000006579 expecting start txid #6513
+2014-03-31 21:05:27,264 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /tmp/hadoop-hduser/dfs/namesecondary/current/edits_0000000000000006513-0000000000000006579
+2014-03-31 21:05:27,270 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /tmp/hadoop-hduser/dfs/namesecondary/current/edits_0000000000000006513-0000000000000006579 of size 8297 edits # 67 loaded in 0 seconds
+2014-03-31 21:05:27,272 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Saving image file /tmp/hadoop-hduser/dfs/namesecondary/current/fsimage.ckpt_0000000000000006579 using no compression
+2014-03-31 21:05:27,286 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Image file /tmp/hadoop-hduser/dfs/namesecondary/current/fsimage.ckpt_0000000000000006579 of size 43906 bytes saved in 0 seconds.
+2014-03-31 21:05:27,288 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 6512
+2014-03-31 21:05:27,288 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/tmp/hadoop-hduser/dfs/namesecondary/current/fsimage_0000000000000006442, cpktTxId=0000000000000006442)
+2014-03-31 21:05:27,291 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50070/getimage?putimage=1&txid=6579&port=50090&storageInfo=-47:833617026:0:CID-064fb2ea-3ab7-4dcf-82a2-e166e9cd8855
+2014-03-31 21:05:27,320 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.03s at 0.00 KB/s
+2014-03-31 21:05:27,320 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 6579 to namenode at localhost:50070
+2014-03-31 21:05:27,320 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 43906
+2014-03-31 22:05:27,803 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2014-03-31 22:05:27,804 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50070/getimage?getedit=1&startTxId=6580&endTxId=6581&storageInfo=-47:833617026:0:CID-064fb2ea-3ab7-4dcf-82a2-e166e9cd8855
+2014-03-31 22:05:27,809 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.01s at 0.00 KB/s
+2014-03-31 22:05:27,809 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000006580-0000000000000006581_0000001396328727804 size 0 bytes.
+2014-03-31 22:05:27,809 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2014-03-31 22:05:27,809 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /tmp/hadoop-hduser/dfs/namesecondary/current/edits_0000000000000006580-0000000000000006581 expecting start txid #6580
+2014-03-31 22:05:27,809 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /tmp/hadoop-hduser/dfs/namesecondary/current/edits_0000000000000006580-0000000000000006581
+2014-03-31 22:05:27,809 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /tmp/hadoop-hduser/dfs/namesecondary/current/edits_0000000000000006580-0000000000000006581 of size 30 edits # 2 loaded in 0 seconds
+2014-03-31 22:05:27,810 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Saving image file /tmp/hadoop-hduser/dfs/namesecondary/current/fsimage.ckpt_0000000000000006581 using no compression
+2014-03-31 22:05:27,820 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Image file /tmp/hadoop-hduser/dfs/namesecondary/current/fsimage.ckpt_0000000000000006581 of size 43906 bytes saved in 0 seconds.
+2014-03-31 22:05:27,822 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 6579
+2014-03-31 22:05:27,823 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/tmp/hadoop-hduser/dfs/namesecondary/current/fsimage_0000000000000006512, cpktTxId=0000000000000006512)
+2014-03-31 22:05:27,826 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50070/getimage?putimage=1&txid=6581&port=50090&storageInfo=-47:833617026:0:CID-064fb2ea-3ab7-4dcf-82a2-e166e9cd8855
+2014-03-31 22:05:27,854 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.03s at 0.00 KB/s
+2014-03-31 22:05:27,854 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 6581 to namenode at localhost:50070
+2014-03-31 22:05:27,854 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 43906
