@@ -410,3 +410,161 @@ HostSet(
 2014-04-01 01:50:53,743 INFO BlockStateChange: BLOCK* addToInvalidates: blk_1073741841_1017 127.0.0.1:50010 
 2014-04-01 01:50:53,743 INFO BlockStateChange: BLOCK* addToInvalidates: blk_1073741840_1016 127.0.0.1:50010 
 2014-04-01 01:50:56,390 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* InvalidateBlocks: ask 127.0.0.1:50010 to delete [blk_1073741840_1016, blk_1073741841_1017, blk_1073741836_1012, blk_1073741837_1013, blk_1073741838_1014, blk_1073741839_1015]
+2014-04-01 02:03:36,658 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 144 Total time for transactions(ms): 7 Number of transactions batched in Syncs: 1 Number of syncs: 86 SyncTimes(ms): 70 
+2014-04-01 02:03:36,710 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0004/job.jar. BP-1666509703-127.0.1.1-1396341980566 blk_1073741845_1021{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]}
+2014-04-01 02:03:36,927 INFO BlockStateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1073741845_1021{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]} size 0
+2014-04-01 02:03:36,929 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0004/job.jar is closed by DFSClient_NONMAPREDUCE_-2087450428_1
+2014-04-01 02:03:36,932 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: Increasing replication from 1 to 10 for /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0004/job.jar
+2014-04-01 02:03:36,966 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: Increasing replication from 1 to 10 for /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0004/job.split
+2014-04-01 02:03:36,973 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0004/job.split. BP-1666509703-127.0.1.1-1396341980566 blk_1073741846_1022{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]}
+2014-04-01 02:03:36,979 INFO BlockStateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1073741846_1022{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]} size 0
+2014-04-01 02:03:36,980 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0004/job.split is closed by DFSClient_NONMAPREDUCE_-2087450428_1
+2014-04-01 02:03:36,986 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0004/job.splitmetainfo. BP-1666509703-127.0.1.1-1396341980566 blk_1073741847_1023{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]}
+2014-04-01 02:03:36,991 INFO BlockStateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1073741847_1023{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]} size 0
+2014-04-01 02:03:36,992 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0004/job.splitmetainfo is closed by DFSClient_NONMAPREDUCE_-2087450428_1
+2014-04-01 02:03:37,091 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0004/job.xml. BP-1666509703-127.0.1.1-1396341980566 blk_1073741848_1024{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]}
+2014-04-01 02:03:37,096 INFO BlockStateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1073741848_1024{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]} size 0
+2014-04-01 02:03:37,097 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0004/job.xml is closed by DFSClient_NONMAPREDUCE_-2087450428_1
+2014-04-01 02:03:40,364 WARN org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicy: Not able to place enough replicas, still in need of 1 to reach 1
+For more information, please enable DEBUG log level on org.apache.commons.logging.impl.Log4JLogger
+2014-04-01 02:03:40,364 ERROR org.apache.hadoop.security.UserGroupInformation: PriviledgedActionException as:hduser (auth:SIMPLE) cause:java.io.IOException: File /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0004/job_1396342005689_0004_1_conf.xml could only be replicated to 0 nodes instead of minReplication (=1).  There are 1 datanode(s) running and no node(s) are excluded in this operation.
+2014-04-01 02:03:40,365 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 9000, call org.apache.hadoop.hdfs.protocol.ClientProtocol.addBlock from 127.0.0.1:48358 Call#13 Retry#0: error: java.io.IOException: File /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0004/job_1396342005689_0004_1_conf.xml could only be replicated to 0 nodes instead of minReplication (=1).  There are 1 datanode(s) running and no node(s) are excluded in this operation.
+java.io.IOException: File /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0004/job_1396342005689_0004_1_conf.xml could only be replicated to 0 nodes instead of minReplication (=1).  There are 1 datanode(s) running and no node(s) are excluded in this operation.
+	at org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.chooseTarget(BlockManager.java:1384)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:2477)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.addBlock(NameNodeRpcServer.java:555)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.addBlock(ClientNamenodeProtocolServerSideTranslatorPB.java:387)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59582)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-01 02:03:57,008 INFO BlockStateChange: BLOCK* addToInvalidates: blk_1073741845_1021 127.0.0.1:50010 
+2014-04-01 02:03:57,008 INFO BlockStateChange: BLOCK* addToInvalidates: blk_1073741846_1022 127.0.0.1:50010 
+2014-04-01 02:03:57,008 INFO BlockStateChange: BLOCK* addToInvalidates: blk_1073741847_1023 127.0.0.1:50010 
+2014-04-01 02:03:57,008 INFO BlockStateChange: BLOCK* addToInvalidates: blk_1073741848_1024 127.0.0.1:50010 
+2014-04-01 02:03:59,588 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* InvalidateBlocks: ask 127.0.0.1:50010 to delete [blk_1073741845_1021, blk_1073741846_1022, blk_1073741847_1023, blk_1073741848_1024]
+2014-04-01 02:06:02,142 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 175 Total time for transactions(ms): 11 Number of transactions batched in Syncs: 1 Number of syncs: 105 SyncTimes(ms): 77 
+2014-04-01 02:06:02,181 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0005/job.jar. BP-1666509703-127.0.1.1-1396341980566 blk_1073741849_1025{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]}
+2014-04-01 02:06:02,417 INFO BlockStateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1073741849_1025{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]} size 0
+2014-04-01 02:06:02,420 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0005/job.jar is closed by DFSClient_NONMAPREDUCE_-1435173917_1
+2014-04-01 02:06:02,423 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: Increasing replication from 1 to 10 for /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0005/job.jar
+2014-04-01 02:06:02,460 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: Increasing replication from 1 to 10 for /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0005/job.split
+2014-04-01 02:06:02,466 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0005/job.split. BP-1666509703-127.0.1.1-1396341980566 blk_1073741850_1026{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]}
+2014-04-01 02:06:02,471 INFO BlockStateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1073741850_1026{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]} size 0
+2014-04-01 02:06:02,472 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0005/job.split is closed by DFSClient_NONMAPREDUCE_-1435173917_1
+2014-04-01 02:06:02,478 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0005/job.splitmetainfo. BP-1666509703-127.0.1.1-1396341980566 blk_1073741851_1027{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]}
+2014-04-01 02:06:02,482 INFO BlockStateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1073741851_1027{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]} size 0
+2014-04-01 02:06:02,483 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0005/job.splitmetainfo is closed by DFSClient_NONMAPREDUCE_-1435173917_1
+2014-04-01 02:06:02,592 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0005/job.xml. BP-1666509703-127.0.1.1-1396341980566 blk_1073741852_1028{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]}
+2014-04-01 02:06:02,598 INFO BlockStateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1073741852_1028{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]} size 0
+2014-04-01 02:06:02,600 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0005/job.xml is closed by DFSClient_NONMAPREDUCE_-1435173917_1
+2014-04-01 02:06:06,002 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0005/job_1396342005689_0005_1_conf.xml. BP-1666509703-127.0.1.1-1396341980566 blk_1073741853_1029{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]}
+2014-04-01 02:06:06,035 INFO BlockStateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1073741853_1029{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]} size 0
+2014-04-01 02:06:06,039 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0005/job_1396342005689_0005_1_conf.xml is closed by DFSClient_NONMAPREDUCE_-202416392_1
+2014-04-01 02:06:09,644 WARN org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicy: Not able to place enough replicas, still in need of 1 to reach 1
+For more information, please enable DEBUG log level on org.apache.commons.logging.impl.Log4JLogger
+2014-04-01 02:06:09,644 ERROR org.apache.hadoop.security.UserGroupInformation: PriviledgedActionException as:hduser (auth:SIMPLE) cause:java.io.IOException: File /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0005/job_1396342005689_0005_1.jhist could only be replicated to 0 nodes instead of minReplication (=1).  There are 1 datanode(s) running and no node(s) are excluded in this operation.
+2014-04-01 02:06:09,644 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9000, call org.apache.hadoop.hdfs.protocol.ClientProtocol.addBlock from 127.0.0.1:48428 Call#24 Retry#0: error: java.io.IOException: File /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0005/job_1396342005689_0005_1.jhist could only be replicated to 0 nodes instead of minReplication (=1).  There are 1 datanode(s) running and no node(s) are excluded in this operation.
+java.io.IOException: File /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0005/job_1396342005689_0005_1.jhist could only be replicated to 0 nodes instead of minReplication (=1).  There are 1 datanode(s) running and no node(s) are excluded in this operation.
+	at org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.chooseTarget(BlockManager.java:1384)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:2477)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.addBlock(NameNodeRpcServer.java:555)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.addBlock(ClientNamenodeProtocolServerSideTranslatorPB.java:387)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59582)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-01 02:06:20,661 INFO BlockStateChange: BLOCK* addToInvalidates: blk_1073741849_1025 127.0.0.1:50010 
+2014-04-01 02:06:20,661 INFO BlockStateChange: BLOCK* addToInvalidates: blk_1073741850_1026 127.0.0.1:50010 
+2014-04-01 02:06:20,661 INFO BlockStateChange: BLOCK* addToInvalidates: blk_1073741851_1027 127.0.0.1:50010 
+2014-04-01 02:06:20,661 INFO BlockStateChange: BLOCK* addToInvalidates: blk_1073741852_1028 127.0.0.1:50010 
+2014-04-01 02:06:20,661 INFO BlockStateChange: BLOCK* addToInvalidates: blk_1073741853_1029 127.0.0.1:50010 
+2014-04-01 02:06:23,621 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* InvalidateBlocks: ask 127.0.0.1:50010 to delete [blk_1073741849_1025, blk_1073741850_1026, blk_1073741851_1027, blk_1073741852_1028, blk_1073741853_1029]
+2014-04-01 02:12:21,357 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 210 Total time for transactions(ms): 12 Number of transactions batched in Syncs: 1 Number of syncs: 125 SyncTimes(ms): 80 
+2014-04-01 02:12:21,400 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0006/job.jar. BP-1666509703-127.0.1.1-1396341980566 blk_1073741854_1030{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]}
+2014-04-01 02:12:21,661 INFO BlockStateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1073741854_1030{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]} size 0
+2014-04-01 02:12:21,664 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0006/job.jar is closed by DFSClient_NONMAPREDUCE_1447235837_1
+2014-04-01 02:12:21,667 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: Increasing replication from 1 to 10 for /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0006/job.jar
+2014-04-01 02:12:21,700 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: Increasing replication from 1 to 10 for /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0006/job.split
+2014-04-01 02:12:21,706 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0006/job.split. BP-1666509703-127.0.1.1-1396341980566 blk_1073741855_1031{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]}
+2014-04-01 02:12:21,710 INFO BlockStateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1073741855_1031{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]} size 0
+2014-04-01 02:12:21,712 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0006/job.split is closed by DFSClient_NONMAPREDUCE_1447235837_1
+2014-04-01 02:12:21,718 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0006/job.splitmetainfo. BP-1666509703-127.0.1.1-1396341980566 blk_1073741856_1032{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]}
+2014-04-01 02:12:21,723 INFO BlockStateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1073741856_1032{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]} size 0
+2014-04-01 02:12:21,724 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0006/job.splitmetainfo is closed by DFSClient_NONMAPREDUCE_1447235837_1
+2014-04-01 02:12:21,838 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0006/job.xml. BP-1666509703-127.0.1.1-1396341980566 blk_1073741857_1033{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]}
+2014-04-01 02:12:21,842 INFO BlockStateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1073741857_1033{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]} size 0
+2014-04-01 02:12:21,844 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0006/job.xml is closed by DFSClient_NONMAPREDUCE_1447235837_1
+2014-04-01 02:12:25,188 WARN org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicy: Not able to place enough replicas, still in need of 1 to reach 1
+For more information, please enable DEBUG log level on org.apache.commons.logging.impl.Log4JLogger
+2014-04-01 02:12:25,188 ERROR org.apache.hadoop.security.UserGroupInformation: PriviledgedActionException as:hduser (auth:SIMPLE) cause:java.io.IOException: File /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0006/job_1396342005689_0006_1_conf.xml could only be replicated to 0 nodes instead of minReplication (=1).  There are 1 datanode(s) running and no node(s) are excluded in this operation.
+2014-04-01 02:12:25,188 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9000, call org.apache.hadoop.hdfs.protocol.ClientProtocol.addBlock from 127.0.0.1:48510 Call#13 Retry#0: error: java.io.IOException: File /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0006/job_1396342005689_0006_1_conf.xml could only be replicated to 0 nodes instead of minReplication (=1).  There are 1 datanode(s) running and no node(s) are excluded in this operation.
+java.io.IOException: File /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0006/job_1396342005689_0006_1_conf.xml could only be replicated to 0 nodes instead of minReplication (=1).  There are 1 datanode(s) running and no node(s) are excluded in this operation.
+	at org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.chooseTarget(BlockManager.java:1384)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:2477)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.addBlock(NameNodeRpcServer.java:555)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.addBlock(ClientNamenodeProtocolServerSideTranslatorPB.java:387)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59582)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-01 02:12:39,881 INFO BlockStateChange: BLOCK* addToInvalidates: blk_1073741854_1030 127.0.0.1:50010 
+2014-04-01 02:12:39,881 INFO BlockStateChange: BLOCK* addToInvalidates: blk_1073741855_1031 127.0.0.1:50010 
+2014-04-01 02:12:39,881 INFO BlockStateChange: BLOCK* addToInvalidates: blk_1073741856_1032 127.0.0.1:50010 
+2014-04-01 02:12:39,881 INFO BlockStateChange: BLOCK* addToInvalidates: blk_1073741857_1033 127.0.0.1:50010 
+2014-04-01 02:12:41,721 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* InvalidateBlocks: ask 127.0.0.1:50010 to delete [blk_1073741856_1032, blk_1073741857_1033, blk_1073741854_1030, blk_1073741855_1031]
+2014-04-01 02:13:31,027 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 241 Total time for transactions(ms): 12 Number of transactions batched in Syncs: 1 Number of syncs: 144 SyncTimes(ms): 87 
+2014-04-01 02:13:31,068 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0007/job.jar. BP-1666509703-127.0.1.1-1396341980566 blk_1073741858_1034{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]}
+2014-04-01 02:13:31,304 INFO BlockStateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1073741858_1034{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]} size 0
+2014-04-01 02:13:31,305 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0007/job.jar is closed by DFSClient_NONMAPREDUCE_1802809272_1
+2014-04-01 02:13:31,310 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: Increasing replication from 1 to 10 for /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0007/job.jar
+2014-04-01 02:13:31,348 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: Increasing replication from 1 to 10 for /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0007/job.split
+2014-04-01 02:13:31,356 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0007/job.split. BP-1666509703-127.0.1.1-1396341980566 blk_1073741859_1035{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]}
+2014-04-01 02:13:31,361 INFO BlockStateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1073741859_1035{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]} size 0
+2014-04-01 02:13:31,362 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0007/job.split is closed by DFSClient_NONMAPREDUCE_1802809272_1
+2014-04-01 02:13:31,368 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0007/job.splitmetainfo. BP-1666509703-127.0.1.1-1396341980566 blk_1073741860_1036{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]}
+2014-04-01 02:13:31,375 INFO BlockStateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1073741860_1036{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]} size 0
+2014-04-01 02:13:31,376 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0007/job.splitmetainfo is closed by DFSClient_NONMAPREDUCE_1802809272_1
+2014-04-01 02:13:31,476 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0007/job.xml. BP-1666509703-127.0.1.1-1396341980566 blk_1073741861_1037{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]}
+2014-04-01 02:13:31,496 INFO BlockStateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1073741861_1037{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]} size 0
+2014-04-01 02:13:31,498 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0007/job.xml is closed by DFSClient_NONMAPREDUCE_1802809272_1
+2014-04-01 02:13:34,583 WARN org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicy: Not able to place enough replicas, still in need of 1 to reach 1
+For more information, please enable DEBUG log level on org.apache.commons.logging.impl.Log4JLogger
+2014-04-01 02:13:34,583 ERROR org.apache.hadoop.security.UserGroupInformation: PriviledgedActionException as:hduser (auth:SIMPLE) cause:java.io.IOException: File /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0007/job_1396342005689_0007_1_conf.xml could only be replicated to 0 nodes instead of minReplication (=1).  There are 1 datanode(s) running and no node(s) are excluded in this operation.
+2014-04-01 02:13:34,583 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 9000, call org.apache.hadoop.hdfs.protocol.ClientProtocol.addBlock from 127.0.0.1:48578 Call#13 Retry#0: error: java.io.IOException: File /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0007/job_1396342005689_0007_1_conf.xml could only be replicated to 0 nodes instead of minReplication (=1).  There are 1 datanode(s) running and no node(s) are excluded in this operation.
+java.io.IOException: File /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0007/job_1396342005689_0007_1_conf.xml could only be replicated to 0 nodes instead of minReplication (=1).  There are 1 datanode(s) running and no node(s) are excluded in this operation.
+	at org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.chooseTarget(BlockManager.java:1384)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:2477)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.addBlock(NameNodeRpcServer.java:555)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.addBlock(ClientNamenodeProtocolServerSideTranslatorPB.java:387)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59582)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-01 02:13:51,116 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0007/COMMIT_STARTED is closed by DFSClient_NONMAPREDUCE_1717800963_1
+2014-04-01 02:13:51,121 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-yarn/staging/hduser/.staging/job_1396342005689_0007/COMMIT_SUCCESS is closed by DFSClient_NONMAPREDUCE_1717800963_1
+2014-04-01 02:13:52,141 INFO BlockStateChange: BLOCK* addToInvalidates: blk_1073741858_1034 127.0.0.1:50010 
+2014-04-01 02:13:52,141 INFO BlockStateChange: BLOCK* addToInvalidates: blk_1073741859_1035 127.0.0.1:50010 
+2014-04-01 02:13:52,141 INFO BlockStateChange: BLOCK* addToInvalidates: blk_1073741860_1036 127.0.0.1:50010 
+2014-04-01 02:13:52,141 INFO BlockStateChange: BLOCK* addToInvalidates: blk_1073741861_1037 127.0.0.1:50010 
+2014-04-01 02:13:53,742 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* InvalidateBlocks: ask 127.0.0.1:50010 to delete [blk_1073741858_1034, blk_1073741859_1035, blk_1073741860_1036, blk_1073741861_1037]
