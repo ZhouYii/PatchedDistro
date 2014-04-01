@@ -1785,3 +1785,4 @@ STARTUP_MSG:   java = 1.7.0_51
 2014-03-31 20:13:02,365 INFO org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor: Deleting absolute path : /tmp/hadoop-hduser/nm-local-dir/usercache/hduser/appcache/application_1396321465238_0002
 2014-03-31 20:13:02,366 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.application.Application: Application application_1396321465238_0002 transitioned from APPLICATION_RESOURCES_CLEANINGUP to FINISHED
 2014-03-31 20:13:02,366 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.NonAggregatingLogHandler: Scheduling Log Deletion for application: application_1396321465238_0002, with delay of 10800 seconds
+2014-03-31 23:05:27,006 INFO org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor: Deleting path : /home/hduser/PatchedDistro/patched_hadoop/logs/userlogs/application_1396321465238_0001
