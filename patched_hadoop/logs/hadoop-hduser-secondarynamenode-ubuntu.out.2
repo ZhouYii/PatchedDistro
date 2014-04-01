@@ -1,0 +1,8 @@
+Exception in thread "main" java.lang.IllegalArgumentException: Invalid URI for NameNode address (check fs.defaultFS): file:/// has no authority.
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:347)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:335)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getServiceAddress(NameNode.java:328)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.initialize(SecondaryNameNode.java:235)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.<init>(SecondaryNameNode.java:199)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.main(SecondaryNameNode.java:652)
+               (-x) unlimited
