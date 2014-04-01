@@ -1195,3 +1195,24 @@ java.io.IOException: File /in/a._COPYING_ could only be replicated to 0 nodes in
 2014-04-01 05:48:18,761 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 4 
 2014-04-01 05:48:18,761 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /home/hduser/mydata/hdfs/namenode/current/edits_inprogress_0000000000000000090 -> /home/hduser/mydata/hdfs/namenode/current/edits_0000000000000000090-0000000000000000091
 2014-04-01 05:48:18,761 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 92
+2014-04-01 05:49:18,776 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
+2014-04-01 05:49:18,777 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2014-04-01 05:49:18,777 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 92
+2014-04-01 05:49:18,777 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 4 
+2014-04-01 05:49:18,778 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 4 
+2014-04-01 05:49:18,778 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /home/hduser/mydata/hdfs/namenode/current/edits_inprogress_0000000000000000092 -> /home/hduser/mydata/hdfs/namenode/current/edits_0000000000000000092-0000000000000000093
+2014-04-01 05:49:18,778 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 94
+2014-04-01 05:50:18,799 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
+2014-04-01 05:50:18,799 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2014-04-01 05:50:18,800 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 94
+2014-04-01 05:50:18,800 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 3 
+2014-04-01 05:50:18,800 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 3 
+2014-04-01 05:50:18,801 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /home/hduser/mydata/hdfs/namenode/current/edits_inprogress_0000000000000000094 -> /home/hduser/mydata/hdfs/namenode/current/edits_0000000000000000094-0000000000000000095
+2014-04-01 05:50:18,801 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 96
+2014-04-01 05:51:18,812 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
+2014-04-01 05:51:18,812 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2014-04-01 05:51:18,812 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 96
+2014-04-01 05:51:18,813 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 1 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 3 
+2014-04-01 05:51:18,813 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 1 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 3 
+2014-04-01 05:51:18,814 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /home/hduser/mydata/hdfs/namenode/current/edits_inprogress_0000000000000000096 -> /home/hduser/mydata/hdfs/namenode/current/edits_0000000000000000096-0000000000000000097
+2014-04-01 05:51:18,814 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 98
