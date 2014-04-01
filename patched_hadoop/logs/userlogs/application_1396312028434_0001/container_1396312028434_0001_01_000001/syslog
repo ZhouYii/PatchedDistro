@@ -1,0 +1,224 @@
+2014-03-31 17:28:04,218 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Created MRAppMaster for application appattempt_1396312028434_0001_000001
+2014-03-31 17:28:04,359 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-03-31 17:28:04,359 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-03-31 17:28:05,675 WARN [main] org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-03-31 17:28:05,684 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Executing with tokens:
+2014-03-31 17:28:05,684 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Kind: YARN_AM_RM_TOKEN, Service: , Ident: (org.apache.hadoop.yarn.security.AMRMTokenIdentifier@df4c8a)
+2014-03-31 17:28:05,701 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: The specific max attempts: 2 for application: 1. Attempt num: 1 is last retry: false
+2014-03-31 17:28:05,704 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Using mapred newApiCommitter.
+2014-03-31 17:28:05,755 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-03-31 17:28:05,755 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-03-31 17:28:06,082 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: OutputCommitter set in config null
+2014-03-31 17:28:06,123 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: OutputCommitter is org.apache.cassandra.hadoop.AbstractColumnFamilyOutputFormat$NullOutputCommitter
+2014-03-31 17:28:06,137 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.jobhistory.EventType for class org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler
+2014-03-31 17:28:06,138 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher
+2014-03-31 17:28:06,138 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskEventDispatcher
+2014-03-31 17:28:06,139 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskAttemptEventDispatcher
+2014-03-31 17:28:06,139 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventType for class org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler
+2014-03-31 17:28:06,143 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.speculate.Speculator$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$SpeculatorEventDispatcher
+2014-03-31 17:28:06,144 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.rm.ContainerAllocator$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$ContainerAllocatorRouter
+2014-03-31 17:28:06,145 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncher$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$ContainerLauncherRouter
+2014-03-31 17:28:06,210 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobFinishEvent$Type for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobFinishEventHandler
+2014-03-31 17:28:06,371 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2014-03-31 17:28:06,414 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2014-03-31 17:28:06,414 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MRAppMaster metrics system started
+2014-03-31 17:28:06,421 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Adding job token for job_1396312028434_0001 to jobTokenSecretManager
+2014-03-31 17:28:06,494 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Not uberizing job_1396312028434_0001 because: not enabled;
+2014-03-31 17:28:06,505 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Input size for job job_1396312028434_0001 = 1768. Number of splits = 2
+2014-03-31 17:28:06,506 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Number of reduces for job job_1396312028434_0001 = 1
+2014-03-31 17:28:06,506 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1396312028434_0001Job Transitioned from NEW to INITED
+2014-03-31 17:28:06,507 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: MRAppMaster launching normal, non-uberized, multi-container job job_1396312028434_0001.
+2014-03-31 17:28:06,551 INFO [Socket Reader #1 for port 40753] org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 40753
+2014-03-31 17:28:06,591 INFO [main] org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.mapreduce.v2.api.MRClientProtocolPB to the server
+2014-03-31 17:28:06,592 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2014-03-31 17:28:06,593 INFO [main] org.apache.hadoop.mapreduce.v2.app.client.MRClientService: Instantiated MRClientService at ubuntu/127.0.1.1:40753
+2014-03-31 17:28:06,594 INFO [IPC Server listener on 40753] org.apache.hadoop.ipc.Server: IPC Server listener on 40753: starting
+2014-03-31 17:28:06,625 INFO [main] org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-03-31 17:28:06,666 INFO [main] org.apache.hadoop.http.HttpServer: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2014-03-31 17:28:06,669 INFO [main] org.apache.hadoop.http.HttpServer: Added filter AM_PROXY_FILTER (class=org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter) to context mapreduce
+2014-03-31 17:28:06,669 INFO [main] org.apache.hadoop.http.HttpServer: Added filter AM_PROXY_FILTER (class=org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter) to context static
+2014-03-31 17:28:06,672 INFO [main] org.apache.hadoop.http.HttpServer: adding path spec: /mapreduce/*
+2014-03-31 17:28:06,672 INFO [main] org.apache.hadoop.http.HttpServer: adding path spec: /ws/*
+2014-03-31 17:28:06,673 INFO [main] org.apache.hadoop.http.HttpServer: Jetty bound to port 37847
+2014-03-31 17:28:06,673 INFO [main] org.mortbay.log: jetty-6.1.26
+2014-03-31 17:28:06,694 INFO [main] org.mortbay.log: Extract jar:file:/home/hduser/PatchedDistro/patched_hadoop/share/hadoop/yarn/hadoop-yarn-common-2.2.0.jar!/webapps/mapreduce to /tmp/Jetty_0_0_0_0_37847_mapreduce____.itogqm/webapp
+2014-03-31 17:28:06,901 INFO [main] org.mortbay.log: Started SelectChannelConnector@0.0.0.0:37847
+2014-03-31 17:28:06,901 INFO [main] org.apache.hadoop.yarn.webapp.WebApps: Web app /mapreduce started at 37847
+2014-03-31 17:28:07,122 INFO [main] org.apache.hadoop.yarn.webapp.WebApps: Registered webapp guice modules
+2014-03-31 17:28:07,124 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: JOB_CREATE job_1396312028434_0001
+2014-03-31 17:28:07,128 INFO [Socket Reader #1 for port 33988] org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 33988
+2014-03-31 17:28:07,128 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2014-03-31 17:28:07,129 INFO [IPC Server listener on 33988] org.apache.hadoop.ipc.Server: IPC Server listener on 33988: starting
+2014-03-31 17:28:07,172 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: nodeBlacklistingEnabled:true
+2014-03-31 17:28:07,172 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: maxTaskFailuresPerNode is 3
+2014-03-31 17:28:07,172 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: blacklistDisablePercent is 33
+2014-03-31 17:28:07,190 INFO [main] org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8030
+2014-03-31 17:28:07,228 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: maxContainerCapability: 8192
+2014-03-31 17:28:07,230 INFO [main] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Upper limit on the thread pool size is 500
+2014-03-31 17:28:07,231 INFO [main] org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy: yarn.client.max-nodemanagers-proxies : 500
+2014-03-31 17:28:07,236 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1396312028434_0001Job Transitioned from INITED to SETUP
+2014-03-31 17:28:07,238 INFO [CommitterEvent Processor #0] org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler: Processing the event EventType: JOB_SETUP
+2014-03-31 17:28:07,239 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1396312028434_0001Job Transitioned from SETUP to RUNNING
+2014-03-31 17:28:07,252 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved ubuntu to /default-rack
+2014-03-31 17:28:07,255 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1396312028434_0001_m_000000 Task Transitioned from NEW to SCHEDULED
+2014-03-31 17:28:07,255 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved ubuntu to /default-rack
+2014-03-31 17:28:07,255 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1396312028434_0001_m_000001 Task Transitioned from NEW to SCHEDULED
+2014-03-31 17:28:07,255 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1396312028434_0001_r_000000 Task Transitioned from NEW to SCHEDULED
+2014-03-31 17:28:07,256 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1396312028434_0001_m_000000_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-03-31 17:28:07,256 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1396312028434_0001_m_000001_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-03-31 17:28:07,256 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1396312028434_0001_r_000000_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-03-31 17:28:07,257 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: mapResourceReqt:1024
+2014-03-31 17:28:07,261 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: reduceResourceReqt:1024
+2014-03-31 17:28:07,279 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Event Writer setup for JobId: job_1396312028434_0001, File: hdfs://localhost:9000/tmp/hadoop-yarn/staging/hduser/.staging/job_1396312028434_0001/job_1396312028434_0001_1.jhist
+2014-03-31 17:28:07,282 INFO [eventHandlingThread] org.apache.hadoop.conf.Configuration.deprecation: user.name is deprecated. Instead, use mapreduce.job.user.name
+2014-03-31 17:28:08,230 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:1 ScheduledMaps:2 ScheduledReds:0 AssignedMaps:0 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:0 ContRel:0 HostLocal:0 RackLocal:0
+2014-03-31 17:28:08,256 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1396312028434_0001: ask=3 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:6144, vCores:0> knownNMs=1
+2014-03-31 17:28:08,256 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=6144
+2014-03-31 17:28:08,256 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2014-03-31 17:28:09,268 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Got allocated containers 2
+2014-03-31 17:28:09,271 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1396312028434_0001_01_000002 to attempt_1396312028434_0001_m_000000_0
+2014-03-31 17:28:09,272 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1396312028434_0001_01_000003 to attempt_1396312028434_0001_m_000001_0
+2014-03-31 17:28:09,272 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=4096
+2014-03-31 17:28:09,272 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2014-03-31 17:28:09,272 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:2 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:2 ContRel:0 HostLocal:2 RackLocal:0
+2014-03-31 17:28:09,291 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved ubuntu to /default-rack
+2014-03-31 17:28:09,301 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: The job-jar file on the remote FS is hdfs://localhost:9000/tmp/hadoop-yarn/staging/hduser/.staging/job_1396312028434_0001/job.jar
+2014-03-31 17:28:09,303 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: The job-conf file on the remote FS is /tmp/hadoop-yarn/staging/hduser/.staging/job_1396312028434_0001/job.xml
+2014-03-31 17:28:09,304 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Adding #0 tokens and #1 secret keys for NM use for launching container
+2014-03-31 17:28:09,304 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Size of containertokens_dob is 1
+2014-03-31 17:28:09,304 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Putting shuffle token in serviceData
+2014-03-31 17:28:09,318 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1396312028434_0001_m_000000_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2014-03-31 17:28:09,320 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved ubuntu to /default-rack
+2014-03-31 17:28:09,321 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1396312028434_0001_m_000001_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2014-03-31 17:28:09,322 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1396312028434_0001_01_000002 taskAttempt attempt_1396312028434_0001_m_000000_0
+2014-03-31 17:28:09,322 INFO [ContainerLauncher #1] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1396312028434_0001_01_000003 taskAttempt attempt_1396312028434_0001_m_000001_0
+2014-03-31 17:28:09,324 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1396312028434_0001_m_000000_0
+2014-03-31 17:28:09,324 INFO [ContainerLauncher #1] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1396312028434_0001_m_000001_0
+2014-03-31 17:28:09,325 INFO [ContainerLauncher #0] org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy: Opening proxy : ubuntu:35171
+2014-03-31 17:28:09,371 INFO [ContainerLauncher #1] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1396312028434_0001_m_000001_0 : 13562
+2014-03-31 17:28:09,372 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1396312028434_0001_m_000001_0] using containerId: [container_1396312028434_0001_01_000003 on NM: [ubuntu:35171]
+2014-03-31 17:28:09,374 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1396312028434_0001_m_000001_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2014-03-31 17:28:09,374 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1396312028434_0001_m_000001
+2014-03-31 17:28:09,374 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1396312028434_0001_m_000001 Task Transitioned from SCHEDULED to RUNNING
+2014-03-31 17:28:09,375 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1396312028434_0001_m_000000_0 : 13562
+2014-03-31 17:28:09,379 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1396312028434_0001_m_000000_0] using containerId: [container_1396312028434_0001_01_000002 on NM: [ubuntu:35171]
+2014-03-31 17:28:09,380 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1396312028434_0001_m_000000_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2014-03-31 17:28:09,380 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1396312028434_0001_m_000000
+2014-03-31 17:28:09,380 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1396312028434_0001_m_000000 Task Transitioned from SCHEDULED to RUNNING
+2014-03-31 17:28:10,275 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1396312028434_0001: ask=3 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:4096, vCores:-2> knownNMs=1
+2014-03-31 17:28:11,792 INFO [Socket Reader #1 for port 33988] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1396312028434_0001 (auth:SIMPLE)
+2014-03-31 17:28:11,805 INFO [IPC Server handler 0 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1396312028434_0001_m_000002 asked for a task
+2014-03-31 17:28:11,806 INFO [IPC Server handler 0 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1396312028434_0001_m_000002 given task: attempt_1396312028434_0001_m_000000_0
+2014-03-31 17:28:11,887 INFO [Socket Reader #1 for port 33988] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1396312028434_0001 (auth:SIMPLE)
+2014-03-31 17:28:11,901 INFO [IPC Server handler 1 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1396312028434_0001_m_000003 asked for a task
+2014-03-31 17:28:11,901 INFO [IPC Server handler 1 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1396312028434_0001_m_000003 given task: attempt_1396312028434_0001_m_000001_0
+2014-03-31 17:28:13,040 INFO [IPC Server handler 2 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1396312028434_0001_m_000001_0
+2014-03-31 17:28:13,040 INFO [IPC Server handler 2 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1396312028434_0001_m_000001_0 is : 0.0
+2014-03-31 17:28:13,108 INFO [IPC Server handler 3 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1396312028434_0001_m_000000_0
+2014-03-31 17:28:13,108 INFO [IPC Server handler 3 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1396312028434_0001_m_000000_0 is : 0.0
+2014-03-31 17:28:13,131 INFO [IPC Server handler 4 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1396312028434_0001_m_000001_0
+2014-03-31 17:28:13,131 INFO [IPC Server handler 4 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1396312028434_0001_m_000001_0 is : 1.0
+2014-03-31 17:28:13,134 INFO [IPC Server handler 5 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Done acknowledgement from attempt_1396312028434_0001_m_000001_0
+2014-03-31 17:28:13,135 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1396312028434_0001_m_000001_0 TaskAttempt Transitioned from RUNNING to SUCCESS_CONTAINER_CLEANUP
+2014-03-31 17:28:13,137 INFO [ContainerLauncher #2] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_CLEANUP for container container_1396312028434_0001_01_000003 taskAttempt attempt_1396312028434_0001_m_000001_0
+2014-03-31 17:28:13,137 INFO [ContainerLauncher #2] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: KILLING attempt_1396312028434_0001_m_000001_0
+2014-03-31 17:28:13,161 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1396312028434_0001_m_000001_0 TaskAttempt Transitioned from SUCCESS_CONTAINER_CLEANUP to SUCCEEDED
+2014-03-31 17:28:13,167 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: Task succeeded with attempt attempt_1396312028434_0001_m_000001_0
+2014-03-31 17:28:13,175 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1396312028434_0001_m_000001 Task Transitioned from RUNNING to SUCCEEDED
+2014-03-31 17:28:13,178 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Num completed Tasks: 1
+2014-03-31 17:28:13,200 INFO [IPC Server handler 6 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1396312028434_0001_m_000000_0
+2014-03-31 17:28:13,200 INFO [IPC Server handler 6 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1396312028434_0001_m_000000_0 is : 1.0
+2014-03-31 17:28:13,202 INFO [IPC Server handler 7 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Done acknowledgement from attempt_1396312028434_0001_m_000000_0
+2014-03-31 17:28:13,204 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1396312028434_0001_m_000000_0 TaskAttempt Transitioned from RUNNING to SUCCESS_CONTAINER_CLEANUP
+2014-03-31 17:28:13,204 INFO [ContainerLauncher #3] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_CLEANUP for container container_1396312028434_0001_01_000002 taskAttempt attempt_1396312028434_0001_m_000000_0
+2014-03-31 17:28:13,204 INFO [ContainerLauncher #3] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: KILLING attempt_1396312028434_0001_m_000000_0
+2014-03-31 17:28:13,207 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1396312028434_0001_m_000000_0 TaskAttempt Transitioned from SUCCESS_CONTAINER_CLEANUP to SUCCEEDED
+2014-03-31 17:28:13,207 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: Task succeeded with attempt attempt_1396312028434_0001_m_000000_0
+2014-03-31 17:28:13,207 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1396312028434_0001_m_000000 Task Transitioned from RUNNING to SUCCEEDED
+2014-03-31 17:28:13,207 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Num completed Tasks: 2
+2014-03-31 17:28:13,279 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:2 AssignedReds:0 CompletedMaps:2 CompletedReds:0 ContAlloc:2 ContRel:0 HostLocal:2 RackLocal:0
+2014-03-31 17:28:13,285 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Received completed container container_1396312028434_0001_01_000003
+2014-03-31 17:28:13,285 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=4096
+2014-03-31 17:28:13,285 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold reached. Scheduling reduces.
+2014-03-31 17:28:13,285 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: All maps assigned. Ramping up all remaining reduces:1
+2014-03-31 17:28:13,286 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:0 ScheduledMaps:0 ScheduledReds:1 AssignedMaps:1 AssignedReds:0 CompletedMaps:2 CompletedReds:0 ContAlloc:2 ContRel:0 HostLocal:2 RackLocal:0
+2014-03-31 17:28:13,289 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1396312028434_0001_m_000001_0: Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+
+2014-03-31 17:28:14,289 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1396312028434_0001: ask=1 release= 0 newContainers=0 finishedContainers=1 resourcelimit=<memory:4096, vCores:-2> knownNMs=1
+2014-03-31 17:28:14,289 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Received completed container container_1396312028434_0001_01_000002
+2014-03-31 17:28:14,290 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:0 ScheduledMaps:0 ScheduledReds:1 AssignedMaps:0 AssignedReds:0 CompletedMaps:2 CompletedReds:0 ContAlloc:2 ContRel:0 HostLocal:2 RackLocal:0
+2014-03-31 17:28:14,290 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1396312028434_0001_m_000000_0: Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+
+2014-03-31 17:28:15,292 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Got allocated containers 1
+2014-03-31 17:28:15,293 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned to reduce
+2014-03-31 17:28:15,293 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1396312028434_0001_01_000004 to attempt_1396312028434_0001_r_000000_0
+2014-03-31 17:28:15,293 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:0 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:0 AssignedReds:1 CompletedMaps:2 CompletedReds:0 ContAlloc:3 ContRel:0 HostLocal:2 RackLocal:0
+2014-03-31 17:28:15,298 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved ubuntu to /default-rack
+2014-03-31 17:28:15,299 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1396312028434_0001_r_000000_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2014-03-31 17:28:15,299 INFO [ContainerLauncher #4] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1396312028434_0001_01_000004 taskAttempt attempt_1396312028434_0001_r_000000_0
+2014-03-31 17:28:15,299 INFO [ContainerLauncher #4] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1396312028434_0001_r_000000_0
+2014-03-31 17:28:15,301 INFO [ContainerLauncher #4] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1396312028434_0001_r_000000_0 : 13562
+2014-03-31 17:28:15,302 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1396312028434_0001_r_000000_0] using containerId: [container_1396312028434_0001_01_000004 on NM: [ubuntu:35171]
+2014-03-31 17:28:15,302 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1396312028434_0001_r_000000_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2014-03-31 17:28:15,302 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1396312028434_0001_r_000000
+2014-03-31 17:28:15,302 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1396312028434_0001_r_000000 Task Transitioned from SCHEDULED to RUNNING
+2014-03-31 17:28:16,296 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1396312028434_0001: ask=1 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:5120, vCores:-1> knownNMs=1
+2014-03-31 17:28:17,402 INFO [Socket Reader #1 for port 33988] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1396312028434_0001 (auth:SIMPLE)
+2014-03-31 17:28:17,412 INFO [IPC Server handler 8 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1396312028434_0001_r_000004 asked for a task
+2014-03-31 17:28:17,412 INFO [IPC Server handler 8 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1396312028434_0001_r_000004 given task: attempt_1396312028434_0001_r_000000_0
+2014-03-31 17:28:18,024 INFO [IPC Server handler 9 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: MapCompletionEvents request from attempt_1396312028434_0001_r_000000_0. startIndex 0 maxEvents 10000
+2014-03-31 17:28:18,147 INFO [IPC Server handler 10 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1396312028434_0001_r_000000_0
+2014-03-31 17:28:18,147 INFO [IPC Server handler 10 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1396312028434_0001_r_000000_0 is : 0.0
+2014-03-31 17:28:18,164 INFO [IPC Server handler 11 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1396312028434_0001_r_000000_0
+2014-03-31 17:28:18,164 INFO [IPC Server handler 11 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1396312028434_0001_r_000000_0 is : 0.0
+2014-03-31 17:28:18,440 INFO [IPC Server handler 12 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1396312028434_0001_r_000000_0
+2014-03-31 17:28:18,440 INFO [IPC Server handler 12 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1396312028434_0001_r_000000_0 is : 1.0
+2014-03-31 17:28:18,446 INFO [IPC Server handler 13 on 33988] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Done acknowledgement from attempt_1396312028434_0001_r_000000_0
+2014-03-31 17:28:18,449 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1396312028434_0001_r_000000_0 TaskAttempt Transitioned from RUNNING to SUCCESS_CONTAINER_CLEANUP
+2014-03-31 17:28:18,450 INFO [ContainerLauncher #5] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_CLEANUP for container container_1396312028434_0001_01_000004 taskAttempt attempt_1396312028434_0001_r_000000_0
+2014-03-31 17:28:18,450 INFO [ContainerLauncher #5] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: KILLING attempt_1396312028434_0001_r_000000_0
+2014-03-31 17:28:18,453 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1396312028434_0001_r_000000_0 TaskAttempt Transitioned from SUCCESS_CONTAINER_CLEANUP to SUCCEEDED
+2014-03-31 17:28:18,453 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: Task succeeded with attempt attempt_1396312028434_0001_r_000000_0
+2014-03-31 17:28:18,453 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1396312028434_0001_r_000000 Task Transitioned from RUNNING to SUCCEEDED
+2014-03-31 17:28:18,453 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Num completed Tasks: 3
+2014-03-31 17:28:18,455 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1396312028434_0001Job Transitioned from RUNNING to COMMITTING
+2014-03-31 17:28:18,455 INFO [CommitterEvent Processor #1] org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler: Processing the event EventType: JOB_COMMIT
+2014-03-31 17:28:18,468 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Calling handler for JobFinishedEvent 
+2014-03-31 17:28:18,469 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1396312028434_0001Job Transitioned from COMMITTING to SUCCEEDED
+2014-03-31 17:28:18,470 INFO [Thread-61] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: We are finishing cleanly so this is the last retry
+2014-03-31 17:28:18,470 INFO [Thread-61] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Notify RMCommunicator isAMLastRetry: true
+2014-03-31 17:28:18,470 INFO [Thread-61] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: RMCommunicator notified that shouldUnregistered is: true
+2014-03-31 17:28:18,470 INFO [Thread-61] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Notify JHEH isAMLastRetry: true
+2014-03-31 17:28:18,470 INFO [Thread-61] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: JobHistoryEventHandler notified that forceJobCompletion is true
+2014-03-31 17:28:18,470 INFO [Thread-61] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Calling stop for all the services
+2014-03-31 17:28:18,475 INFO [Thread-61] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Stopping JobHistoryEventHandler. Size of the outstanding queue size is 0
+2014-03-31 17:28:18,505 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Copying hdfs://localhost:9000/tmp/hadoop-yarn/staging/hduser/.staging/job_1396312028434_0001/job_1396312028434_0001_1.jhist to hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/hduser/job_1396312028434_0001-1396312081639-hduser-wordcount-1396312098467-2-1-SUCCEEDED-default.jhist_tmp
+2014-03-31 17:28:18,929 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Copied to done location: hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/hduser/job_1396312028434_0001-1396312081639-hduser-wordcount-1396312098467-2-1-SUCCEEDED-default.jhist_tmp
+2014-03-31 17:28:18,931 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Copying hdfs://localhost:9000/tmp/hadoop-yarn/staging/hduser/.staging/job_1396312028434_0001/job_1396312028434_0001_1_conf.xml to hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/hduser/job_1396312028434_0001_conf.xml_tmp
+2014-03-31 17:28:18,946 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Copied to done location: hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/hduser/job_1396312028434_0001_conf.xml_tmp
+2014-03-31 17:28:18,955 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Moved tmp to done: hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/hduser/job_1396312028434_0001.summary_tmp to hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/hduser/job_1396312028434_0001.summary
+2014-03-31 17:28:18,957 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Moved tmp to done: hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/hduser/job_1396312028434_0001_conf.xml_tmp to hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/hduser/job_1396312028434_0001_conf.xml
+2014-03-31 17:28:18,960 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Moved tmp to done: hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/hduser/job_1396312028434_0001-1396312081639-hduser-wordcount-1396312098467-2-1-SUCCEEDED-default.jhist_tmp to hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/hduser/job_1396312028434_0001-1396312081639-hduser-wordcount-1396312098467-2-1-SUCCEEDED-default.jhist
+2014-03-31 17:28:18,960 INFO [Thread-61] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Stopped JobHistoryEventHandler. super.stop()
+2014-03-31 17:28:18,962 INFO [Thread-61] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Setting job diagnostics to 
+2014-03-31 17:28:18,962 INFO [Thread-61] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: History url is http://ubuntu:19888/jobhistory/job/job_1396312028434_0001
+2014-03-31 17:28:18,973 INFO [Thread-61] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Waiting for application to be successfully unregistered.
+2014-03-31 17:28:19,975 INFO [Thread-61] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Final Stats: PendingReds:0 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:0 AssignedReds:1 CompletedMaps:2 CompletedReds:0 ContAlloc:3 ContRel:0 HostLocal:2 RackLocal:0
+2014-03-31 17:28:19,975 INFO [Thread-61] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Deleting staging directory hdfs://localhost:9000 /tmp/hadoop-yarn/staging/hduser/.staging/job_1396312028434_0001
+2014-03-31 17:28:19,986 INFO [Thread-61] org.apache.hadoop.ipc.Server: Stopping server on 33988
+2014-03-31 17:28:19,987 INFO [IPC Server listener on 33988] org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 33988
+2014-03-31 17:28:19,987 INFO [TaskHeartbeatHandler PingChecker] org.apache.hadoop.mapreduce.v2.app.TaskHeartbeatHandler: TaskHeartbeatHandler thread interrupted
+2014-03-31 17:28:19,988 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2014-03-31 17:28:24,989 INFO [Thread-61] org.apache.hadoop.ipc.Server: Stopping server on 40753
+2014-03-31 17:28:24,989 INFO [IPC Server listener on 40753] org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 40753
+2014-03-31 17:28:24,989 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2014-03-31 17:28:24,991 INFO [Thread-61] org.mortbay.log: Stopped SelectChannelConnector@0.0.0.0:0
+2014-03-31 17:28:24,991 INFO [Thread-61] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Exiting MR AppMaster..GoodBye!
+2014-03-31 17:28:24,993 INFO [Thread-1] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: MRAppMaster received a signal. Signaling RMCommunicator and JobHistoryEventHandler.
+2014-03-31 17:28:24,993 INFO [Thread-1] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: RMCommunicator notified that iSignalled is: true
+2014-03-31 17:28:24,993 INFO [Thread-1] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Notify RMCommunicator isAMLastRetry: true
+2014-03-31 17:28:24,993 INFO [Thread-1] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: RMCommunicator notified that shouldUnregistered is: true
+2014-03-31 17:28:24,993 INFO [Thread-1] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Notify JHEH isAMLastRetry: true
+2014-03-31 17:28:24,993 INFO [Thread-1] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: JobHistoryEventHandler notified that forceJobCompletion is true
