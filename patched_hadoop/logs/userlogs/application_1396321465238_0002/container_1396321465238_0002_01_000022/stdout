@@ -1,4 +1,0 @@
-FORMATTED QUERY:SELECT key_validator,       key_aliases,       column_aliases FROM system.schema_columnfamilies WHERE keyspace_name='cql3_worldcount' and columnfamily_name='output_words'
------------------------------Printing keys to initialize partitionkeycolumns---cqlrecwriter:402
-Key: row_id1
-Reduce Setup : PartitionKey[0]: word
