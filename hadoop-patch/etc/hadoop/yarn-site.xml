@@ -15,16 +15,5 @@
 <configuration>
 
 <!-- Site specific YARN configuration properties -->
-<property>
-  <name>yarn.resourcemanager.hostname</name>
-  <value>ec2-54-187-121-79.us-west-2.compute.amazonaws.com</value>
-</property>
-<property>
-   <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>
-   <value>org.apache.hadoop.mapred.ShuffleHandler</value>
-</property>
-<property>
-  <name>yarn.nodemanager.aux-services</name>  
-  <value>mapreduce_shuffle</value>  
-</property>
+
 </configuration>
