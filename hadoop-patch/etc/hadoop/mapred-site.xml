@@ -23,6 +23,6 @@
 </property>
 <property>
   <name>mapreduce.framework.name</name>
-  <value></value>
+  <value>yarn</value>
 </property>
 </configuration>
