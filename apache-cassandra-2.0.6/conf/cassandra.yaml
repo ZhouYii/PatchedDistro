@@ -51,7 +51,7 @@ max_hints_delivery_threads: 2
 
 # Maximum throttle in KBs per second, total. This will be
 # reduced proportionally to the number of nodes in the cluster.
-#batchlog_replay_throttle_in_kb: 1024
+batchlog_replay_throttle_in_kb: 1024
 
 # Authentication backend, implementing IAuthenticator; used to identify users
 # Out of the box, Cassandra provides org.apache.cassandra.auth.{AllowAllAuthenticator,
@@ -125,7 +125,7 @@ disk_failure_policy: stop
 # stop_commit: shutdown the commit log, letting writes collect but 
 #              continuing to service reads, as in pre-2.0.5 Cassandra
 # ignore: ignore fatal errors and let the batches fail
-#commit_failure_policy: stop
+commit_failure_policy: stop
 
 # Maximum size of the key cache in memory.
 #
@@ -234,7 +234,7 @@ seed_provider:
       parameters:
           # seeds is actually a comma-delimited list of addresses.
           # Ex: "<ip1>,<ip2>,<ip3>"
-          - seeds: "ec2-54-186-165-248.us-west-2.compute.amazonaws.com,ec2-54-186-155-133.us-west-2.compute.amazonaws.com"
+          - seeds: "10.0.0.199, 10.0.0.154"
 
 # For workloads with more data than can fit in memory, Cassandra's
 # bottleneck will be reads that need to fetch data from
@@ -304,7 +304,7 @@ ssl_storage_port: 7001
 # address associated with the hostname (it might not be).
 #
 # Setting this to 0.0.0.0 is always wrong.
-listen_address: ec2-54-186-165-248.us-west-2.compute.amazonaws.com
+listen_address: 10.0.0.123
 
 # Address to broadcast to other Cassandra nodes
 # Leaving this blank will set it to the same value as listen_address
@@ -427,8 +427,8 @@ auto_snapshot: true
 # Adjust the thresholds here if you understand the dangers and want to
 # scan more tombstones anyway.  These thresholds may also be adjusted at runtime
 # using the StorageService mbean.
-#tombstone_warn_threshold: 1000
-#tombstone_failure_threshold: 100000
+tombstone_warn_threshold: 1000
+tombstone_failure_threshold: 100000
 
 # Add column indexes to a row after its contents reach this size.
 # Increase if your column values are large, or if you have a very large
@@ -492,7 +492,7 @@ range_request_timeout_in_ms: 10000
 write_request_timeout_in_ms: 2000
 # How long a coordinator should continue to retry a CAS operation
 # that contends with other proposals for the same row
-#cas_contention_timeout_in_ms: 1000
+cas_contention_timeout_in_ms: 1000
 # How long the coordinator should wait for truncates to complete
 # (This can be much longer, because unless auto_snapshot is disabled
 # we need to flush first so we can snapshot before removing the data.)
@@ -686,4 +686,4 @@ inter_dc_tcp_nodelay: false
 # When enabled it would preheat only first "page" (4KB) of each row to optimize
 # for sequential access. Note: This could be harmful for fat rows, see CASSANDRA-4937
 # for further details on that topic.
-#preheat_kernel_page_cache: false
+preheat_kernel_page_cache: false
