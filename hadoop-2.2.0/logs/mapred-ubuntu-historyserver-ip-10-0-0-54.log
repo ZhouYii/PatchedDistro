@@ -1823,3 +1823,4 @@ STARTUP_MSG:   java = 1.7.0_51
 2014-04-25 00:00:36,972 INFO org.apache.hadoop.mapreduce.v2.hs.JobHistory: Starting scan to move intermediate done files
 2014-04-25 00:00:44,738 INFO org.apache.hadoop.yarn.webapp.View: Getting list of all Jobs.
 2014-04-25 00:00:46,140 INFO org.apache.hadoop.yarn.webapp.View: Getting list of all Jobs.
+2014-04-25 00:03:36,972 INFO org.apache.hadoop.mapreduce.v2.hs.JobHistory: Starting scan to move intermediate done files

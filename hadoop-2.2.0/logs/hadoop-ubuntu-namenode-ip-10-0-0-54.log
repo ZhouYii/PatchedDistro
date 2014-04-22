@@ -12922,3 +12922,4 @@ The reported blocks 988 has reached the threshold 0.9990 of total blocks 988. Th
 2014-04-24 23:57:29,212 INFO BlockStateChange: BLOCK* addToInvalidates: blk_1073745680_4861 10.0.0.199:50010 10.0.0.54:50010 
 2014-04-24 23:57:31,721 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* InvalidateBlocks: ask 10.0.0.199:50010 to delete [blk_1073745680_4861, blk_1073745689_4870]
 2014-04-24 23:57:31,722 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* InvalidateBlocks: ask 10.0.0.54:50010 to delete [blk_1073745680_4861, blk_1073745689_4870]
+2014-04-25 00:03:47,172 WARN org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: PendingReplicationMonitor timed out blk_1073744925_4106
