@@ -6766,3 +6766,4 @@ HostSet(
 2014-04-24 10:13:27,852 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000002724 size 510 bytes.
 2014-04-24 10:13:27,857 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 2722
 2014-04-24 10:13:27,858 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/home/hduser/mydata/hdfs/namenode/current/fsimage_0000000000000000000, cpktTxId=0000000000000000000)
+2014-04-24 11:01:19,573 INFO BlockStateChange: BLOCK* processReport: from DatanodeRegistration(127.0.0.1, storageID=DS-732914256-127.0.1.1-50010-1396353912951, infoPort=50075, ipcPort=50020, storageInfo=lv=-47;cid=CID-2eac1282-42ce-4174-b911-c696d8651c9d;nsid=951462109;c=0), blocks: 0, processing time: 0 msecs
