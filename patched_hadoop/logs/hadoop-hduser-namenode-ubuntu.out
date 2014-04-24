@@ -1,17 +1,22 @@
-ulimit -a for user hduser
-core file size          (blocks, -c) 0
-data seg size           (kbytes, -d) unlimited
-scheduling priority             (-e) 0
-file size               (blocks, -f) unlimited
-pending signals                 (-i) 66048
-max locked memory       (kbytes, -l) 64
-max memory size         (kbytes, -m) unlimited
-open files                      (-n) 1024
-pipe size            (512 bytes, -p) 8
-POSIX message queues     (bytes, -q) 819200
-real-time priority              (-r) 0
-stack size              (kbytes, -s) 8192
-cpu time               (seconds, -t) unlimited
-max user processes              (-u) 66048
-virtual memory          (kbytes, -v) unlimited
-file locks                      (-x) unlimited
+log4j:ERROR Failed to flush writer,
+java.io.IOException: No space left on device
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:345)
+	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:291)
+	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:295)
+	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+	at org.apache.log4j.helpers.QuietWriter.flush(QuietWriter.java:59)
+	at org.apache.log4j.WriterAppender.subAppend(WriterAppender.java:324)
+	at org.apache.log4j.RollingFileAppender.subAppend(RollingFileAppender.java:276)
+	at org.apache.log4j.WriterAppender.append(WriterAppender.java:162)
+	at org.apache.log4j.AppenderSkeleton.doAppend(AppenderSkeleton.java:251)
+	at org.apache.log4j.helpers.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:66)
+	at org.apache.log4j.Category.callAppenders(Category.java:206)
+	at org.apache.log4j.Category.forcedLog(Category.java:391)
+	at org.apache.log4j.Category.log(Category.java:856)
+	at org.apache.commons.logging.impl.Log4JLogger.info(Log4JLogger.java:199)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.enterSafeMode(FSNamesystem.java:5004)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem$NameNodeResourceMonitor.run(FSNamesystem.java:4020)
+	at java.lang.Thread.run(Thread.java:744)

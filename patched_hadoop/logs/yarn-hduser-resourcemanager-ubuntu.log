@@ -1397,3 +1397,31 @@ nodeLocalityDelay = 0
 2014-04-24 10:12:49,200 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.server.api.ResourceManagerAdministrationProtocolPB to the server
 2014-04-24 10:12:49,201 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
 2014-04-24 10:12:49,202 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8033: starting
+2014-04-24 15:42:37,054 ERROR org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: RECEIVED SIGNAL 15: SIGTERM
+2014-04-24 15:42:37,062 INFO org.mortbay.log: Stopped SelectChannelConnector@0.0.0.0:8088
+2014-04-24 15:42:37,063 ERROR org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: InterruptedExcpetion recieved for ExpiredTokenRemover thread java.lang.InterruptedException: sleep interrupted
+2014-04-24 15:42:37,064 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping ResourceManager metrics system...
+2014-04-24 15:42:37,072 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system stopped.
+2014-04-24 15:42:37,072 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system shutdown complete.
+2014-04-24 15:42:37,072 WARN org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher: org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher$LauncherThread interrupted. Returning.
+2014-04-24 15:42:37,073 INFO org.apache.hadoop.ipc.Server: Stopping server on 8033
+2014-04-24 15:42:37,075 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8033
+2014-04-24 15:42:37,076 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2014-04-24 15:42:37,076 INFO org.apache.hadoop.ipc.Server: Stopping server on 8032
+2014-04-24 15:42:37,083 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8032
+2014-04-24 15:42:37,084 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2014-04-24 15:42:37,084 INFO org.apache.hadoop.ipc.Server: Stopping server on 8030
+2014-04-24 15:42:37,087 INFO org.apache.hadoop.ipc.Server: Stopping server on 8031
+2014-04-24 15:42:37,088 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2014-04-24 15:42:37,088 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8030
+2014-04-24 15:42:37,091 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2014-04-24 15:42:37,091 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8031
+2014-04-24 15:42:37,092 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: NMLivelinessMonitor thread interrupted
+2014-04-24 15:42:37,092 ERROR org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Returning, interrupted : java.lang.InterruptedException
+2014-04-24 15:42:37,092 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: AMLivelinessMonitor thread interrupted
+2014-04-24 15:42:37,092 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: AMLivelinessMonitor thread interrupted
+2014-04-24 15:42:37,092 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: org.apache.hadoop.yarn.server.resourcemanager.rmcontainer.ContainerAllocationExpirer thread interrupted
+2014-04-24 15:42:37,092 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down ResourceManager at ubuntu/127.0.1.1
+************************************************************/

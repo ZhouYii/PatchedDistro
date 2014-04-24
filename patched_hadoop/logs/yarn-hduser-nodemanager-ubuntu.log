@@ -1573,3 +1573,20 @@ STARTUP_MSG:   java = 1.7.0_51
 2014-04-24 10:12:40,837 INFO org.apache.hadoop.yarn.server.nodemanager.security.NMTokenSecretManagerInNM: Rolling master-key for nm-tokens, got key with id :946106638
 2014-04-24 10:12:40,838 INFO org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl: Registered with ResourceManager as ubuntu:42422 with total resource of <memory:8192, vCores:8>
 2014-04-24 10:12:40,838 INFO org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl: Notifying ContainerManager to unblock new container-requests
+2014-04-24 15:42:42,326 ERROR org.apache.hadoop.yarn.server.nodemanager.NodeManager: RECEIVED SIGNAL 15: SIGTERM
+2014-04-24 15:42:42,355 INFO org.mortbay.log: Stopped SelectChannelConnector@0.0.0.0:8042
+2014-04-24 15:42:42,456 INFO org.apache.hadoop.ipc.Server: Stopping server on 42422
+2014-04-24 15:42:42,463 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 42422
+2014-04-24 15:42:42,464 WARN org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl is interrupted. Exiting.
+2014-04-24 15:42:42,464 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2014-04-24 15:42:42,475 INFO org.apache.hadoop.ipc.Server: Stopping server on 8040
+2014-04-24 15:42:42,477 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService: Public cache exiting
+2014-04-24 15:42:42,477 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping NodeManager metrics system...
+2014-04-24 15:42:42,478 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2014-04-24 15:42:42,478 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8040
+2014-04-24 15:42:42,480 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NodeManager metrics system stopped.
+2014-04-24 15:42:42,480 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NodeManager metrics system shutdown complete.
+2014-04-24 15:42:42,480 INFO org.apache.hadoop.yarn.server.nodemanager.NodeManager: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NodeManager at ubuntu/127.0.1.1
+************************************************************/

@@ -734,3 +734,30 @@ STARTUP_MSG:   java = 1.7.0_51
 2014-04-24 11:01:19,574 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 0 blocks took 0 msec to generate and 1 msecs for RPC and NN processing
 2014-04-24 11:01:19,574 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: sent block report, processed command:org.apache.hadoop.hdfs.server.protocol.FinalizeCommand@17da237
 2014-04-24 14:19:20,967 INFO org.apache.hadoop.hdfs.server.datanode.DirectoryScanner: BlockPool BP-1322550291-127.0.1.1-1396353721270 Total blocks: 0, missing metadata files:0, missing block files:0, missing blocks in memory:0, mismatched blocks:0
+2014-04-24 15:42:17,216 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+java.io.IOException: Failed on local exception: java.io.EOFException; Host Details : local host is: "ubuntu/127.0.1.1"; destination host is: "localhost":9000; 
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:764)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.sendHeartbeat(DatanodeProtocolClientSideTranslatorPB.java:167)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.sendHeartBeat(BPServiceActor.java:445)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:525)
+	at org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:676)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.hadoop.ipc.Client$Connection.receiveRpcResponse(Client.java:995)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:891)
+2014-04-24 15:42:19,725 ERROR org.apache.hadoop.hdfs.server.datanode.DataNode: RECEIVED SIGNAL 15: SIGTERM
+2014-04-24 15:42:19,727 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at ubuntu/127.0.1.1
+************************************************************/
