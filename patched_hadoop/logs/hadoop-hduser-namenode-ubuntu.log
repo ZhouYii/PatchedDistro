@@ -6791,3 +6791,15 @@ HostSet(
 2014-04-24 12:13:28,924 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000002728 size 510 bytes.
 2014-04-24 12:13:28,941 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 2726
 2014-04-24 12:13:28,941 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/home/hduser/mydata/hdfs/namenode/current/fsimage_0000000000000002724, cpktTxId=0000000000000002724)
+2014-04-24 13:13:29,492 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
+2014-04-24 13:13:29,492 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2014-04-24 13:13:29,492 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 2729
+2014-04-24 13:13:29,492 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 8 
+2014-04-24 13:13:29,493 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 9 
+2014-04-24 13:13:29,493 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /home/hduser/mydata/hdfs/namenode/current/edits_inprogress_0000000000000002729 -> /home/hduser/mydata/hdfs/namenode/current/edits_0000000000000002729-0000000000000002730
+2014-04-24 13:13:29,493 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 2731
+2014-04-24 13:13:29,533 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50090/getimage?getimage=1&txid=2730&storageInfo=-47:951462109:0:CID-2eac1282-42ce-4174-b911-c696d8651c9d
+2014-04-24 13:13:29,537 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.00s at 0.00 KB/s
+2014-04-24 13:13:29,537 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000002730 size 510 bytes.
+2014-04-24 13:13:29,541 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 2728
+2014-04-24 13:13:29,541 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/home/hduser/mydata/hdfs/namenode/current/fsimage_0000000000000002726, cpktTxId=0000000000000002726)
