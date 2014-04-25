@@ -1,0 +1,46 @@
+2014-04-24 22:03:26,063 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-04-24 22:03:26,066 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-04-24 22:03:26,938 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2014-04-24 22:03:27,201 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2014-04-24 22:03:27,201 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ReduceTask metrics system started
+2014-04-24 22:03:27,233 INFO [main] org.apache.hadoop.mapred.YarnChild: Executing with tokens:
+2014-04-24 22:03:27,234 INFO [main] org.apache.hadoop.mapred.YarnChild: Kind: mapreduce.job, Service: job_1398311343215_0053, Ident: (org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier@536922b)
+2014-04-24 22:03:27,376 INFO [main] org.apache.hadoop.mapred.YarnChild: Sleeping for 0ms before retrying again. Got null now.
+2014-04-24 22:03:28,301 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-04-24 22:03:28,302 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-04-24 22:03:28,612 INFO [main] org.apache.hadoop.mapred.YarnChild: mapreduce.cluster.local.dir for child: /var/hadoop/tmp/nm-local-dir/usercache/ubuntu/appcache/application_1398311343215_0053
+2014-04-24 22:03:28,942 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-04-24 22:03:28,943 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-04-24 22:03:29,128 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+2014-04-24 22:03:29,128 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+2014-04-24 22:03:29,135 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+2014-04-24 22:03:29,137 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+2014-04-24 22:03:29,139 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.local.dir is deprecated. Instead, use mapreduce.cluster.local.dir
+2014-04-24 22:03:29,140 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: job.local.dir is deprecated. Instead, use mapreduce.job.local.dir
+2014-04-24 22:03:29,140 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2014-04-24 22:03:29,141 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+2014-04-24 22:03:29,983 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-04-24 22:03:30,841 INFO [main] org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-04-24 22:03:30,955 INFO [main] org.apache.hadoop.mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@3d7f0649
+2014-04-24 22:03:30,990 INFO [main] org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: MergerManager: memoryLimit=130652568, maxSingleShuffleLimit=32663142, mergeThreshold=86230696, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2014-04-24 22:03:30,994 INFO [EventFetcher for fetching Map Completion Events] org.apache.hadoop.mapreduce.task.reduce.EventFetcher: attempt_1398311343215_0053_r_000001_0 Thread started: EventFetcher for fetching Map Completion Events
+2014-04-24 22:03:31,008 INFO [EventFetcher for fetching Map Completion Events] org.apache.hadoop.mapreduce.task.reduce.EventFetcher: attempt_1398311343215_0053_r_000001_0: Got 1 new map-outputs
+2014-04-24 22:03:31,016 INFO [fetcher#1] org.apache.hadoop.mapreduce.task.reduce.ShuffleSchedulerImpl: Assigning nodec:13562 with 1 to fetcher#1
+2014-04-24 22:03:31,016 INFO [fetcher#1] org.apache.hadoop.mapreduce.task.reduce.ShuffleSchedulerImpl: assigned 1 of 1 to nodec:13562 to fetcher#1
+2014-04-24 22:03:31,077 INFO [fetcher#1] org.apache.hadoop.mapreduce.task.reduce.Fetcher: for url=13562/mapOutput?job=job_1398311343215_0053&reduce=1&map=attempt_1398311343215_0053_m_000000_0 sent hash and received reply
+2014-04-24 22:03:31,082 INFO [fetcher#1] org.apache.hadoop.mapreduce.task.reduce.Fetcher: fetcher#1 about to shuffle output of map attempt_1398311343215_0053_m_000000_0 decomp: 590980 len: 590984 to MEMORY
+2014-04-24 22:03:31,094 INFO [fetcher#1] org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput: Read 590980 bytes from map-output for attempt_1398311343215_0053_m_000000_0
+2014-04-24 22:03:31,099 INFO [fetcher#1] org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 590980, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->590980
+2014-04-24 22:03:31,100 INFO [EventFetcher for fetching Map Completion Events] org.apache.hadoop.mapreduce.task.reduce.EventFetcher: EventFetcher is interrupted.. Returning
+2014-04-24 22:03:31,101 INFO [fetcher#1] org.apache.hadoop.mapreduce.task.reduce.ShuffleSchedulerImpl: nodec:13562 freed by fetcher#1 in 85ms
+2014-04-24 22:03:31,108 INFO [main] org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2014-04-24 22:03:31,119 INFO [main] org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2014-04-24 22:03:31,119 INFO [main] org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 590969 bytes
+2014-04-24 22:03:31,574 INFO [main] org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merged 1 segments, 590980 bytes to disk to satisfy reduce memory limit
+2014-04-24 22:03:31,580 INFO [main] org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 1 files, 590984 bytes from disk
+2014-04-24 22:03:31,582 INFO [main] org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+2014-04-24 22:03:31,582 INFO [main] org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2014-04-24 22:03:31,598 INFO [main] org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 590969 bytes
+2014-04-24 22:03:32,283 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2014-04-24 22:04:01,537 INFO [main] org.apache.hadoop.mapred.Task: Task:attempt_1398311343215_0053_r_000001_0 is done. And is in the process of committing
+2014-04-24 22:04:01,589 INFO [main] org.apache.hadoop.mapred.Task: Task 'attempt_1398311343215_0053_r_000001_0' done.

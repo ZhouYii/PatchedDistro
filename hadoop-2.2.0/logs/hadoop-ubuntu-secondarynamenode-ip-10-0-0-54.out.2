@@ -1,0 +1,192 @@
+2014-04-22 15:39:55,023 INFO  [main] namenode.SecondaryNameNode (StringUtils.java:startupShutdownMessage(601)) - STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = ip-10-0-0-54/10.0.0.54
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 2.2.0
+STARTUP_MSG:   classpath = /home/ubuntu/PatchedDistro/hadoop-2.2.0/etc/hadoop:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-net-3.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-httpclient-3.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jersey-json-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-digester-1.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/hadoop-annotations-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/guava-11.0.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jettison-1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-math-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-configuration-1.6.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jsr305-1.3.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/activation-1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jackson-core-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jackson-xc-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jersey-server-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jersey-core-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-cli-1.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-lang-2.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jsp-api-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/asm-3.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/zookeeper-3.4.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/slf4j-api-1.7.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-collections-3.2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jasper-runtime-5.5.23.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jackson-jaxrs-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/paranamer-2.3.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/junit-4.8.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-codec-1.4.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-el-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/mockito-all-1.8.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jetty-util-6.1.26.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-compress-1.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jsch-0.1.42.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/stax-api-1.0.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/xz-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jasper-compiler-5.5.23.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/servlet-api-2.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/avro-1.7.4.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/xmlenc-0.52.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-logging-1.1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jetty-6.1.26.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/hadoop-auth-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/commons-io-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/netty-3.6.2.Final.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/log4j-1.2.17.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/lib/jets3t-0.6.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/hadoop-common-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/hadoop-common-2.2.0-tests.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/common/hadoop-nfs-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/guava-11.0.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jsr305-1.3.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jackson-core-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-lang-2.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jsp-api-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/asm-3.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jasper-runtime-5.5.23.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-el-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-logging-1.1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-io-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/hadoop-hdfs-2.2.0-tests.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/hadoop-hdfs-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/hdfs/hadoop-hdfs-nfs-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/hadoop-annotations-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/jackson-core-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/jersey-server-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/jersey-core-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/asm-3.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/snappy-java-1.0.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/paranamer-2.3.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/guice-3.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/hamcrest-core-1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/xz-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/aopalliance-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/junit-4.10.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/avro-1.7.4.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/javax.inject-1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/commons-io-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/lib/log4j-1.2.17.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-site-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-common-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-client-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-tests-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-common-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-api-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/hadoop-annotations-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/jackson-core-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/asm-3.2.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/guice-3.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/hamcrest-core-1.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/xz-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/junit-4.10.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/javax.inject-1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/commons-io-2.1.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.2.0-tests.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.2.0.jar:/home/ubuntu/PatchedDistro/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.2.0.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = Unknown -r Unknown; compiled by 'Joey' on 2014-03-24T00:00Z
+STARTUP_MSG:   java = 1.7.0_51
+************************************************************/
+2014-04-22 15:39:55,037 INFO  [main] namenode.SecondaryNameNode (SignalLogger.java:register(91)) - registered UNIX signal handlers for [TERM, HUP, INT]
+2014-04-22 15:39:56,275 WARN  [main] impl.MetricsConfig (MetricsConfig.java:loadFirst(124)) - Cannot locate configuration: tried hadoop-metrics2-secondarynamenode.properties,hadoop-metrics2.properties
+2014-04-22 15:39:56,398 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(344)) - Scheduled snapshot period at 10 second(s).
+2014-04-22 15:39:56,398 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:start(183)) - SecondaryNameNode metrics system started
+2014-04-22 15:39:56,772 INFO  [main] common.Storage (Storage.java:tryLock(665)) - Lock on /var/hadoop/tmp/dfs/namesecondary/in_use.lock acquired by nodename 29551@ip-10-0-0-54
+2014-04-22 15:39:56,924 INFO  [main] namenode.HostFileManager (HostFileManager.java:refresh(304)) - read includes:
+HostSet(
+)
+2014-04-22 15:39:56,924 INFO  [main] namenode.HostFileManager (HostFileManager.java:refresh(311)) - read excludes:
+HostSet(
+)
+2014-04-22 15:39:56,928 INFO  [main] blockmanagement.DatanodeManager (DatanodeManager.java:<init>(210)) - dfs.block.invalidate.limit=1000
+2014-04-22 15:39:56,932 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(328)) - Computing capacity for map BlocksMap
+2014-04-22 15:39:56,932 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(329)) - VM type       = 64-bit
+2014-04-22 15:39:56,935 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(330)) - 2.0% max memory = 1.8 GB
+2014-04-22 15:39:56,936 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(332)) - capacity      = 2^22 = 4194304 entries
+2014-04-22 15:39:56,945 INFO  [main] blockmanagement.BlockManager (BlockManager.java:createBlockTokenSecretManager(314)) - dfs.block.access.token.enable=false
+2014-04-22 15:39:56,946 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(300)) - defaultReplication         = 2
+2014-04-22 15:39:56,946 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(301)) - maxReplication             = 512
+2014-04-22 15:39:56,949 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(302)) - minReplication             = 1
+2014-04-22 15:39:56,949 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(303)) - maxReplicationStreams      = 2
+2014-04-22 15:39:56,949 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(304)) - shouldCheckForEnoughRacks  = false
+2014-04-22 15:39:56,949 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(305)) - replicationRecheckInterval = 3000
+2014-04-22 15:39:56,950 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(306)) - encryptDataTransfer        = false
+2014-04-22 15:39:56,951 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(612)) - fsOwner             = ubuntu (auth:SIMPLE)
+2014-04-22 15:39:56,951 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(613)) - supergroup          = supergroup
+2014-04-22 15:39:56,951 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(614)) - isPermissionEnabled = true
+2014-04-22 15:39:56,951 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(628)) - HA Enabled: false
+2014-04-22 15:39:56,955 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(665)) - Append Enabled: true
+2014-04-22 15:39:57,040 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(328)) - Computing capacity for map INodeMap
+2014-04-22 15:39:57,040 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(329)) - VM type       = 64-bit
+2014-04-22 15:39:57,040 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(330)) - 1.0% max memory = 1.8 GB
+2014-04-22 15:39:57,040 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(332)) - capacity      = 2^21 = 2097152 entries
+2014-04-22 15:39:57,121 INFO  [main] namenode.NameNode (FSDirectory.java:<init>(173)) - Caching file names occuring more than 10 times
+2014-04-22 15:39:57,127 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(4362)) - dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2014-04-22 15:39:57,130 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(4363)) - dfs.namenode.safemode.min.datanodes = 0
+2014-04-22 15:39:57,130 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(4364)) - dfs.namenode.safemode.extension     = 30000
+2014-04-22 15:39:57,247 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-04-22 15:39:57,327 INFO  [main] http.HttpServer (HttpServer.java:addGlobalFilter(525)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2014-04-22 15:39:57,331 INFO  [main] http.HttpServer (HttpServer.java:addFilter(503)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context secondary
+2014-04-22 15:39:57,331 INFO  [main] http.HttpServer (HttpServer.java:addFilter(510)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2014-04-22 15:39:57,331 INFO  [main] http.HttpServer (HttpServer.java:addFilter(510)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2014-04-22 15:39:57,348 INFO  [main] http.HttpServer (HttpServer.java:start(687)) - Jetty bound to port 50090
+2014-04-22 15:39:57,348 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - jetty-6.1.26
+2014-04-22 15:39:57,751 INFO  [main] mortbay.log (Slf4jLog.java:info(67)) - Started SelectChannelConnector@0.0.0.0:50090
+2014-04-22 15:39:57,751 INFO  [main] namenode.SecondaryNameNode (SecondaryNameNode.java:initialize(279)) - Web server init done
+2014-04-22 15:39:57,751 INFO  [main] namenode.SecondaryNameNode (SecondaryNameNode.java:initialize(285)) - Secondary Web-server up at: 0.0.0.0:50090
+2014-04-22 15:39:57,751 INFO  [main] namenode.SecondaryNameNode (SecondaryNameNode.java:initialize(286)) - Checkpoint Period   :3600 secs (60 min)
+2014-04-22 15:39:57,752 INFO  [main] namenode.SecondaryNameNode (SecondaryNameNode.java:initialize(288)) - Log Size Trigger    :1000000 txns
+2014-04-22 15:41:17,807 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310
+Start Time           : Tue Apr 22 15:39:55 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310. Already tried 0 time(s); maxRetries=45
+2014-04-22 15:41:37,819 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310
+Start Time           : Tue Apr 22 15:39:55 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310. Already tried 1 time(s); maxRetries=45
+2014-04-22 15:41:57,832 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310
+Start Time           : Tue Apr 22 15:39:55 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310. Already tried 2 time(s); maxRetries=45
+2014-04-22 15:42:17,853 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310
+Start Time           : Tue Apr 22 15:39:55 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310. Already tried 3 time(s); maxRetries=45
+2014-04-22 15:42:37,875 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310
+Start Time           : Tue Apr 22 15:39:55 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310. Already tried 4 time(s); maxRetries=45
+2014-04-22 15:42:57,876 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310
+Start Time           : Tue Apr 22 15:39:55 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310. Already tried 5 time(s); maxRetries=45
+2014-04-22 15:43:17,880 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310
+Start Time           : Tue Apr 22 15:39:55 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310. Already tried 6 time(s); maxRetries=45
+2014-04-22 15:43:37,889 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310
+Start Time           : Tue Apr 22 15:39:55 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310. Already tried 7 time(s); maxRetries=45
+2014-04-22 15:43:57,906 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310
+Start Time           : Tue Apr 22 15:39:55 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310. Already tried 8 time(s); maxRetries=45
+2014-04-22 15:44:17,927 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310
+Start Time           : Tue Apr 22 15:39:55 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310. Already tried 9 time(s); maxRetries=45
+2014-04-22 15:44:37,935 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310
+Start Time           : Tue Apr 22 15:39:55 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310. Already tried 10 time(s); maxRetries=45
+2014-04-22 15:44:57,952 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310
+Start Time           : Tue Apr 22 15:39:55 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310. Already tried 11 time(s); maxRetries=45
+2014-04-22 15:45:17,968 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310
+Start Time           : Tue Apr 22 15:39:55 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310. Already tried 12 time(s); maxRetries=45
+2014-04-22 15:45:37,974 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310
+Start Time           : Tue Apr 22 15:39:55 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310. Already tried 13 time(s); maxRetries=45
+2014-04-22 15:45:57,995 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310
+Start Time           : Tue Apr 22 15:39:55 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310. Already tried 14 time(s); maxRetries=45
+2014-04-22 15:46:18,015 INFO  [SecondaryNameNode Status
+Name Node Address    : ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310
+Start Time           : Tue Apr 22 15:39:55 UTC 2014
+Last Checkpoint Time : --
+Checkpoint Period    : 3600 seconds
+Checkpoint Size      : 976.56 KB (= 1000000 bytes)
+Checkpoint Dirs      : [file:///var/hadoop/tmp/dfs/namesecondary]
+Checkpoint Edits Dirs: [file:///var/hadoop/tmp/dfs/namesecondary]] ipc.Client (Client.java:handleConnectionTimeout(755)) - Retrying connect to server: ec2-54-186-165-248.us-west-2.compute.amazonaws.com/54.186.165.248:54310. Already tried 15 time(s); maxRetries=45
+2014-04-22 15:46:26,750 ERROR [SIGTERM handler] namenode.SecondaryNameNode (SignalLogger.java:handle(60)) - RECEIVED SIGNAL 15: SIGTERM
+2014-04-22 15:46:26,754 INFO  [Thread-1] namenode.SecondaryNameNode (StringUtils.java:run(627)) - SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at ip-10-0-0-54/10.0.0.54
+************************************************************/

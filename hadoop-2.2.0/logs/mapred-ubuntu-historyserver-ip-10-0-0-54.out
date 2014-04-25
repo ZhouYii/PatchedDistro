@@ -1,0 +1,16 @@
+Apr 24, 2014 11:25:05 PM com.google.inject.servlet.InternalServletModule$BackwardsCompatibleServletContextProvider get
+WARNING: You are attempting to use a deprecated API (specifically, attempting to @Inject ServletContext inside an eagerly created singleton. While we allow this for backwards compatibility, be warned that this MAY have unexpected behavior if you have more than one injector (with ServletModule) running in the same JVM. Please consult the Guice documentation at http://code.google.com/p/google-guice/wiki/Servlets for more information.
+Apr 24, 2014 11:25:05 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+INFO: Registering org.apache.hadoop.mapreduce.v2.hs.webapp.HsWebServices as a root resource class
+Apr 24, 2014 11:25:05 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+INFO: Registering org.apache.hadoop.mapreduce.v2.hs.webapp.JAXBContextResolver as a provider class
+Apr 24, 2014 11:25:05 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+INFO: Registering org.apache.hadoop.yarn.webapp.GenericExceptionHandler as a provider class
+Apr 24, 2014 11:25:05 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.9 09/02/2011 11:17 AM'
+Apr 24, 2014 11:25:05 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFO: Binding org.apache.hadoop.mapreduce.v2.hs.webapp.JAXBContextResolver to GuiceManagedComponentProvider with the scope "Singleton"
+Apr 24, 2014 11:25:06 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFO: Binding org.apache.hadoop.yarn.webapp.GenericExceptionHandler to GuiceManagedComponentProvider with the scope "Singleton"
+Apr 24, 2014 11:25:07 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFO: Binding org.apache.hadoop.mapreduce.v2.hs.webapp.HsWebServices to GuiceManagedComponentProvider with the scope "PerRequest"
