@@ -17,5 +17,12 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
-
+<property>
+  <name>dfs.replication</name>
+  <value>2</value>
+</property>
+<property>
+  <name>dfs.namenode.http-address</name>
+  <value>ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070</value>
+</property>
 </configuration>

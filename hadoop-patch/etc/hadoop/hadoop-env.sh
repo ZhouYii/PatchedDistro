@@ -24,7 +24,7 @@
 # remote nodes.
 
 # The java implementation to use.
-export JAVA_HOME=${JAVA_HOME}
+export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64/jre"
 
 # The jsvc implementation to use. Jsvc is required to run secure datanodes.
 #export JSVC_HOME=${JSVC_HOME}
@@ -46,15 +46,16 @@ done
 
 # Extra Java runtime options.  Empty by default.
 export HADOOP_OPTS="$HADOOP_OPTS -Djava.net.preferIPv4Stack=true"
+export HADOOP_OPTS="$HADOOP_OPTS -Xmx2048m"
 
 # Command specific options appended to HADOOP_OPTS when specified
-export HADOOP_NAMENODE_OPTS="-Dhadoop.security.logger=${HADOOP_SECURITY_LOGGER:-INFO,RFAS} -Dhdfs.audit.logger=${HDFS_AUDIT_LOGGER:-INFO,NullAppender} $HADOOP_NAMENODE_OPTS"
+export HADOOP_NAMENODE_OPTS="-Dhadoop.security.logger=${HADOOP_SECURITY_LOGGER:-INFO,RFAS,stdout} -Dhdfs.audit.logger=${HDFS_AUDIT_LOGGER:-INFO,NullAppender} $HADOOP_NAMENODE_OPTS"
 export HADOOP_DATANODE_OPTS="-Dhadoop.security.logger=ERROR,RFAS $HADOOP_DATANODE_OPTS"
 
-export HADOOP_SECONDARYNAMENODE_OPTS="-Dhadoop.security.logger=${HADOOP_SECURITY_LOGGER:-INFO,RFAS} -Dhdfs.audit.logger=${HDFS_AUDIT_LOGGER:-INFO,NullAppender} $HADOOP_SECONDARYNAMENODE_OPTS"
+export HADOOP_SECONDARYNAMENODE_OPTS="-Dhadoop.security.logger=${HADOOP_SECURITY_LOGGER:-INFO,RFAS,stdout} -Dhdfs.audit.logger=${HDFS_AUDIT_LOGGER:-INFO,NullAppender} $HADOOP_SECONDARYNAMENODE_OPTS"
 
 # The following applies to multiple commands (fs, dfs, fsck, distcp etc)
-export HADOOP_CLIENT_OPTS="-Xmx512m $HADOOP_CLIENT_OPTS"
+export HADOOP_CLIENT_OPTS="-Xmx2048m $HADOOP_CLIENT_OPTS"
 #HADOOP_JAVA_PLATFORM_OPTS="-XX:-UsePerfData $HADOOP_JAVA_PLATFORM_OPTS"
 
 # On secure datanodes, user to run the datanode as after dropping privileges

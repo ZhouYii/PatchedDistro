@@ -17,5 +17,6 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
-
+  <name>mapred.job.tracker</name>
+  <value>54.185.107.145:54311</value>
 </configuration>
