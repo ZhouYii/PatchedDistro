@@ -17,9 +17,10 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
+<configuration>
 <property>
   <name>mapred.job.tracker</name>
-  <value>ec2-54-187-121-79.us-west-2.compute.amazonaws.com:54311</value>
+  <value>ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54311</value>
 </property>
 <property>
   <name>mapreduce.framework.name</name>
