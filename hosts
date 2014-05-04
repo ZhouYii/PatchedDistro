@@ -2,6 +2,8 @@
 
 10.0.0.158 nodea
 10.0.0.59 nodeb
+10.0.0.181 nodec
+10.0.0.180 noded
 
 # The following lines are desirable for IPv6 capable hosts
 ::1 ip6-localhost ip6-loopback
