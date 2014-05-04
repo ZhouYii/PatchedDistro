@@ -22,6 +22,10 @@
   <value>4</value>
 </property>
 <property>
+  <name>dfs.datanode.data.dir</name>
+  <value>/var/hadoop</value>
+</property>
+<property>
   <name>dfs.namenode.http-address</name>
   <value>ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070</value>
 </property>
