@@ -1,4 +1,4 @@
-2014-05-04 23:39:02,439 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+2014-05-05 03:49:43,185 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
 /************************************************************
 STARTUP_MSG: Starting SecondaryNameNode
 STARTUP_MSG:   host = ip-10-0-0-158/10.0.0.158
@@ -8,167 +8,102 @@ STARTUP_MSG:   classpath = /home/ubuntu/PatchedDistro/hadoop-patch/etc/hadoop:/h
 STARTUP_MSG:   build = Unknown -r Unknown; compiled by 'root' on 2014-05-04T05:58Z
 STARTUP_MSG:   java = 1.7.0_51
 ************************************************************/
-2014-05-04 23:39:02,447 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: registered UNIX signal handlers for [TERM, HUP, INT]
-2014-05-04 23:39:03,138 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2014-05-04 23:39:03,404 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
-2014-05-04 23:39:03,540 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
-2014-05-04 23:39:03,540 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: SecondaryNameNode metrics system started
-2014-05-04 23:39:03,867 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /var/hadoop/tmp/dfs/namesecondary/in_use.lock acquired by nodename 12201@ip-10-0-0-158
-2014-05-04 23:39:03,991 INFO org.apache.hadoop.hdfs.server.namenode.HostFileManager: read includes:
+2014-05-05 03:49:43,193 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2014-05-05 03:49:43,908 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-05-05 03:49:44,257 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2014-05-05 03:49:44,359 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2014-05-05 03:49:44,359 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: SecondaryNameNode metrics system started
+2014-05-05 03:49:44,634 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /var/hadoop/tmp/dfs/namesecondary/in_use.lock acquired by nodename 19045@ip-10-0-0-158
+2014-05-05 03:49:44,769 INFO org.apache.hadoop.hdfs.server.namenode.HostFileManager: read includes:
 HostSet(
 )
-2014-05-04 23:39:03,991 INFO org.apache.hadoop.hdfs.server.namenode.HostFileManager: read excludes:
+2014-05-05 03:49:44,769 INFO org.apache.hadoop.hdfs.server.namenode.HostFileManager: read excludes:
 HostSet(
 )
-2014-05-04 23:39:03,994 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
-2014-05-04 23:39:03,998 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlocksMap
-2014-05-04 23:39:03,998 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
-2014-05-04 23:39:03,999 INFO org.apache.hadoop.util.GSet: 2.0% max memory = 889 MB
-2014-05-04 23:39:03,999 INFO org.apache.hadoop.util.GSet: capacity      = 2^21 = 2097152 entries
-2014-05-04 23:39:04,006 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.block.access.token.enable=false
-2014-05-04 23:39:04,006 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: defaultReplication         = 4
-2014-05-04 23:39:04,006 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplication             = 512
-2014-05-04 23:39:04,006 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: minReplication             = 1
-2014-05-04 23:39:04,006 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplicationStreams      = 2
-2014-05-04 23:39:04,006 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: shouldCheckForEnoughRacks  = false
-2014-05-04 23:39:04,006 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: replicationRecheckInterval = 3000
-2014-05-04 23:39:04,006 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: encryptDataTransfer        = false
-2014-05-04 23:39:04,007 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner             = ubuntu (auth:SIMPLE)
-2014-05-04 23:39:04,007 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup          = supergroup
-2014-05-04 23:39:04,008 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled = true
-2014-05-04 23:39:04,008 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: HA Enabled: false
-2014-05-04 23:39:04,011 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Append Enabled: true
-2014-05-04 23:39:04,145 INFO org.apache.hadoop.util.GSet: Computing capacity for map INodeMap
-2014-05-04 23:39:04,146 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
-2014-05-04 23:39:04,146 INFO org.apache.hadoop.util.GSet: 1.0% max memory = 889 MB
-2014-05-04 23:39:04,146 INFO org.apache.hadoop.util.GSet: capacity      = 2^20 = 1048576 entries
-2014-05-04 23:39:04,146 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times
-2014-05-04 23:39:04,151 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
-2014-05-04 23:39:04,151 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
-2014-05-04 23:39:04,151 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
-2014-05-04 23:39:04,263 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2014-05-04 23:39:04,374 INFO org.apache.hadoop.http.HttpServer: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
-2014-05-04 23:39:04,377 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context secondary
-2014-05-04 23:39:04,377 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
-2014-05-04 23:39:04,377 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
-2014-05-04 23:39:04,392 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
-2014-05-04 23:39:04,392 INFO org.mortbay.log: jetty-6.1.26
-2014-05-04 23:39:04,714 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
-2014-05-04 23:39:04,714 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
-2014-05-04 23:39:04,714 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
-2014-05-04 23:39:04,714 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
-2014-05-04 23:39:04,714 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :1000000 txns
-2014-05-04 23:40:04,800 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint
-org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Log not rolled. Name node is in safe mode.
-The reported blocks 454 needs additional 320 blocks to reach the threshold 0.9990 of total blocks 774.
-Safe mode will be turned off automatically
-	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.rollEditLog(FSNamesystem.java:5047)
-	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.rollEditLog(NameNodeRpcServer.java:832)
-	at org.apache.hadoop.hdfs.protocolPB.NamenodeProtocolServerSideTranslatorPB.rollEditLog(NamenodeProtocolServerSideTranslatorPB.java:139)
-	at org.apache.hadoop.hdfs.protocol.proto.NamenodeProtocolProtos$NamenodeProtocolService$2.callBlockingMethod(NamenodeProtocolProtos.java:11214)
-	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
-	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
-	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
-	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at javax.security.auth.Subject.doAs(Subject.java:415)
-	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
-	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
-
-	at org.apache.hadoop.ipc.Client.call(Client.java:1347)
-	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
-	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
-	at com.sun.proxy.$Proxy8.rollEditLog(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
-	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
-	at com.sun.proxy.$Proxy8.rollEditLog(Unknown Source)
-	at org.apache.hadoop.hdfs.protocolPB.NamenodeProtocolTranslatorPB.rollEditLog(NamenodeProtocolTranslatorPB.java:139)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doCheckpoint(SecondaryNameNode.java:502)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork(SecondaryNameNode.java:380)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:346)
-	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:456)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:342)
-	at java.lang.Thread.run(Thread.java:744)
-2014-05-04 23:41:04,812 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint
-org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Log not rolled. Name node is in safe mode.
-The reported blocks 454 needs additional 320 blocks to reach the threshold 0.9990 of total blocks 774.
-Safe mode will be turned off automatically
-	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.rollEditLog(FSNamesystem.java:5047)
-	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.rollEditLog(NameNodeRpcServer.java:832)
-	at org.apache.hadoop.hdfs.protocolPB.NamenodeProtocolServerSideTranslatorPB.rollEditLog(NamenodeProtocolServerSideTranslatorPB.java:139)
-	at org.apache.hadoop.hdfs.protocol.proto.NamenodeProtocolProtos$NamenodeProtocolService$2.callBlockingMethod(NamenodeProtocolProtos.java:11214)
-	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
-	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
-	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
-	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at javax.security.auth.Subject.doAs(Subject.java:415)
-	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
-	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
-
-	at org.apache.hadoop.ipc.Client.call(Client.java:1347)
-	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
-	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
-	at com.sun.proxy.$Proxy8.rollEditLog(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
-	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
-	at com.sun.proxy.$Proxy8.rollEditLog(Unknown Source)
-	at org.apache.hadoop.hdfs.protocolPB.NamenodeProtocolTranslatorPB.rollEditLog(NamenodeProtocolTranslatorPB.java:139)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doCheckpoint(SecondaryNameNode.java:502)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork(SecondaryNameNode.java:380)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:346)
-	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:456)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:342)
-	at java.lang.Thread.run(Thread.java:744)
-2014-05-04 23:42:04,822 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint
-org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Log not rolled. Name node is in safe mode.
-The reported blocks 454 needs additional 320 blocks to reach the threshold 0.9990 of total blocks 774.
-Safe mode will be turned off automatically
-	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.rollEditLog(FSNamesystem.java:5047)
-	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.rollEditLog(NameNodeRpcServer.java:832)
-	at org.apache.hadoop.hdfs.protocolPB.NamenodeProtocolServerSideTranslatorPB.rollEditLog(NamenodeProtocolServerSideTranslatorPB.java:139)
-	at org.apache.hadoop.hdfs.protocol.proto.NamenodeProtocolProtos$NamenodeProtocolService$2.callBlockingMethod(NamenodeProtocolProtos.java:11214)
-	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
-	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
-	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
-	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at javax.security.auth.Subject.doAs(Subject.java:415)
-	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
-	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
-
-	at org.apache.hadoop.ipc.Client.call(Client.java:1347)
-	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
-	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
-	at com.sun.proxy.$Proxy8.rollEditLog(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
-	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
-	at com.sun.proxy.$Proxy8.rollEditLog(Unknown Source)
-	at org.apache.hadoop.hdfs.protocolPB.NamenodeProtocolTranslatorPB.rollEditLog(NamenodeProtocolTranslatorPB.java:139)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doCheckpoint(SecondaryNameNode.java:502)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork(SecondaryNameNode.java:380)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:346)
-	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:456)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:342)
-	at java.lang.Thread.run(Thread.java:744)
-2014-05-04 23:42:11,800 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: RECEIVED SIGNAL 15: SIGTERM
-2014-05-04 23:42:11,806 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+2014-05-05 03:49:44,773 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+2014-05-05 03:49:44,776 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlocksMap
+2014-05-05 03:49:44,776 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2014-05-05 03:49:44,777 INFO org.apache.hadoop.util.GSet: 2.0% max memory = 889 MB
+2014-05-05 03:49:44,777 INFO org.apache.hadoop.util.GSet: capacity      = 2^21 = 2097152 entries
+2014-05-05 03:49:44,784 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.block.access.token.enable=false
+2014-05-05 03:49:44,784 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: defaultReplication         = 4
+2014-05-05 03:49:44,784 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplication             = 512
+2014-05-05 03:49:44,784 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: minReplication             = 1
+2014-05-05 03:49:44,784 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplicationStreams      = 2
+2014-05-05 03:49:44,784 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: shouldCheckForEnoughRacks  = false
+2014-05-05 03:49:44,784 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: replicationRecheckInterval = 3000
+2014-05-05 03:49:44,784 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: encryptDataTransfer        = false
+2014-05-05 03:49:44,785 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner             = ubuntu (auth:SIMPLE)
+2014-05-05 03:49:44,785 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup          = supergroup
+2014-05-05 03:49:44,785 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled = true
+2014-05-05 03:49:44,786 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: HA Enabled: false
+2014-05-05 03:49:44,789 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Append Enabled: true
+2014-05-05 03:49:44,884 INFO org.apache.hadoop.util.GSet: Computing capacity for map INodeMap
+2014-05-05 03:49:44,884 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2014-05-05 03:49:44,884 INFO org.apache.hadoop.util.GSet: 1.0% max memory = 889 MB
+2014-05-05 03:49:44,884 INFO org.apache.hadoop.util.GSet: capacity      = 2^20 = 1048576 entries
+2014-05-05 03:49:44,885 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times
+2014-05-05 03:49:44,889 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2014-05-05 03:49:44,889 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2014-05-05 03:49:44,890 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+2014-05-05 03:49:44,944 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-05-05 03:49:45,012 INFO org.apache.hadoop.http.HttpServer: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2014-05-05 03:49:45,015 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context secondary
+2014-05-05 03:49:45,016 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2014-05-05 03:49:45,016 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2014-05-05 03:49:45,026 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
+2014-05-05 03:49:45,026 INFO org.mortbay.log: jetty-6.1.26
+2014-05-05 03:49:45,351 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
+2014-05-05 03:49:45,351 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2014-05-05 03:49:45,352 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
+2014-05-05 03:49:45,352 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2014-05-05 03:49:45,352 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :1000000 txns
+2014-05-05 03:50:45,567 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has changed. Downloading updated image from NN.
+2014-05-05 03:50:45,570 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070/getimage?getimage=1&txid=623&storageInfo=-47:1706908940:0:CID-d15da203-f6c5-4f57-ae24-0c30923abeda
+2014-05-05 03:50:45,799 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.23s at 21.93 KB/s
+2014-05-05 03:50:45,799 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000623 size 5560 bytes.
+2014-05-05 03:50:45,810 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070/getimage?getedit=1&startTxId=624&endTxId=973&storageInfo=-47:1706908940:0:CID-d15da203-f6c5-4f57-ae24-0c30923abeda
+2014-05-05 03:50:45,871 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.06s at 16786.89 KB/s
+2014-05-05 03:50:45,871 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000624-0000000000000000973_0000001399261845810 size 0 bytes.
+2014-05-05 03:50:45,872 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070/getimage?getedit=1&startTxId=974&endTxId=975&storageInfo=-47:1706908940:0:CID-d15da203-f6c5-4f57-ae24-0c30923abeda
+2014-05-05 03:50:45,882 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.01s at 0.00 KB/s
+2014-05-05 03:50:45,882 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000974-0000000000000000975_0000001399261845872 size 0 bytes.
+2014-05-05 03:50:45,961 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Loading image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000623 using no compression
+2014-05-05 03:50:45,961 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Number of files = 39
+2014-05-05 03:50:46,006 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Number of files under construction = 1
+2014-05-05 03:50:46,038 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000623 of size 5560 bytes loaded in 0 seconds.
+2014-05-05 03:50:46,046 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Loaded image for txid 623 from /var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000623
+2014-05-05 03:50:46,046 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2014-05-05 03:50:46,074 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 2 stream(s).
+2014-05-05 03:50:46,084 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000624-0000000000000000973 expecting start txid #624
+2014-05-05 03:50:46,084 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000624-0000000000000000973
+2014-05-05 03:50:46,194 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000624-0000000000000000973 of size 1048576 edits # 350 loaded in 0 seconds
+2014-05-05 03:50:46,194 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000974-0000000000000000975 expecting start txid #974
+2014-05-05 03:50:46,194 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000974-0000000000000000975
+2014-05-05 03:50:46,194 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000974-0000000000000000975 of size 30 edits # 2 loaded in 0 seconds
+2014-05-05 03:50:46,199 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Saving image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage.ckpt_0000000000000000975 using no compression
+2014-05-05 03:50:46,209 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage.ckpt_0000000000000000975 of size 6590 bytes saved in 0 seconds.
+2014-05-05 03:50:46,217 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 623
+2014-05-05 03:50:46,217 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000552, cpktTxId=0000000000000000552)
+2014-05-05 03:50:46,233 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070/getimage?putimage=1&txid=975&port=50090&storageInfo=-47:1706908940:0:CID-d15da203-f6c5-4f57-ae24-0c30923abeda
+2014-05-05 03:50:46,465 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.23s at 0.00 KB/s
+2014-05-05 03:50:46,465 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 975 to namenode at ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070
+2014-05-05 03:50:46,465 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 6590
+2014-05-05 04:17:50,461 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-186-230-200.us-west-2.compute.amazonaws.com/10.0.0.158:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-05-05 04:17:51,462 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-186-230-200.us-west-2.compute.amazonaws.com/10.0.0.158:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-05-05 04:17:52,462 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-186-230-200.us-west-2.compute.amazonaws.com/10.0.0.158:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-05-05 04:17:53,463 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-186-230-200.us-west-2.compute.amazonaws.com/10.0.0.158:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-05-05 04:17:54,463 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-186-230-200.us-west-2.compute.amazonaws.com/10.0.0.158:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-05-05 04:17:55,464 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-186-230-200.us-west-2.compute.amazonaws.com/10.0.0.158:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-05-05 04:17:56,464 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-186-230-200.us-west-2.compute.amazonaws.com/10.0.0.158:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-05-05 04:17:57,465 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-186-230-200.us-west-2.compute.amazonaws.com/10.0.0.158:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-05-05 04:17:58,465 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: ec2-54-186-230-200.us-west-2.compute.amazonaws.com/10.0.0.158:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2014-05-05 04:17:59,438 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: RECEIVED SIGNAL 15: SIGTERM
+2014-05-05 04:17:59,440 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
 /************************************************************
 SHUTDOWN_MSG: Shutting down SecondaryNameNode at ip-10-0-0-158/10.0.0.158
 ************************************************************/
-2014-05-04 23:57:34,766 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+2014-05-05 04:18:31,533 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
 /************************************************************
 STARTUP_MSG: Starting SecondaryNameNode
 STARTUP_MSG:   host = ip-10-0-0-158/10.0.0.158
@@ -178,167 +113,93 @@ STARTUP_MSG:   classpath = /home/ubuntu/PatchedDistro/hadoop-patch/etc/hadoop:/h
 STARTUP_MSG:   build = Unknown -r Unknown; compiled by 'root' on 2014-05-04T05:58Z
 STARTUP_MSG:   java = 1.7.0_51
 ************************************************************/
-2014-05-04 23:57:34,789 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: registered UNIX signal handlers for [TERM, HUP, INT]
-2014-05-04 23:57:35,501 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2014-05-04 23:57:35,754 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
-2014-05-04 23:57:35,894 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
-2014-05-04 23:57:35,894 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: SecondaryNameNode metrics system started
-2014-05-04 23:57:36,213 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /var/hadoop/tmp/dfs/namesecondary/in_use.lock acquired by nodename 2508@ip-10-0-0-158
-2014-05-04 23:57:36,372 INFO org.apache.hadoop.hdfs.server.namenode.HostFileManager: read includes:
+2014-05-05 04:18:31,541 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2014-05-05 04:18:32,249 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-05-05 04:18:32,558 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2014-05-05 04:18:32,695 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2014-05-05 04:18:32,696 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: SecondaryNameNode metrics system started
+2014-05-05 04:18:32,978 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /var/hadoop/tmp/dfs/namesecondary/in_use.lock acquired by nodename 23380@ip-10-0-0-158
+2014-05-05 04:18:33,110 INFO org.apache.hadoop.hdfs.server.namenode.HostFileManager: read includes:
 HostSet(
 )
-2014-05-04 23:57:36,373 INFO org.apache.hadoop.hdfs.server.namenode.HostFileManager: read excludes:
+2014-05-05 04:18:33,110 INFO org.apache.hadoop.hdfs.server.namenode.HostFileManager: read excludes:
 HostSet(
 )
-2014-05-04 23:57:36,376 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
-2014-05-04 23:57:36,380 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlocksMap
-2014-05-04 23:57:36,380 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
-2014-05-04 23:57:36,381 INFO org.apache.hadoop.util.GSet: 2.0% max memory = 889 MB
-2014-05-04 23:57:36,381 INFO org.apache.hadoop.util.GSet: capacity      = 2^21 = 2097152 entries
-2014-05-04 23:57:36,387 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.block.access.token.enable=false
-2014-05-04 23:57:36,387 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: defaultReplication         = 4
-2014-05-04 23:57:36,388 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplication             = 512
-2014-05-04 23:57:36,388 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: minReplication             = 1
-2014-05-04 23:57:36,388 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplicationStreams      = 2
-2014-05-04 23:57:36,388 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: shouldCheckForEnoughRacks  = false
-2014-05-04 23:57:36,388 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: replicationRecheckInterval = 3000
-2014-05-04 23:57:36,388 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: encryptDataTransfer        = false
-2014-05-04 23:57:36,389 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner             = ubuntu (auth:SIMPLE)
-2014-05-04 23:57:36,389 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup          = supergroup
-2014-05-04 23:57:36,389 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled = true
-2014-05-04 23:57:36,389 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: HA Enabled: false
-2014-05-04 23:57:36,392 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Append Enabled: true
-2014-05-04 23:57:36,485 INFO org.apache.hadoop.util.GSet: Computing capacity for map INodeMap
-2014-05-04 23:57:36,485 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
-2014-05-04 23:57:36,485 INFO org.apache.hadoop.util.GSet: 1.0% max memory = 889 MB
-2014-05-04 23:57:36,485 INFO org.apache.hadoop.util.GSet: capacity      = 2^20 = 1048576 entries
-2014-05-04 23:57:36,486 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times
-2014-05-04 23:57:36,490 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
-2014-05-04 23:57:36,490 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
-2014-05-04 23:57:36,490 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
-2014-05-04 23:57:36,574 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2014-05-04 23:57:36,628 INFO org.apache.hadoop.http.HttpServer: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
-2014-05-04 23:57:36,630 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context secondary
-2014-05-04 23:57:36,630 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
-2014-05-04 23:57:36,630 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
-2014-05-04 23:57:36,640 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
-2014-05-04 23:57:36,640 INFO org.mortbay.log: jetty-6.1.26
-2014-05-04 23:57:36,961 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
-2014-05-04 23:57:36,961 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
-2014-05-04 23:57:36,961 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
-2014-05-04 23:57:36,961 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
-2014-05-04 23:57:36,961 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :1000000 txns
-2014-05-04 23:58:37,047 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint
-org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Log not rolled. Name node is in safe mode.
-The reported blocks 0 needs additional 774 blocks to reach the threshold 0.9990 of total blocks 774.
-Safe mode will be turned off automatically
-	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.rollEditLog(FSNamesystem.java:5047)
-	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.rollEditLog(NameNodeRpcServer.java:832)
-	at org.apache.hadoop.hdfs.protocolPB.NamenodeProtocolServerSideTranslatorPB.rollEditLog(NamenodeProtocolServerSideTranslatorPB.java:139)
-	at org.apache.hadoop.hdfs.protocol.proto.NamenodeProtocolProtos$NamenodeProtocolService$2.callBlockingMethod(NamenodeProtocolProtos.java:11214)
-	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
-	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
-	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
-	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at javax.security.auth.Subject.doAs(Subject.java:415)
-	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
-	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
-
-	at org.apache.hadoop.ipc.Client.call(Client.java:1347)
-	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
-	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
-	at com.sun.proxy.$Proxy8.rollEditLog(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
-	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
-	at com.sun.proxy.$Proxy8.rollEditLog(Unknown Source)
-	at org.apache.hadoop.hdfs.protocolPB.NamenodeProtocolTranslatorPB.rollEditLog(NamenodeProtocolTranslatorPB.java:139)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doCheckpoint(SecondaryNameNode.java:502)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork(SecondaryNameNode.java:380)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:346)
-	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:456)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:342)
-	at java.lang.Thread.run(Thread.java:744)
-2014-05-04 23:59:37,060 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint
-org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Log not rolled. Name node is in safe mode.
-The reported blocks 0 needs additional 774 blocks to reach the threshold 0.9990 of total blocks 774.
-Safe mode will be turned off automatically
-	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.rollEditLog(FSNamesystem.java:5047)
-	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.rollEditLog(NameNodeRpcServer.java:832)
-	at org.apache.hadoop.hdfs.protocolPB.NamenodeProtocolServerSideTranslatorPB.rollEditLog(NamenodeProtocolServerSideTranslatorPB.java:139)
-	at org.apache.hadoop.hdfs.protocol.proto.NamenodeProtocolProtos$NamenodeProtocolService$2.callBlockingMethod(NamenodeProtocolProtos.java:11214)
-	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
-	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
-	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
-	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at javax.security.auth.Subject.doAs(Subject.java:415)
-	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
-	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
-
-	at org.apache.hadoop.ipc.Client.call(Client.java:1347)
-	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
-	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
-	at com.sun.proxy.$Proxy8.rollEditLog(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
-	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
-	at com.sun.proxy.$Proxy8.rollEditLog(Unknown Source)
-	at org.apache.hadoop.hdfs.protocolPB.NamenodeProtocolTranslatorPB.rollEditLog(NamenodeProtocolTranslatorPB.java:139)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doCheckpoint(SecondaryNameNode.java:502)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork(SecondaryNameNode.java:380)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:346)
-	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:456)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:342)
-	at java.lang.Thread.run(Thread.java:744)
-2014-05-05 00:00:37,077 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint
-org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Log not rolled. Name node is in safe mode.
-The reported blocks 0 needs additional 774 blocks to reach the threshold 0.9990 of total blocks 774.
-Safe mode will be turned off automatically
-	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.rollEditLog(FSNamesystem.java:5047)
-	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.rollEditLog(NameNodeRpcServer.java:832)
-	at org.apache.hadoop.hdfs.protocolPB.NamenodeProtocolServerSideTranslatorPB.rollEditLog(NamenodeProtocolServerSideTranslatorPB.java:139)
-	at org.apache.hadoop.hdfs.protocol.proto.NamenodeProtocolProtos$NamenodeProtocolService$2.callBlockingMethod(NamenodeProtocolProtos.java:11214)
-	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
-	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
-	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
-	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at javax.security.auth.Subject.doAs(Subject.java:415)
-	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
-	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
-
-	at org.apache.hadoop.ipc.Client.call(Client.java:1347)
-	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
-	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
-	at com.sun.proxy.$Proxy8.rollEditLog(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
-	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
-	at com.sun.proxy.$Proxy8.rollEditLog(Unknown Source)
-	at org.apache.hadoop.hdfs.protocolPB.NamenodeProtocolTranslatorPB.rollEditLog(NamenodeProtocolTranslatorPB.java:139)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doCheckpoint(SecondaryNameNode.java:502)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork(SecondaryNameNode.java:380)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:346)
-	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:456)
-	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:342)
-	at java.lang.Thread.run(Thread.java:744)
-2014-05-05 00:01:20,282 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: RECEIVED SIGNAL 15: SIGTERM
-2014-05-05 00:01:20,285 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+2014-05-05 04:18:33,114 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+2014-05-05 04:18:33,118 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlocksMap
+2014-05-05 04:18:33,118 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2014-05-05 04:18:33,119 INFO org.apache.hadoop.util.GSet: 2.0% max memory = 889 MB
+2014-05-05 04:18:33,119 INFO org.apache.hadoop.util.GSet: capacity      = 2^21 = 2097152 entries
+2014-05-05 04:18:33,125 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.block.access.token.enable=false
+2014-05-05 04:18:33,126 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: defaultReplication         = 4
+2014-05-05 04:18:33,126 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplication             = 512
+2014-05-05 04:18:33,126 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: minReplication             = 1
+2014-05-05 04:18:33,126 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplicationStreams      = 2
+2014-05-05 04:18:33,126 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: shouldCheckForEnoughRacks  = false
+2014-05-05 04:18:33,126 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: replicationRecheckInterval = 3000
+2014-05-05 04:18:33,126 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: encryptDataTransfer        = false
+2014-05-05 04:18:33,127 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner             = ubuntu (auth:SIMPLE)
+2014-05-05 04:18:33,127 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup          = supergroup
+2014-05-05 04:18:33,127 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled = true
+2014-05-05 04:18:33,127 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: HA Enabled: false
+2014-05-05 04:18:33,131 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Append Enabled: true
+2014-05-05 04:18:33,194 INFO org.apache.hadoop.util.GSet: Computing capacity for map INodeMap
+2014-05-05 04:18:33,194 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2014-05-05 04:18:33,194 INFO org.apache.hadoop.util.GSet: 1.0% max memory = 889 MB
+2014-05-05 04:18:33,194 INFO org.apache.hadoop.util.GSet: capacity      = 2^20 = 1048576 entries
+2014-05-05 04:18:33,195 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times
+2014-05-05 04:18:33,199 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2014-05-05 04:18:33,200 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2014-05-05 04:18:33,200 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+2014-05-05 04:18:33,251 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-05-05 04:18:33,318 INFO org.apache.hadoop.http.HttpServer: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2014-05-05 04:18:33,321 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context secondary
+2014-05-05 04:18:33,321 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2014-05-05 04:18:33,321 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2014-05-05 04:18:33,336 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
+2014-05-05 04:18:33,336 INFO org.mortbay.log: jetty-6.1.26
+2014-05-05 04:18:33,711 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
+2014-05-05 04:18:33,711 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2014-05-05 04:18:33,712 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
+2014-05-05 04:18:33,712 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2014-05-05 04:18:33,712 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :1000000 txns
+2014-05-05 04:19:33,902 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has changed. Downloading updated image from NN.
+2014-05-05 04:19:33,905 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070/getimage?getimage=1&txid=975&storageInfo=-47:1706908940:0:CID-d15da203-f6c5-4f57-ae24-0c30923abeda
+2014-05-05 04:19:34,150 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.24s at 24.59 KB/s
+2014-05-05 04:19:34,150 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000975 size 6590 bytes.
+2014-05-05 04:19:34,166 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070/getimage?getedit=1&startTxId=976&endTxId=1218&storageInfo=-47:1706908940:0:CID-d15da203-f6c5-4f57-ae24-0c30923abeda
+2014-05-05 04:19:34,230 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.06s at 16000.00 KB/s
+2014-05-05 04:19:34,230 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000976-0000000000000001218_0000001399263574165 size 0 bytes.
+2014-05-05 04:19:34,231 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070/getimage?getedit=1&startTxId=1219&endTxId=1220&storageInfo=-47:1706908940:0:CID-d15da203-f6c5-4f57-ae24-0c30923abeda
+2014-05-05 04:19:34,239 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.01s at 0.00 KB/s
+2014-05-05 04:19:34,239 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000001219-0000000000000001220_0000001399263574231 size 0 bytes.
+2014-05-05 04:19:34,327 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Loading image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000975 using no compression
+2014-05-05 04:19:34,327 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Number of files = 44
+2014-05-05 04:19:34,361 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Number of files under construction = 0
+2014-05-05 04:19:34,361 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000975 of size 6590 bytes loaded in 0 seconds.
+2014-05-05 04:19:34,361 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Loaded image for txid 975 from /var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000975
+2014-05-05 04:19:34,361 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2014-05-05 04:19:34,388 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 2 stream(s).
+2014-05-05 04:19:34,392 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000976-0000000000000001218 expecting start txid #976
+2014-05-05 04:19:34,392 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000976-0000000000000001218
+2014-05-05 04:19:34,523 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000976-0000000000000001218 of size 1048576 edits # 243 loaded in 0 seconds
+2014-05-05 04:19:34,523 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000001219-0000000000000001220 expecting start txid #1219
+2014-05-05 04:19:34,523 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000001219-0000000000000001220
+2014-05-05 04:19:34,523 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000001219-0000000000000001220 of size 30 edits # 2 loaded in 0 seconds
+2014-05-05 04:19:34,528 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Saving image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage.ckpt_0000000000000001220 using no compression
+2014-05-05 04:19:34,537 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage.ckpt_0000000000000001220 of size 8582 bytes saved in 0 seconds.
+2014-05-05 04:19:34,544 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 975
+2014-05-05 04:19:34,544 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000623, cpktTxId=0000000000000000623)
+2014-05-05 04:19:34,558 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070/getimage?putimage=1&txid=1220&port=50090&storageInfo=-47:1706908940:0:CID-d15da203-f6c5-4f57-ae24-0c30923abeda
+2014-05-05 04:19:34,743 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.19s at 0.00 KB/s
+2014-05-05 04:19:34,743 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 1220 to namenode at ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070
+2014-05-05 04:19:34,744 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 8582
+2014-05-05 04:29:31,620 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: RECEIVED SIGNAL 15: SIGTERM
+2014-05-05 04:29:31,622 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
 /************************************************************
 SHUTDOWN_MSG: Shutting down SecondaryNameNode at ip-10-0-0-158/10.0.0.158
 ************************************************************/
-2014-05-05 00:05:07,597 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+2014-05-05 04:30:03,638 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
 /************************************************************
 STARTUP_MSG: Starting SecondaryNameNode
 STARTUP_MSG:   host = ip-10-0-0-158/10.0.0.158
@@ -348,77 +209,84 @@ STARTUP_MSG:   classpath = /home/ubuntu/PatchedDistro/hadoop-patch/etc/hadoop:/h
 STARTUP_MSG:   build = Unknown -r Unknown; compiled by 'root' on 2014-05-04T05:58Z
 STARTUP_MSG:   java = 1.7.0_51
 ************************************************************/
-2014-05-05 00:05:07,605 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: registered UNIX signal handlers for [TERM, HUP, INT]
-2014-05-05 00:05:08,307 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2014-05-05 00:05:08,563 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
-2014-05-05 00:05:08,725 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
-2014-05-05 00:05:08,725 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: SecondaryNameNode metrics system started
-2014-05-05 00:05:09,020 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /var/hadoop/tmp/dfs/namesecondary/in_use.lock acquired by nodename 5113@ip-10-0-0-158
-2014-05-05 00:05:09,062 INFO org.apache.hadoop.hdfs.server.namenode.HostFileManager: read includes:
+2014-05-05 04:30:03,645 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2014-05-05 04:30:04,356 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-05-05 04:30:04,729 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2014-05-05 04:30:04,849 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2014-05-05 04:30:04,849 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: SecondaryNameNode metrics system started
+2014-05-05 04:30:05,089 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /var/hadoop/tmp/dfs/namesecondary/in_use.lock acquired by nodename 26094@ip-10-0-0-158
+2014-05-05 04:30:05,212 INFO org.apache.hadoop.hdfs.server.namenode.HostFileManager: read includes:
 HostSet(
 )
-2014-05-05 00:05:09,062 INFO org.apache.hadoop.hdfs.server.namenode.HostFileManager: read excludes:
+2014-05-05 04:30:05,212 INFO org.apache.hadoop.hdfs.server.namenode.HostFileManager: read excludes:
 HostSet(
 )
-2014-05-05 00:05:09,065 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
-2014-05-05 00:05:09,067 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlocksMap
-2014-05-05 00:05:09,067 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
-2014-05-05 00:05:09,068 INFO org.apache.hadoop.util.GSet: 2.0% max memory = 889 MB
-2014-05-05 00:05:09,068 INFO org.apache.hadoop.util.GSet: capacity      = 2^21 = 2097152 entries
-2014-05-05 00:05:09,073 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.block.access.token.enable=false
-2014-05-05 00:05:09,073 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: defaultReplication         = 4
-2014-05-05 00:05:09,073 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplication             = 512
-2014-05-05 00:05:09,073 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: minReplication             = 1
-2014-05-05 00:05:09,073 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplicationStreams      = 2
-2014-05-05 00:05:09,073 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: shouldCheckForEnoughRacks  = false
-2014-05-05 00:05:09,073 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: replicationRecheckInterval = 3000
-2014-05-05 00:05:09,073 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: encryptDataTransfer        = false
-2014-05-05 00:05:09,074 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner             = ubuntu (auth:SIMPLE)
-2014-05-05 00:05:09,074 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup          = supergroup
-2014-05-05 00:05:09,074 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled = true
-2014-05-05 00:05:09,074 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: HA Enabled: false
-2014-05-05 00:05:09,076 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Append Enabled: true
-2014-05-05 00:05:09,128 INFO org.apache.hadoop.util.GSet: Computing capacity for map INodeMap
-2014-05-05 00:05:09,128 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
-2014-05-05 00:05:09,128 INFO org.apache.hadoop.util.GSet: 1.0% max memory = 889 MB
-2014-05-05 00:05:09,128 INFO org.apache.hadoop.util.GSet: capacity      = 2^20 = 1048576 entries
-2014-05-05 00:05:09,129 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times
-2014-05-05 00:05:09,131 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
-2014-05-05 00:05:09,131 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
-2014-05-05 00:05:09,131 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
-2014-05-05 00:05:09,166 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2014-05-05 00:05:09,209 INFO org.apache.hadoop.http.HttpServer: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
-2014-05-05 00:05:09,211 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context secondary
-2014-05-05 00:05:09,211 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
-2014-05-05 00:05:09,211 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
-2014-05-05 00:05:09,221 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
-2014-05-05 00:05:09,221 INFO org.mortbay.log: jetty-6.1.26
-2014-05-05 00:05:09,523 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
-2014-05-05 00:05:09,523 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
-2014-05-05 00:05:09,523 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
-2014-05-05 00:05:09,523 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
-2014-05-05 00:05:09,523 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :1000000 txns
-2014-05-05 00:06:09,807 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has changed. Downloading updated image from NN.
-2014-05-05 00:06:09,812 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070/getimage?getimage=1&txid=0&storageInfo=-47:1706908940:0:CID-d15da203-f6c5-4f57-ae24-0c30923abeda
-2014-05-05 00:06:10,171 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.36s at 0.00 KB/s
-2014-05-05 00:06:10,172 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000000 size 198 bytes.
-2014-05-05 00:06:10,192 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070/getimage?getedit=1&startTxId=1&endTxId=2&storageInfo=-47:1706908940:0:CID-d15da203-f6c5-4f57-ae24-0c30923abeda
-2014-05-05 00:06:10,201 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.01s at 0.00 KB/s
-2014-05-05 00:06:10,201 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000001-0000000000000000002_0000001399248370192 size 0 bytes.
-2014-05-05 00:06:10,333 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Loading image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000000 using no compression
-2014-05-05 00:06:10,333 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Number of files = 1
-2014-05-05 00:06:10,347 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Number of files under construction = 0
-2014-05-05 00:06:10,347 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000000 of size 198 bytes loaded in 0 seconds.
-2014-05-05 00:06:10,347 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Loaded image for txid 0 from /var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000000
-2014-05-05 00:06:10,347 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
-2014-05-05 00:06:10,372 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
-2014-05-05 00:06:10,396 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000002 expecting start txid #1
-2014-05-05 00:06:10,397 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000002
-2014-05-05 00:06:10,490 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000002 of size 30 edits # 2 loaded in 0 seconds
-2014-05-05 00:06:10,529 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Saving image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage.ckpt_0000000000000000002 using no compression
-2014-05-05 00:06:10,565 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage.ckpt_0000000000000000002 of size 198 bytes saved in 0 seconds.
-2014-05-05 00:06:10,573 INFO org.apache.hadoop.hdfs.server.namenode.FSImageTransactionalStorageInspector: No version file in /var/hadoop/tmp/dfs/namesecondary
-2014-05-05 00:06:10,600 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070/getimage?putimage=1&txid=2&port=50090&storageInfo=-47:1706908940:0:CID-d15da203-f6c5-4f57-ae24-0c30923abeda
-2014-05-05 00:06:11,228 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.63s at 0.00 KB/s
-2014-05-05 00:06:11,228 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 2 to namenode at ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070
-2014-05-05 00:06:11,228 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 198
+2014-05-05 04:30:05,215 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+2014-05-05 04:30:05,219 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlocksMap
+2014-05-05 04:30:05,219 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2014-05-05 04:30:05,220 INFO org.apache.hadoop.util.GSet: 2.0% max memory = 889 MB
+2014-05-05 04:30:05,220 INFO org.apache.hadoop.util.GSet: capacity      = 2^21 = 2097152 entries
+2014-05-05 04:30:05,226 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.block.access.token.enable=false
+2014-05-05 04:30:05,227 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: defaultReplication         = 4
+2014-05-05 04:30:05,227 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplication             = 512
+2014-05-05 04:30:05,227 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: minReplication             = 1
+2014-05-05 04:30:05,227 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplicationStreams      = 2
+2014-05-05 04:30:05,227 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: shouldCheckForEnoughRacks  = false
+2014-05-05 04:30:05,227 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: replicationRecheckInterval = 3000
+2014-05-05 04:30:05,227 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: encryptDataTransfer        = false
+2014-05-05 04:30:05,228 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner             = ubuntu (auth:SIMPLE)
+2014-05-05 04:30:05,228 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup          = supergroup
+2014-05-05 04:30:05,228 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled = true
+2014-05-05 04:30:05,228 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: HA Enabled: false
+2014-05-05 04:30:05,232 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Append Enabled: true
+2014-05-05 04:30:05,345 INFO org.apache.hadoop.util.GSet: Computing capacity for map INodeMap
+2014-05-05 04:30:05,345 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2014-05-05 04:30:05,345 INFO org.apache.hadoop.util.GSet: 1.0% max memory = 889 MB
+2014-05-05 04:30:05,345 INFO org.apache.hadoop.util.GSet: capacity      = 2^20 = 1048576 entries
+2014-05-05 04:30:05,346 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times
+2014-05-05 04:30:05,350 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2014-05-05 04:30:05,350 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2014-05-05 04:30:05,350 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+2014-05-05 04:30:05,410 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-05-05 04:30:05,476 INFO org.apache.hadoop.http.HttpServer: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2014-05-05 04:30:05,479 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context secondary
+2014-05-05 04:30:05,480 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2014-05-05 04:30:05,480 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2014-05-05 04:30:05,495 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
+2014-05-05 04:30:05,495 INFO org.mortbay.log: jetty-6.1.26
+2014-05-05 04:30:05,831 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
+2014-05-05 04:30:05,831 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2014-05-05 04:30:05,831 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
+2014-05-05 04:30:05,831 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2014-05-05 04:30:05,832 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :1000000 txns
+2014-05-05 04:31:06,025 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has changed. Downloading updated image from NN.
+2014-05-05 04:31:06,028 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070/getimage?getimage=1&txid=1220&storageInfo=-47:1706908940:0:CID-d15da203-f6c5-4f57-ae24-0c30923abeda
+2014-05-05 04:31:06,214 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.19s at 43.24 KB/s
+2014-05-05 04:31:06,214 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000001220 size 8582 bytes.
+2014-05-05 04:31:06,229 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070/getimage?getedit=1&startTxId=1221&endTxId=1327&storageInfo=-47:1706908940:0:CID-d15da203-f6c5-4f57-ae24-0c30923abeda
+2014-05-05 04:31:06,287 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.06s at 17655.17 KB/s
+2014-05-05 04:31:06,287 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000001221-0000000000000001327_0000001399264266228 size 0 bytes.
+2014-05-05 04:31:06,288 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070/getimage?getedit=1&startTxId=1328&endTxId=1329&storageInfo=-47:1706908940:0:CID-d15da203-f6c5-4f57-ae24-0c30923abeda
+2014-05-05 04:31:06,295 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.01s at 0.00 KB/s
+2014-05-05 04:31:06,295 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000001328-0000000000000001329_0000001399264266288 size 0 bytes.
+2014-05-05 04:31:06,350 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Loading image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000001220 using no compression
+2014-05-05 04:31:06,350 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Number of files = 57
+2014-05-05 04:31:06,372 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Number of files under construction = 1
+2014-05-05 04:31:06,389 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000001220 of size 8582 bytes loaded in 0 seconds.
+2014-05-05 04:31:06,389 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Loaded image for txid 1220 from /var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000001220
+2014-05-05 04:31:06,389 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2014-05-05 04:31:06,400 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 2 stream(s).
+2014-05-05 04:31:06,445 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000001221-0000000000000001327 expecting start txid #1221
+2014-05-05 04:31:06,446 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000001221-0000000000000001327
+2014-05-05 04:31:06,562 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000001221-0000000000000001327 of size 1048576 edits # 107 loaded in 0 seconds
+2014-05-05 04:31:06,562 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000001328-0000000000000001329 expecting start txid #1328
+2014-05-05 04:31:06,562 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000001328-0000000000000001329
+2014-05-05 04:31:06,563 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /var/hadoop/tmp/dfs/namesecondary/current/edits_0000000000000001328-0000000000000001329 of size 30 edits # 2 loaded in 0 seconds
+2014-05-05 04:31:06,585 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Saving image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage.ckpt_0000000000000001329 using no compression
+2014-05-05 04:31:06,604 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Image file /var/hadoop/tmp/dfs/namesecondary/current/fsimage.ckpt_0000000000000001329 of size 9897 bytes saved in 0 seconds.
+2014-05-05 04:31:06,613 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 1220
+2014-05-05 04:31:06,613 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/var/hadoop/tmp/dfs/namesecondary/current/fsimage_0000000000000000975, cpktTxId=0000000000000000975)
+2014-05-05 04:31:06,645 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070/getimage?putimage=1&txid=1329&port=50090&storageInfo=-47:1706908940:0:CID-d15da203-f6c5-4f57-ae24-0c30923abeda
+2014-05-05 04:31:06,853 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.21s at 0.00 KB/s
+2014-05-05 04:31:06,853 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 1329 to namenode at ec2-54-186-230-200.us-west-2.compute.amazonaws.com:50070
+2014-05-05 04:31:06,854 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 9897
