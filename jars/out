@@ -2,84 +2,111 @@ Locality Hints Len:8
 Locality Hints Size:8
 NumReduceTasks:8
 LocalityHints:[10.0.0.158, 10.0.0.59, 10.0.0.181, 10.0.0.180, 10.0.0.59#1, 10.0.0.181#1, 10.0.0.180#1, 10.0.0.158#2]
-14/05/05 05:15:38 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-14/05/05 05:15:39 INFO client.RMProxy: Connecting to ResourceManager at ec2-54-186-230-200.us-west-2.compute.amazonaws.com/10.0.0.158:8032
-14/05/05 05:15:39 WARN mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
-14/05/05 05:15:40 INFO input.FileInputFormat: Total input paths to process : 1
-14/05/05 05:15:40 INFO mapreduce.JobSubmitter: number of splits:1
-14/05/05 05:15:40 INFO Configuration.deprecation: user.name is deprecated. Instead, use mapreduce.job.user.name
-14/05/05 05:15:40 INFO Configuration.deprecation: mapred.jar is deprecated. Instead, use mapreduce.job.jar
-14/05/05 05:15:40 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
-14/05/05 05:15:40 INFO Configuration.deprecation: mapreduce.partitioner.class is deprecated. Instead, use mapreduce.job.partitioner.class
-14/05/05 05:15:40 INFO Configuration.deprecation: mapred.output.value.class is deprecated. Instead, use mapreduce.job.output.value.class
-14/05/05 05:15:40 INFO Configuration.deprecation: mapred.mapoutput.value.class is deprecated. Instead, use mapreduce.map.output.value.class
-14/05/05 05:15:40 INFO Configuration.deprecation: mapreduce.map.class is deprecated. Instead, use mapreduce.job.map.class
-14/05/05 05:15:40 INFO Configuration.deprecation: mapred.job.name is deprecated. Instead, use mapreduce.job.name
-14/05/05 05:15:40 INFO Configuration.deprecation: mapreduce.reduce.class is deprecated. Instead, use mapreduce.job.reduce.class
-14/05/05 05:15:40 INFO Configuration.deprecation: mapreduce.inputformat.class is deprecated. Instead, use mapreduce.job.inputformat.class
-14/05/05 05:15:40 INFO Configuration.deprecation: mapred.input.dir is deprecated. Instead, use mapreduce.input.fileinputformat.inputdir
-14/05/05 05:15:40 INFO Configuration.deprecation: mapreduce.outputformat.class is deprecated. Instead, use mapreduce.job.outputformat.class
-14/05/05 05:15:40 INFO Configuration.deprecation: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
-14/05/05 05:15:40 INFO Configuration.deprecation: mapred.output.key.class is deprecated. Instead, use mapreduce.job.output.key.class
-14/05/05 05:15:40 INFO Configuration.deprecation: mapred.mapoutput.key.class is deprecated. Instead, use mapreduce.map.output.key.class
-14/05/05 05:15:40 INFO Configuration.deprecation: mapred.working.dir is deprecated. Instead, use mapreduce.job.working.dir
-14/05/05 05:15:40 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1399264210646_0005
-14/05/05 05:15:40 INFO impl.YarnClientImpl: Submitted application application_1399264210646_0005 to ResourceManager at ec2-54-186-230-200.us-west-2.compute.amazonaws.com/10.0.0.158:8032
-14/05/05 05:15:41 INFO mapreduce.Job: The url to track the job: http://ec2-54-186-230-200.us-west-2.compute.amazonaws.com:8088/proxy/application_1399264210646_0005/
-14/05/05 05:15:41 INFO mapreduce.Job: Running job: job_1399264210646_0005
-14/05/05 05:15:47 INFO mapreduce.Job: Job job_1399264210646_0005 running in uber mode : false
-14/05/05 05:15:47 INFO mapreduce.Job:  map 0% reduce 0%
-14/05/05 05:15:56 INFO mapreduce.Job:  map 100% reduce 0%
-14/05/05 05:16:10 INFO mapreduce.Job:  map 100% reduce 37%
-14/05/05 05:16:11 INFO mapreduce.Job:  map 100% reduce 75%
-14/05/05 05:16:14 INFO mapreduce.Job:  map 100% reduce 79%
-14/05/05 05:16:16 INFO mapreduce.Job:  map 100% reduce 80%
-14/05/05 05:16:17 INFO mapreduce.Job:  map 100% reduce 86%
-14/05/05 05:16:18 INFO mapreduce.Job:  map 100% reduce 87%
-14/05/05 05:16:20 INFO mapreduce.Job:  map 100% reduce 93%
-14/05/05 05:16:21 INFO mapreduce.Job:  map 100% reduce 94%
-14/05/05 05:16:22 INFO mapreduce.Job:  map 100% reduce 99%
-14/05/05 05:16:23 INFO mapreduce.Job:  map 100% reduce 100%
-14/05/05 05:16:23 INFO mapreduce.Job: Job job_1399264210646_0005 completed successfully
-14/05/05 05:16:23 INFO mapreduce.Job: Counters: 43
+14/05/05 06:13:48 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+14/05/05 06:13:48 INFO client.RMProxy: Connecting to ResourceManager at ec2-54-186-230-200.us-west-2.compute.amazonaws.com/10.0.0.158:8032
+14/05/05 06:13:49 WARN mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+14/05/05 06:13:49 INFO input.FileInputFormat: Total input paths to process : 1
+14/05/05 06:13:50 INFO mapreduce.JobSubmitter: number of splits:2
+14/05/05 06:13:50 INFO Configuration.deprecation: user.name is deprecated. Instead, use mapreduce.job.user.name
+14/05/05 06:13:50 INFO Configuration.deprecation: mapred.jar is deprecated. Instead, use mapreduce.job.jar
+14/05/05 06:13:50 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+14/05/05 06:13:50 INFO Configuration.deprecation: mapreduce.partitioner.class is deprecated. Instead, use mapreduce.job.partitioner.class
+14/05/05 06:13:50 INFO Configuration.deprecation: mapred.output.value.class is deprecated. Instead, use mapreduce.job.output.value.class
+14/05/05 06:13:50 INFO Configuration.deprecation: mapred.mapoutput.value.class is deprecated. Instead, use mapreduce.map.output.value.class
+14/05/05 06:13:50 INFO Configuration.deprecation: mapreduce.map.class is deprecated. Instead, use mapreduce.job.map.class
+14/05/05 06:13:50 INFO Configuration.deprecation: mapred.job.name is deprecated. Instead, use mapreduce.job.name
+14/05/05 06:13:50 INFO Configuration.deprecation: mapreduce.reduce.class is deprecated. Instead, use mapreduce.job.reduce.class
+14/05/05 06:13:50 INFO Configuration.deprecation: mapreduce.inputformat.class is deprecated. Instead, use mapreduce.job.inputformat.class
+14/05/05 06:13:50 INFO Configuration.deprecation: mapred.input.dir is deprecated. Instead, use mapreduce.input.fileinputformat.inputdir
+14/05/05 06:13:50 INFO Configuration.deprecation: mapreduce.outputformat.class is deprecated. Instead, use mapreduce.job.outputformat.class
+14/05/05 06:13:50 INFO Configuration.deprecation: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+14/05/05 06:13:50 INFO Configuration.deprecation: mapred.output.key.class is deprecated. Instead, use mapreduce.job.output.key.class
+14/05/05 06:13:50 INFO Configuration.deprecation: mapred.mapoutput.key.class is deprecated. Instead, use mapreduce.map.output.key.class
+14/05/05 06:13:50 INFO Configuration.deprecation: mapred.working.dir is deprecated. Instead, use mapreduce.job.working.dir
+14/05/05 06:13:50 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1399269907369_0004
+14/05/05 06:13:50 INFO impl.YarnClientImpl: Submitted application application_1399269907369_0004 to ResourceManager at ec2-54-186-230-200.us-west-2.compute.amazonaws.com/10.0.0.158:8032
+14/05/05 06:13:50 INFO mapreduce.Job: The url to track the job: http://ec2-54-186-230-200.us-west-2.compute.amazonaws.com:8088/proxy/application_1399269907369_0004/
+14/05/05 06:13:50 INFO mapreduce.Job: Running job: job_1399269907369_0004
+14/05/05 06:13:58 INFO mapreduce.Job: Job job_1399269907369_0004 running in uber mode : false
+14/05/05 06:13:58 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/05 06:14:13 INFO mapreduce.Job:  map 46% reduce 0%
+14/05/05 06:14:16 INFO mapreduce.Job:  map 67% reduce 0%
+14/05/05 06:14:17 INFO mapreduce.Job:  map 83% reduce 0%
+14/05/05 06:14:18 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/05 06:14:32 INFO mapreduce.Job:  map 100% reduce 34%
+14/05/05 06:14:33 INFO mapreduce.Job:  map 100% reduce 68%
+14/05/05 06:14:35 INFO mapreduce.Job:  map 100% reduce 69%
+14/05/05 06:14:38 INFO mapreduce.Job:  map 100% reduce 70%
+14/05/05 06:14:39 INFO mapreduce.Job:  map 100% reduce 71%
+14/05/05 06:14:42 INFO mapreduce.Job:  map 100% reduce 72%
+14/05/05 06:14:44 INFO mapreduce.Job:  map 100% reduce 73%
+14/05/05 06:14:45 INFO mapreduce.Job:  map 100% reduce 74%
+14/05/05 06:14:48 INFO mapreduce.Job:  map 100% reduce 75%
+14/05/05 06:14:50 INFO mapreduce.Job:  map 100% reduce 76%
+14/05/05 06:14:51 INFO mapreduce.Job:  map 100% reduce 77%
+14/05/05 06:14:54 INFO mapreduce.Job:  map 100% reduce 78%
+14/05/05 06:14:56 INFO mapreduce.Job:  map 100% reduce 79%
+14/05/05 06:14:57 INFO mapreduce.Job:  map 100% reduce 80%
+14/05/05 06:14:59 INFO mapreduce.Job:  map 100% reduce 81%
+14/05/05 06:15:00 INFO mapreduce.Job:  map 100% reduce 82%
+14/05/05 06:15:03 INFO mapreduce.Job:  map 100% reduce 83%
+14/05/05 06:15:06 INFO mapreduce.Job:  map 100% reduce 84%
+14/05/05 06:15:08 INFO mapreduce.Job:  map 100% reduce 85%
+14/05/05 06:15:09 INFO mapreduce.Job:  map 100% reduce 86%
+14/05/05 06:15:11 INFO mapreduce.Job:  map 100% reduce 87%
+14/05/05 06:15:14 INFO mapreduce.Job:  map 100% reduce 88%
+14/05/05 06:15:15 INFO mapreduce.Job:  map 100% reduce 89%
+14/05/05 06:15:18 INFO mapreduce.Job:  map 100% reduce 90%
+14/05/05 06:15:20 INFO mapreduce.Job:  map 100% reduce 91%
+14/05/05 06:15:21 INFO mapreduce.Job:  map 100% reduce 92%
+14/05/05 06:15:24 INFO mapreduce.Job:  map 100% reduce 93%
+14/05/05 06:15:26 INFO mapreduce.Job:  map 100% reduce 94%
+14/05/05 06:15:29 INFO mapreduce.Job:  map 100% reduce 95%
+14/05/05 06:15:30 INFO mapreduce.Job:  map 100% reduce 96%
+14/05/05 06:15:32 INFO mapreduce.Job:  map 100% reduce 97%
+14/05/05 06:15:33 INFO mapreduce.Job:  map 100% reduce 98%
+14/05/05 06:15:35 INFO mapreduce.Job:  map 100% reduce 99%
+14/05/05 06:15:36 INFO mapreduce.Job:  map 100% reduce 100%
+14/05/05 06:15:37 INFO mapreduce.Job: Job job_1399269907369_0004 completed successfully
+14/05/05 06:15:37 INFO mapreduce.Job: Counters: 43
 	File System Counters
-		FILE: Number of bytes read=46588938
-		FILE: Number of bytes written=94414293
+		FILE: Number of bytes read=466833072
+		FILE: Number of bytes written=701540912
 		FILE: Number of read operations=0
 		FILE: Number of large read operations=0
 		FILE: Number of write operations=0
-		HDFS: Number of bytes read=45589030
+		HDFS: Number of bytes read=228393266
 		HDFS: Number of bytes written=0
-		HDFS: Number of read operations=2
+		HDFS: Number of read operations=4
 		HDFS: Number of large read operations=0
 		HDFS: Number of write operations=0
 	Job Counters 
-		Launched map tasks=1
+		Launched map tasks=2
 		Launched reduce tasks=8
-		Data-local map tasks=1
-		Total time spent by all maps in occupied slots (ms)=6773
-		Total time spent by all reduces in occupied slots (ms)=189680
+		Data-local map tasks=2
+		Total time spent by all maps in occupied slots (ms)=35512
+		Total time spent by all reduces in occupied slots (ms)=586004
 	Map-Reduce Framework
-		Map input records=100000
-		Map output records=100000
-		Map output bytes=46188890
-		Map output materialized bytes=46588938
-		Input split bytes=140
+		Map input records=500000
+		Map output records=500000
+		Map output bytes=231388890
+		Map output materialized bytes=233388986
+		Input split bytes=280
 		Combine input records=0
 		Combine output records=0
-		Reduce input groups=100000
-		Reduce shuffle bytes=46588938
-		Reduce input records=100000
-		Reduce output records=100000
-		Spilled Records=200000
-		Shuffled Maps =8
+		Reduce input groups=500000
+		Reduce shuffle bytes=233388986
+		Reduce input records=500000
+		Reduce output records=500000
+		Spilled Records=1500000
+		Shuffled Maps =16
 		Failed Shuffles=0
-		Merged Map outputs=8
-		GC time elapsed (ms)=1316
-		CPU time spent (ms)=52280
-		Physical memory (bytes) snapshot=1622994944
-		Virtual memory (bytes) snapshot=10492379136
-		Total committed heap usage (bytes)=1336410112
+		Merged Map outputs=16
+		GC time elapsed (ms)=2959
+		CPU time spent (ms)=136340
+		Physical memory (bytes) snapshot=1915654144
+		Virtual memory (bytes) snapshot=11653251072
+		Total committed heap usage (bytes)=1460142080
 	Shuffle Errors
 		BAD_ID=0
 		CONNECTION=0
@@ -88,6 +115,6 @@ LocalityHints:[10.0.0.158, 10.0.0.59, 10.0.0.181, 10.0.0.180, 10.0.0.59#1, 10.0.
 		WRONG_MAP=0
 		WRONG_REDUCE=0
 	File Input Format Counters 
-		Bytes Read=45588890
+		Bytes Read=228392986
 	File Output Format Counters 
 		Bytes Written=0
