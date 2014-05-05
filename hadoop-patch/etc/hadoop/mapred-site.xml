@@ -25,4 +25,16 @@
   <name>mapreduce.framework.name</name>
   <value>yarn</value>
 </property>
+<property>
+  <name>mapreduce.reduce.child.java.opts</name>
+  <value>
+	-Xmx4196M -XX:-UseGCOverheadLimit
+  </value>
+</property>
+<property>
+  <name>mapreduce.map.child.java.opts</name>
+  <value>
+	-Xmx4196M -XX:-UseGCOverheadLimit
+  </value>
+</property>
 </configuration>
