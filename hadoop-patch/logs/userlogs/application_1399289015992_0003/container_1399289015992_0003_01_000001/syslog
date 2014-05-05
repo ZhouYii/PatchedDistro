@@ -1,0 +1,1348 @@
+2014-05-05 11:46:52,130 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Created MRAppMaster for application appattempt_1399289015992_0003_000001
+2014-05-05 11:46:52,602 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-05-05 11:46:52,603 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-05-05 11:46:53,000 WARN [main] org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-05-05 11:46:53,025 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Executing with tokens:
+2014-05-05 11:46:53,025 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Kind: YARN_AM_RM_TOKEN, Service: , Ident: (org.apache.hadoop.yarn.security.AMRMTokenIdentifier@5aad7cb)
+2014-05-05 11:46:53,061 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: The specific max attempts: 2 for application: 3. Attempt num: 1 is last retry: false
+2014-05-05 11:46:53,068 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Using mapred newApiCommitter.
+2014-05-05 11:46:53,303 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-05-05 11:46:53,304 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-05-05 11:46:53,977 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: OutputCommitter set in config null
+2014-05-05 11:46:54,117 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: OutputCommitter is org.apache.cassandra.hadoop.AbstractColumnFamilyOutputFormat$NullOutputCommitter
+2014-05-05 11:46:54,170 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.jobhistory.EventType for class org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler
+2014-05-05 11:46:54,171 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher
+2014-05-05 11:46:54,171 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskEventDispatcher
+2014-05-05 11:46:54,172 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskAttemptEventDispatcher
+2014-05-05 11:46:54,173 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventType for class org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler
+2014-05-05 11:46:54,178 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.speculate.Speculator$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$SpeculatorEventDispatcher
+2014-05-05 11:46:54,178 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.rm.ContainerAllocator$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$ContainerAllocatorRouter
+2014-05-05 11:46:54,179 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncher$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$ContainerLauncherRouter
+2014-05-05 11:46:54,259 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobFinishEvent$Type for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobFinishEventHandler
+2014-05-05 11:46:54,530 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2014-05-05 11:46:54,597 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2014-05-05 11:46:54,597 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MRAppMaster metrics system started
+2014-05-05 11:46:54,608 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Adding job token for job_1399289015992_0003 to jobTokenSecretManager
+2014-05-05 11:46:54,742 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Not uberizing job_1399289015992_0003 because: not enabled; too many reduces; too much input;
+2014-05-05 11:46:54,758 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Input size for job job_1399289015992_0003 = 456888890. Number of splits = 4
+2014-05-05 11:46:54,760 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Number of reduces for job job_1399289015992_0003 = 8
+2014-05-05 11:46:54,760 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1399289015992_0003Job Transitioned from NEW to INITED
+2014-05-05 11:46:54,761 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: MRAppMaster launching normal, non-uberized, multi-container job job_1399289015992_0003.
+2014-05-05 11:46:54,802 INFO [Socket Reader #1 for port 43915] org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 43915
+2014-05-05 11:46:54,856 INFO [main] org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.mapreduce.v2.api.MRClientProtocolPB to the server
+2014-05-05 11:46:54,856 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2014-05-05 11:46:54,857 INFO [main] org.apache.hadoop.mapreduce.v2.app.client.MRClientService: Instantiated MRClientService at ip-10-0-0-195/10.0.0.195:43915
+2014-05-05 11:46:54,859 INFO [IPC Server listener on 43915] org.apache.hadoop.ipc.Server: IPC Server listener on 43915: starting
+2014-05-05 11:46:54,906 INFO [main] org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-05-05 11:46:54,972 INFO [main] org.apache.hadoop.http.HttpServer: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2014-05-05 11:46:54,978 INFO [main] org.apache.hadoop.http.HttpServer: Added filter AM_PROXY_FILTER (class=org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter) to context mapreduce
+2014-05-05 11:46:54,978 INFO [main] org.apache.hadoop.http.HttpServer: Added filter AM_PROXY_FILTER (class=org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter) to context static
+2014-05-05 11:46:54,984 INFO [main] org.apache.hadoop.http.HttpServer: adding path spec: /mapreduce/*
+2014-05-05 11:46:54,984 INFO [main] org.apache.hadoop.http.HttpServer: adding path spec: /ws/*
+2014-05-05 11:46:54,986 INFO [main] org.apache.hadoop.http.HttpServer: Jetty bound to port 36093
+2014-05-05 11:46:54,986 INFO [main] org.mortbay.log: jetty-6.1.26
+2014-05-05 11:46:55,071 INFO [main] org.mortbay.log: Extract jar:file:/home/ubuntu/PatchedDistro/hadoop-patch/share/hadoop/yarn/hadoop-yarn-common-2.2.0.jar!/webapps/mapreduce to /tmp/Jetty_0_0_0_0_36093_mapreduce____.snarce/webapp
+2014-05-05 11:46:55,506 INFO [main] org.mortbay.log: Started SelectChannelConnector@0.0.0.0:36093
+2014-05-05 11:46:55,507 INFO [main] org.apache.hadoop.yarn.webapp.WebApps: Web app /mapreduce started at 36093
+2014-05-05 11:46:55,948 INFO [main] org.apache.hadoop.yarn.webapp.WebApps: Registered webapp guice modules
+2014-05-05 11:46:56,825 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: JOB_CREATE job_1399289015992_0003
+2014-05-05 11:46:56,832 INFO [Socket Reader #1 for port 56991] org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 56991
+2014-05-05 11:46:56,834 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2014-05-05 11:46:56,836 INFO [IPC Server listener on 56991] org.apache.hadoop.ipc.Server: IPC Server listener on 56991: starting
+2014-05-05 11:46:56,890 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: nodeBlacklistingEnabled:true
+2014-05-05 11:46:56,890 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: maxTaskFailuresPerNode is 3
+2014-05-05 11:46:56,890 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: blacklistDisablePercent is 33
+2014-05-05 11:46:56,918 INFO [main] org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at ec2-54-186-230-200.us-west-2.compute.amazonaws.com/10.0.0.195:8030
+2014-05-05 11:46:56,971 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: maxContainerCapability: 8192
+2014-05-05 11:46:56,979 INFO [main] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Upper limit on the thread pool size is 500
+2014-05-05 11:46:56,980 INFO [main] org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy: yarn.client.max-nodemanagers-proxies : 500
+2014-05-05 11:46:56,988 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1399289015992_0003Job Transitioned from INITED to SETUP
+2014-05-05 11:46:56,989 INFO [CommitterEvent Processor #0] org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler: Processing the event EventType: JOB_SETUP
+2014-05-05 11:46:56,991 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1399289015992_0003Job Transitioned from SETUP to RUNNING
+2014-05-05 11:46:57,008 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved ip-10-0-0-200.us-west-2.compute.internal to /default-rack
+2014-05-05 11:46:57,009 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved ip-10-0-0-197.us-west-2.compute.internal to /default-rack
+2014-05-05 11:46:57,010 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodeb to /default-rack
+2014-05-05 11:46:57,010 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved ip-10-0-0-196.us-west-2.compute.internal to /default-rack
+2014-05-05 11:46:57,043 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_m_000000 Task Transitioned from NEW to SCHEDULED
+2014-05-05 11:46:57,044 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved ip-10-0-0-198.us-west-2.compute.internal to /default-rack
+2014-05-05 11:46:57,044 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodeb to /default-rack
+2014-05-05 11:46:57,044 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodea to /default-rack
+2014-05-05 11:46:57,045 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved ip-10-0-0-199.us-west-2.compute.internal to /default-rack
+2014-05-05 11:46:57,045 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_m_000001 Task Transitioned from NEW to SCHEDULED
+2014-05-05 11:46:57,045 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved ip-10-0-0-198.us-west-2.compute.internal to /default-rack
+2014-05-05 11:46:57,045 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodeb to /default-rack
+2014-05-05 11:46:57,045 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodea to /default-rack
+2014-05-05 11:46:57,045 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved ip-10-0-0-196.us-west-2.compute.internal to /default-rack
+2014-05-05 11:46:57,046 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_m_000002 Task Transitioned from NEW to SCHEDULED
+2014-05-05 11:46:57,046 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved ip-10-0-0-200.us-west-2.compute.internal to /default-rack
+2014-05-05 11:46:57,046 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodeb to /default-rack
+2014-05-05 11:46:57,046 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodea to /default-rack
+2014-05-05 11:46:57,046 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved ip-10-0-0-199.us-west-2.compute.internal to /default-rack
+2014-05-05 11:46:57,046 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_m_000003 Task Transitioned from NEW to SCHEDULED
+2014-05-05 11:46:57,047 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodeh to /default-rack
+2014-05-05 11:46:57,047 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_r_000000 Task Transitioned from NEW to SCHEDULED
+2014-05-05 11:46:57,048 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodee to /default-rack
+2014-05-05 11:46:57,048 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_r_000001 Task Transitioned from NEW to SCHEDULED
+2014-05-05 11:46:57,048 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodef to /default-rack
+2014-05-05 11:46:57,048 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_r_000002 Task Transitioned from NEW to SCHEDULED
+2014-05-05 11:46:57,049 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved noded to /default-rack
+2014-05-05 11:46:57,049 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_r_000003 Task Transitioned from NEW to SCHEDULED
+2014-05-05 11:46:57,049 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodeb to /default-rack
+2014-05-05 11:46:57,049 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_r_000004 Task Transitioned from NEW to SCHEDULED
+2014-05-05 11:46:57,049 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodea to /default-rack
+2014-05-05 11:46:57,050 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_r_000005 Task Transitioned from NEW to SCHEDULED
+2014-05-05 11:46:57,050 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodeg to /default-rack
+2014-05-05 11:46:57,050 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_r_000006 Task Transitioned from NEW to SCHEDULED
+2014-05-05 11:46:57,050 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodec to /default-rack
+2014-05-05 11:46:57,051 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_r_000007 Task Transitioned from NEW to SCHEDULED
+2014-05-05 11:46:57,052 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000000_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-05-05 11:46:57,052 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000001_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-05-05 11:46:57,052 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000002_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-05-05 11:46:57,052 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000003_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-05-05 11:46:57,052 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_r_000000_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-05-05 11:46:57,052 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_r_000001_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-05-05 11:46:57,052 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_r_000002_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-05-05 11:46:57,053 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_r_000003_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-05-05 11:46:57,053 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_r_000004_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-05-05 11:46:57,053 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_r_000005_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-05-05 11:46:57,053 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_r_000006_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-05-05 11:46:57,053 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_r_000007_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-05-05 11:46:57,058 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: mapResourceReqt:1024
+2014-05-05 11:46:57,065 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=ip-10-0-0-200.us-west-2.compute.internal numContainers=1 #asks=0
+2014-05-05 11:46:57,065 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=ip-10-0-0-197.us-west-2.compute.internal numContainers=1 #asks=1
+2014-05-05 11:46:57,065 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=nodeb numContainers=1 #asks=2
+2014-05-05 11:46:57,066 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=ip-10-0-0-196.us-west-2.compute.internal numContainers=1 #asks=3
+2014-05-05 11:46:57,066 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=/default-rack numContainers=1 #asks=4
+2014-05-05 11:46:57,066 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=* numContainers=1 #asks=5
+2014-05-05 11:46:57,066 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=ip-10-0-0-198.us-west-2.compute.internal numContainers=1 #asks=6
+2014-05-05 11:46:57,066 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=nodeb numContainers=2 #asks=7
+2014-05-05 11:46:57,066 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=nodea numContainers=1 #asks=7
+2014-05-05 11:46:57,066 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=ip-10-0-0-199.us-west-2.compute.internal numContainers=1 #asks=8
+2014-05-05 11:46:57,067 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=/default-rack numContainers=2 #asks=9
+2014-05-05 11:46:57,067 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=* numContainers=2 #asks=9
+2014-05-05 11:46:57,067 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=ip-10-0-0-198.us-west-2.compute.internal numContainers=2 #asks=9
+2014-05-05 11:46:57,067 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=nodeb numContainers=3 #asks=9
+2014-05-05 11:46:57,067 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=nodea numContainers=2 #asks=9
+2014-05-05 11:46:57,067 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=ip-10-0-0-196.us-west-2.compute.internal numContainers=2 #asks=9
+2014-05-05 11:46:57,067 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=/default-rack numContainers=3 #asks=9
+2014-05-05 11:46:57,067 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=* numContainers=3 #asks=9
+2014-05-05 11:46:57,068 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=ip-10-0-0-200.us-west-2.compute.internal numContainers=2 #asks=9
+2014-05-05 11:46:57,068 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=nodeb numContainers=4 #asks=9
+2014-05-05 11:46:57,068 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=nodea numContainers=3 #asks=9
+2014-05-05 11:46:57,068 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=ip-10-0-0-199.us-west-2.compute.internal numContainers=2 #asks=9
+2014-05-05 11:46:57,068 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=/default-rack numContainers=4 #asks=9
+2014-05-05 11:46:57,068 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=* numContainers=4 #asks=9
+2014-05-05 11:46:57,068 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: reduceResourceReqt:1024
+2014-05-05 11:46:57,972 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:8 ScheduledMaps:4 ScheduledReds:0 AssignedMaps:0 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:0 ContRel:0 HostLocal:0 RackLocal:0
+2014-05-05 11:46:58,121 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1399289015992_0003: ask=9 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:63488, vCores:0> knownNMs=8
+2014-05-05 11:46:58,122 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=63488
+2014-05-05 11:46:58,122 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2014-05-05 11:46:58,135 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Event Writer setup for JobId: job_1399289015992_0003, File: hdfs://ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310/tmp/hadoop-yarn/staging/ubuntu/.staging/job_1399289015992_0003/job_1399289015992_0003_1.jhist
+2014-05-05 11:46:59,133 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Got allocated containers 4
+2014-05-05 11:46:59,135 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1399289015992_0003_01_000002 to attempt_1399289015992_0003_m_000000_0
+2014-05-05 11:46:59,136 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1399289015992_0003_01_000003 to attempt_1399289015992_0003_m_000001_0
+2014-05-05 11:46:59,137 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1399289015992_0003_01_000004 to attempt_1399289015992_0003_m_000002_0
+2014-05-05 11:46:59,137 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1399289015992_0003_01_000005 to attempt_1399289015992_0003_m_000003_0
+2014-05-05 11:46:59,137 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=59392
+2014-05-05 11:46:59,137 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2014-05-05 11:46:59,137 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:8 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:4 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:4 ContRel:0 HostLocal:4 RackLocal:0
+2014-05-05 11:46:59,195 INFO [eventHandlingThread] org.apache.hadoop.conf.Configuration.deprecation: user.name is deprecated. Instead, use mapreduce.job.user.name
+2014-05-05 11:46:59,628 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodeb to /default-rack
+2014-05-05 11:46:59,655 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: The job-jar file on the remote FS is hdfs://ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310/tmp/hadoop-yarn/staging/ubuntu/.staging/job_1399289015992_0003/job.jar
+2014-05-05 11:46:59,664 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: The job-conf file on the remote FS is /tmp/hadoop-yarn/staging/ubuntu/.staging/job_1399289015992_0003/job.xml
+2014-05-05 11:46:59,665 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Adding #0 tokens and #1 secret keys for NM use for launching container
+2014-05-05 11:46:59,665 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Size of containertokens_dob is 1
+2014-05-05 11:46:59,665 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Putting shuffle token in serviceData
+2014-05-05 11:46:59,724 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000000_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2014-05-05 11:46:59,731 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodeb to /default-rack
+2014-05-05 11:46:59,732 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000001_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2014-05-05 11:46:59,732 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodeb to /default-rack
+2014-05-05 11:46:59,733 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000002_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2014-05-05 11:46:59,733 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodeb to /default-rack
+2014-05-05 11:46:59,735 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000003_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2014-05-05 11:46:59,750 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1399289015992_0003_01_000002 taskAttempt attempt_1399289015992_0003_m_000000_0
+2014-05-05 11:46:59,760 INFO [ContainerLauncher #1] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1399289015992_0003_01_000003 taskAttempt attempt_1399289015992_0003_m_000001_0
+2014-05-05 11:46:59,762 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1399289015992_0003_m_000000_0
+2014-05-05 11:46:59,763 INFO [ContainerLauncher #0] org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy: Opening proxy : nodeb:43052
+2014-05-05 11:46:59,768 INFO [ContainerLauncher #1] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1399289015992_0003_m_000001_0
+2014-05-05 11:46:59,769 INFO [ContainerLauncher #2] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1399289015992_0003_01_000004 taskAttempt attempt_1399289015992_0003_m_000002_0
+2014-05-05 11:46:59,769 INFO [ContainerLauncher #2] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1399289015992_0003_m_000002_0
+2014-05-05 11:46:59,796 INFO [ContainerLauncher #3] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1399289015992_0003_01_000005 taskAttempt attempt_1399289015992_0003_m_000003_0
+2014-05-05 11:46:59,796 INFO [ContainerLauncher #3] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1399289015992_0003_m_000003_0
+2014-05-05 11:47:00,140 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1399289015992_0003: ask=9 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:59392, vCores:-4> knownNMs=8
+2014-05-05 11:47:00,356 INFO [ContainerLauncher #2] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1399289015992_0003_m_000002_0 : 13562
+2014-05-05 11:47:00,362 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1399289015992_0003_m_000002_0] using containerId: [container_1399289015992_0003_01_000004 on NM: [nodeb:43052]
+2014-05-05 11:47:00,366 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000002_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2014-05-05 11:47:00,366 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1399289015992_0003_m_000002
+2014-05-05 11:47:00,366 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_m_000002 Task Transitioned from SCHEDULED to RUNNING
+2014-05-05 11:47:00,388 INFO [ContainerLauncher #3] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1399289015992_0003_m_000003_0 : 13562
+2014-05-05 11:47:00,388 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1399289015992_0003_m_000000_0 : 13562
+2014-05-05 11:47:00,389 INFO [ContainerLauncher #1] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1399289015992_0003_m_000001_0 : 13562
+2014-05-05 11:47:00,389 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1399289015992_0003_m_000003_0] using containerId: [container_1399289015992_0003_01_000005 on NM: [nodeb:43052]
+2014-05-05 11:47:00,389 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000003_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2014-05-05 11:47:00,389 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1399289015992_0003_m_000000_0] using containerId: [container_1399289015992_0003_01_000002 on NM: [nodeb:43052]
+2014-05-05 11:47:00,390 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000000_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2014-05-05 11:47:00,390 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1399289015992_0003_m_000001_0] using containerId: [container_1399289015992_0003_01_000003 on NM: [nodeb:43052]
+2014-05-05 11:47:00,390 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000001_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2014-05-05 11:47:00,390 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1399289015992_0003_m_000003
+2014-05-05 11:47:00,390 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_m_000003 Task Transitioned from SCHEDULED to RUNNING
+2014-05-05 11:47:00,391 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1399289015992_0003_m_000000
+2014-05-05 11:47:00,391 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_m_000000 Task Transitioned from SCHEDULED to RUNNING
+2014-05-05 11:47:00,391 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1399289015992_0003_m_000001
+2014-05-05 11:47:00,391 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_m_000001 Task Transitioned from SCHEDULED to RUNNING
+2014-05-05 11:47:09,788 INFO [Socket Reader #1 for port 56991] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1399289015992_0003 (auth:SIMPLE)
+2014-05-05 11:47:09,852 INFO [IPC Server handler 1 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1399289015992_0003_m_000005 asked for a task
+2014-05-05 11:47:09,852 INFO [IPC Server handler 1 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1399289015992_0003_m_000005 given task: attempt_1399289015992_0003_m_000003_0
+2014-05-05 11:47:10,203 INFO [Socket Reader #1 for port 56991] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1399289015992_0003 (auth:SIMPLE)
+2014-05-05 11:47:10,251 INFO [IPC Server handler 0 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1399289015992_0003_m_000003 asked for a task
+2014-05-05 11:47:10,251 INFO [IPC Server handler 0 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1399289015992_0003_m_000003 given task: attempt_1399289015992_0003_m_000001_0
+2014-05-05 11:47:10,489 INFO [Socket Reader #1 for port 56991] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1399289015992_0003 (auth:SIMPLE)
+2014-05-05 11:47:10,529 INFO [IPC Server handler 2 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1399289015992_0003_m_000002 asked for a task
+2014-05-05 11:47:10,530 INFO [IPC Server handler 2 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1399289015992_0003_m_000002 given task: attempt_1399289015992_0003_m_000000_0
+2014-05-05 11:47:10,686 INFO [Socket Reader #1 for port 56991] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1399289015992_0003 (auth:SIMPLE)
+2014-05-05 11:47:10,726 INFO [IPC Server handler 3 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1399289015992_0003_m_000004 asked for a task
+2014-05-05 11:47:10,727 INFO [IPC Server handler 3 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1399289015992_0003_m_000004 given task: attempt_1399289015992_0003_m_000002_0
+2014-05-05 11:47:17,360 INFO [IPC Server handler 4 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1399289015992_0003_m_000003_0
+2014-05-05 11:47:18,014 INFO [IPC Server handler 5 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1399289015992_0003_m_000000_0
+2014-05-05 11:47:18,070 INFO [IPC Server handler 6 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1399289015992_0003_m_000001_0
+2014-05-05 11:47:18,210 INFO [IPC Server handler 7 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1399289015992_0003_m_000002_0
+2014-05-05 11:47:20,759 INFO [IPC Server handler 8 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000003_0
+2014-05-05 11:47:20,760 INFO [IPC Server handler 8 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000003_0 is : 0.08704154
+2014-05-05 11:47:21,418 INFO [IPC Server handler 9 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000000_0
+2014-05-05 11:47:21,418 INFO [IPC Server handler 9 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000000_0 is : 0.03818764
+2014-05-05 11:47:21,470 INFO [IPC Server handler 10 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000001_0
+2014-05-05 11:47:21,471 INFO [IPC Server handler 10 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000001_0 is : 0.03191328
+2014-05-05 11:47:21,718 INFO [IPC Server handler 11 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000002_0
+2014-05-05 11:47:21,718 INFO [IPC Server handler 11 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000002_0 is : 0.032149468
+2014-05-05 11:47:24,283 INFO [IPC Server handler 12 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000003_0
+2014-05-05 11:47:24,491 INFO [IPC Server handler 12 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000003_0 is : 0.23130895
+2014-05-05 11:47:24,517 INFO [IPC Server handler 13 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000000_0
+2014-05-05 11:47:24,517 INFO [IPC Server handler 13 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000000_0 is : 0.09716993
+2014-05-05 11:47:24,584 INFO [IPC Server handler 14 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000001_0
+2014-05-05 11:47:24,584 INFO [IPC Server handler 14 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000001_0 is : 0.15032537
+2014-05-05 11:47:24,799 INFO [IPC Server handler 15 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000002_0
+2014-05-05 11:47:24,800 INFO [IPC Server handler 15 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000002_0 is : 0.09640072
+2014-05-05 11:47:27,256 INFO [IPC Server handler 16 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000003_0
+2014-05-05 11:47:27,256 INFO [IPC Server handler 16 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000003_0 is : 0.23130895
+2014-05-05 11:47:27,612 INFO [IPC Server handler 17 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000003_0
+2014-05-05 11:47:27,612 INFO [IPC Server handler 17 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000003_0 is : 0.667
+2014-05-05 11:47:27,623 INFO [IPC Server handler 18 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000000_0
+2014-05-05 11:47:27,623 INFO [IPC Server handler 18 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000000_0 is : 0.25793973
+2014-05-05 11:47:27,706 INFO [IPC Server handler 19 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000001_0
+2014-05-05 11:47:27,706 INFO [IPC Server handler 19 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000001_0 is : 0.31405923
+2014-05-05 11:47:27,910 INFO [IPC Server handler 20 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000002_0
+2014-05-05 11:47:27,916 INFO [IPC Server handler 20 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000002_0 is : 0.27682927
+2014-05-05 11:47:29,490 INFO [IPC Server handler 21 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000003_0
+2014-05-05 11:47:29,490 INFO [IPC Server handler 21 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000003_0 is : 1.0
+2014-05-05 11:47:29,493 INFO [IPC Server handler 22 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Done acknowledgement from attempt_1399289015992_0003_m_000003_0
+2014-05-05 11:47:29,494 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000003_0 TaskAttempt Transitioned from RUNNING to SUCCESS_CONTAINER_CLEANUP
+2014-05-05 11:47:29,495 INFO [ContainerLauncher #4] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_CLEANUP for container container_1399289015992_0003_01_000005 taskAttempt attempt_1399289015992_0003_m_000003_0
+2014-05-05 11:47:29,495 INFO [ContainerLauncher #4] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: KILLING attempt_1399289015992_0003_m_000003_0
+2014-05-05 11:47:29,596 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000003_0 TaskAttempt Transitioned from SUCCESS_CONTAINER_CLEANUP to SUCCEEDED
+2014-05-05 11:47:29,604 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: Task succeeded with attempt attempt_1399289015992_0003_m_000003_0
+2014-05-05 11:47:29,621 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_m_000003 Task Transitioned from RUNNING to SUCCEEDED
+2014-05-05 11:47:29,626 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Num completed Tasks: 1
+2014-05-05 11:47:29,895 INFO [DefaultSpeculator background processing] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1399289015992_0003_m_000000
+2014-05-05 11:47:29,895 INFO [DefaultSpeculator background processing] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: We launched 1 speculations.  Sleeping 15000 milliseconds.
+2014-05-05 11:47:29,895 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: Scheduling a redundant attempt for task task_1399289015992_0003_m_000000
+2014-05-05 11:47:29,896 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved ip-10-0-0-200.us-west-2.compute.internal to /default-rack
+2014-05-05 11:47:29,897 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved ip-10-0-0-197.us-west-2.compute.internal to /default-rack
+2014-05-05 11:47:29,897 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodeb to /default-rack
+2014-05-05 11:47:29,898 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved ip-10-0-0-196.us-west-2.compute.internal to /default-rack
+2014-05-05 11:47:29,898 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000000_1 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-05-05 11:47:29,898 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=ip-10-0-0-200.us-west-2.compute.internal numContainers=1 #asks=0
+2014-05-05 11:47:29,898 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=ip-10-0-0-197.us-west-2.compute.internal numContainers=1 #asks=1
+2014-05-05 11:47:29,899 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=nodeb numContainers=1 #asks=2
+2014-05-05 11:47:29,899 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=ip-10-0-0-196.us-west-2.compute.internal numContainers=1 #asks=3
+2014-05-05 11:47:29,899 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=/default-rack numContainers=1 #asks=4
+2014-05-05 11:47:29,899 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=20 resourceName=* numContainers=1 #asks=5
+2014-05-05 11:47:30,191 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:8 ScheduledMaps:1 ScheduledReds:0 AssignedMaps:4 AssignedReds:0 CompletedMaps:1 CompletedReds:0 ContAlloc:4 ContRel:0 HostLocal:4 RackLocal:0
+2014-05-05 11:47:30,193 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1399289015992_0003: ask=6 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:59392, vCores:-4> knownNMs=8
+2014-05-05 11:47:30,194 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=59392
+2014-05-05 11:47:30,194 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold reached. Scheduling reduces.
+2014-05-05 11:47:30,194 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: completedMapPercent 0.25 totalMemLimit:63488 finalMapMemLimit:5120 finalReduceMemLimit:58368 netScheduledMapMem:5120 netScheduledReduceMem:0
+2014-05-05 11:47:30,194 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Ramping up 8
+2014-05-05 11:47:30,194 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=nodeh numContainers=1 #asks=0
+2014-05-05 11:47:30,194 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=/default-rack numContainers=1 #asks=1
+2014-05-05 11:47:30,194 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=* numContainers=1 #asks=2
+2014-05-05 11:47:30,194 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=nodee numContainers=1 #asks=3
+2014-05-05 11:47:30,194 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=/default-rack numContainers=2 #asks=4
+2014-05-05 11:47:30,194 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=* numContainers=2 #asks=4
+2014-05-05 11:47:30,195 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=nodef numContainers=1 #asks=4
+2014-05-05 11:47:30,195 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=/default-rack numContainers=3 #asks=5
+2014-05-05 11:47:30,195 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=* numContainers=3 #asks=5
+2014-05-05 11:47:30,195 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=noded numContainers=1 #asks=5
+2014-05-05 11:47:30,195 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=/default-rack numContainers=4 #asks=6
+2014-05-05 11:47:30,195 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=* numContainers=4 #asks=6
+2014-05-05 11:47:30,195 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=nodeb numContainers=1 #asks=6
+2014-05-05 11:47:30,195 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=/default-rack numContainers=5 #asks=7
+2014-05-05 11:47:30,195 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=* numContainers=5 #asks=7
+2014-05-05 11:47:30,195 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=nodea numContainers=1 #asks=7
+2014-05-05 11:47:30,195 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=/default-rack numContainers=6 #asks=8
+2014-05-05 11:47:30,195 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=* numContainers=6 #asks=8
+2014-05-05 11:47:30,195 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=nodeg numContainers=1 #asks=8
+2014-05-05 11:47:30,195 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=/default-rack numContainers=7 #asks=9
+2014-05-05 11:47:30,195 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=* numContainers=7 #asks=9
+2014-05-05 11:47:30,196 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=nodec numContainers=1 #asks=9
+2014-05-05 11:47:30,196 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=/default-rack numContainers=8 #asks=10
+2014-05-05 11:47:30,196 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=* numContainers=8 #asks=10
+2014-05-05 11:47:30,196 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:0 ScheduledMaps:1 ScheduledReds:8 AssignedMaps:4 AssignedReds:0 CompletedMaps:1 CompletedReds:0 ContAlloc:4 ContRel:0 HostLocal:4 RackLocal:0
+2014-05-05 11:47:30,724 INFO [IPC Server handler 24 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000000_0
+2014-05-05 11:47:30,725 INFO [IPC Server handler 24 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000000_0 is : 0.44542408
+2014-05-05 11:47:30,772 INFO [IPC Server handler 25 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000001_0
+2014-05-05 11:47:30,772 INFO [IPC Server handler 25 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000001_0 is : 0.45133266
+2014-05-05 11:47:31,005 INFO [IPC Server handler 23 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000002_0
+2014-05-05 11:47:31,005 INFO [IPC Server handler 23 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000002_0 is : 0.4390188
+2014-05-05 11:47:31,203 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1399289015992_0003: ask=10 release= 0 newContainers=1 finishedContainers=1 resourcelimit=<memory:58368, vCores:-5> knownNMs=8
+2014-05-05 11:47:31,203 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Received completed container container_1399289015992_0003_01_000005
+2014-05-05 11:47:31,204 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Got allocated containers 1
+2014-05-05 11:47:31,204 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1399289015992_0003_m_000003_0: Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+
+2014-05-05 11:47:31,204 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1399289015992_0003_01_000006 to attempt_1399289015992_0003_m_000000_1
+2014-05-05 11:47:31,204 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:0 ScheduledMaps:0 ScheduledReds:8 AssignedMaps:4 AssignedReds:0 CompletedMaps:1 CompletedReds:0 ContAlloc:5 ContRel:0 HostLocal:5 RackLocal:0
+2014-05-05 11:47:31,205 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved ip-10-0-0-197.us-west-2.compute.internal to /default-rack
+2014-05-05 11:47:31,206 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000000_1 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2014-05-05 11:47:31,207 INFO [ContainerLauncher #5] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1399289015992_0003_01_000006 taskAttempt attempt_1399289015992_0003_m_000000_1
+2014-05-05 11:47:31,207 INFO [ContainerLauncher #5] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1399289015992_0003_m_000000_1
+2014-05-05 11:47:31,207 INFO [ContainerLauncher #5] org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy: Opening proxy : ip-10-0-0-197.us-west-2.compute.internal:36720
+2014-05-05 11:47:31,217 INFO [ContainerLauncher #5] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1399289015992_0003_m_000000_1 : 13562
+2014-05-05 11:47:31,218 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1399289015992_0003_m_000000_1] using containerId: [container_1399289015992_0003_01_000006 on NM: [ip-10-0-0-197.us-west-2.compute.internal:36720]
+2014-05-05 11:47:31,218 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000000_1 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2014-05-05 11:47:31,218 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1399289015992_0003_m_000000
+2014-05-05 11:47:32,208 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1399289015992_0003: ask=6 release= 0 newContainers=2 finishedContainers=0 resourcelimit=<memory:57344, vCores:-6> knownNMs=8
+2014-05-05 11:47:32,208 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Got allocated containers 2
+2014-05-05 11:47:32,208 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1399289015992_0003_01_000007 to attempt_1399289015992_0003_r_000005_0
+2014-05-05 11:47:32,209 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1399289015992_0003_01_000008 to attempt_1399289015992_0003_r_000004_0
+2014-05-05 11:47:32,209 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:0 ScheduledMaps:0 ScheduledReds:6 AssignedMaps:4 AssignedReds:2 CompletedMaps:1 CompletedReds:0 ContAlloc:7 ContRel:0 HostLocal:5 RackLocal:0
+2014-05-05 11:47:32,215 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodea to /default-rack
+2014-05-05 11:47:32,216 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_r_000005_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2014-05-05 11:47:32,216 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodeb to /default-rack
+2014-05-05 11:47:32,217 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_r_000004_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2014-05-05 11:47:32,218 INFO [ContainerLauncher #6] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1399289015992_0003_01_000007 taskAttempt attempt_1399289015992_0003_r_000005_0
+2014-05-05 11:47:32,218 INFO [ContainerLauncher #6] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1399289015992_0003_r_000005_0
+2014-05-05 11:47:32,218 INFO [ContainerLauncher #7] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1399289015992_0003_01_000008 taskAttempt attempt_1399289015992_0003_r_000004_0
+2014-05-05 11:47:32,218 INFO [ContainerLauncher #6] org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy: Opening proxy : nodea:34521
+2014-05-05 11:47:32,218 INFO [ContainerLauncher #7] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1399289015992_0003_r_000004_0
+2014-05-05 11:47:32,223 INFO [ContainerLauncher #7] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1399289015992_0003_r_000004_0 : 13562
+2014-05-05 11:47:32,224 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1399289015992_0003_r_000004_0] using containerId: [container_1399289015992_0003_01_000008 on NM: [nodeb:43052]
+2014-05-05 11:47:32,224 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_r_000004_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2014-05-05 11:47:32,224 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1399289015992_0003_r_000004
+2014-05-05 11:47:32,224 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_r_000004 Task Transitioned from SCHEDULED to RUNNING
+2014-05-05 11:47:32,241 INFO [ContainerLauncher #6] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1399289015992_0003_r_000005_0 : 13562
+2014-05-05 11:47:32,241 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1399289015992_0003_r_000005_0] using containerId: [container_1399289015992_0003_01_000007 on NM: [nodea:34521]
+2014-05-05 11:47:32,241 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_r_000005_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2014-05-05 11:47:32,242 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1399289015992_0003_r_000005
+2014-05-05 11:47:32,242 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_r_000005 Task Transitioned from SCHEDULED to RUNNING
+2014-05-05 11:47:33,211 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1399289015992_0003: ask=4 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:57344, vCores:-6> knownNMs=8
+2014-05-05 11:47:33,780 INFO [IPC Server handler 26 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000000_0
+2014-05-05 11:47:33,780 INFO [IPC Server handler 26 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000000_0 is : 0.59122956
+2014-05-05 11:47:33,828 INFO [IPC Server handler 27 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000001_0
+2014-05-05 11:47:33,828 INFO [IPC Server handler 27 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000001_0 is : 0.56539106
+2014-05-05 11:47:33,840 INFO [Socket Reader #1 for port 56991] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1399289015992_0003 (auth:SIMPLE)
+2014-05-05 11:47:33,853 INFO [IPC Server handler 28 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1399289015992_0003_m_000006 asked for a task
+2014-05-05 11:47:33,853 INFO [IPC Server handler 28 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1399289015992_0003_m_000006 given task: attempt_1399289015992_0003_m_000000_1
+2014-05-05 11:47:34,066 INFO [IPC Server handler 29 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000002_0
+2014-05-05 11:47:34,066 INFO [IPC Server handler 29 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000002_0 is : 0.5393303
+2014-05-05 11:47:34,397 INFO [Socket Reader #1 for port 56991] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1399289015992_0003 (auth:SIMPLE)
+2014-05-05 11:47:34,409 INFO [IPC Server handler 1 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1399289015992_0003_r_000007 asked for a task
+2014-05-05 11:47:34,409 INFO [IPC Server handler 1 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1399289015992_0003_r_000007 given task: attempt_1399289015992_0003_r_000005_0
+2014-05-05 11:47:34,668 INFO [IPC Server handler 0 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000000_0
+2014-05-05 11:47:34,668 INFO [IPC Server handler 0 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000000_0 is : 0.59122956
+2014-05-05 11:47:35,569 INFO [IPC Server handler 2 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000001_0
+2014-05-05 11:47:35,569 INFO [IPC Server handler 2 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000001_0 is : 0.56539106
+2014-05-05 11:47:36,054 INFO [IPC Server handler 3 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: MapCompletionEvents request from attempt_1399289015992_0003_r_000005_0. startIndex 0 maxEvents 10000
+2014-05-05 11:47:36,184 INFO [IPC Server handler 4 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000002_0
+2014-05-05 11:47:36,184 INFO [IPC Server handler 4 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000002_0 is : 0.5393303
+2014-05-05 11:47:36,906 INFO [IPC Server handler 5 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000000_0
+2014-05-05 11:47:36,906 INFO [IPC Server handler 5 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000000_0 is : 0.68141323
+2014-05-05 11:47:37,056 INFO [IPC Server handler 6 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000001_0
+2014-05-05 11:47:37,056 INFO [IPC Server handler 6 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000001_0 is : 0.6670433
+2014-05-05 11:47:37,061 INFO [IPC Server handler 7 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: MapCompletionEvents request from attempt_1399289015992_0003_r_000005_0. startIndex 1 maxEvents 10000
+2014-05-05 11:47:37,257 INFO [IPC Server handler 8 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000002_0
+2014-05-05 11:47:37,257 INFO [IPC Server handler 8 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000002_0 is : 0.667
+2014-05-05 11:47:38,063 INFO [IPC Server handler 9 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: MapCompletionEvents request from attempt_1399289015992_0003_r_000005_0. startIndex 1 maxEvents 10000
+2014-05-05 11:47:38,329 INFO [IPC Server handler 10 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1399289015992_0003_m_000000_1
+2014-05-05 11:47:38,931 INFO [IPC Server handler 11 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1399289015992_0003_r_000005_0
+2014-05-05 11:47:39,064 INFO [IPC Server handler 12 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: MapCompletionEvents request from attempt_1399289015992_0003_r_000005_0. startIndex 1 maxEvents 10000
+2014-05-05 11:47:39,993 INFO [Socket Reader #1 for port 56991] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1399289015992_0003 (auth:SIMPLE)
+2014-05-05 11:47:40,003 INFO [IPC Server handler 13 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000000_0
+2014-05-05 11:47:40,004 INFO [IPC Server handler 13 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000000_0 is : 0.97655976
+2014-05-05 11:47:40,058 INFO [IPC Server handler 14 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1399289015992_0003_r_000008 asked for a task
+2014-05-05 11:47:40,058 INFO [IPC Server handler 14 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1399289015992_0003_r_000008 given task: attempt_1399289015992_0003_r_000004_0
+2014-05-05 11:47:40,066 INFO [IPC Server handler 15 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: MapCompletionEvents request from attempt_1399289015992_0003_r_000005_0. startIndex 1 maxEvents 10000
+2014-05-05 11:47:40,123 INFO [IPC Server handler 16 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000001_0
+2014-05-05 11:47:40,123 INFO [IPC Server handler 16 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000001_0 is : 0.84145415
+2014-05-05 11:47:40,327 INFO [IPC Server handler 17 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000002_0
+2014-05-05 11:47:40,328 INFO [IPC Server handler 17 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000002_0 is : 0.75341487
+2014-05-05 11:47:40,353 INFO [IPC Server handler 18 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000000_0
+2014-05-05 11:47:40,353 INFO [IPC Server handler 18 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000000_0 is : 1.0
+2014-05-05 11:47:40,356 INFO [IPC Server handler 19 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Done acknowledgement from attempt_1399289015992_0003_m_000000_0
+2014-05-05 11:47:40,356 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000000_0 TaskAttempt Transitioned from RUNNING to SUCCESS_CONTAINER_CLEANUP
+2014-05-05 11:47:40,357 INFO [ContainerLauncher #8] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_CLEANUP for container container_1399289015992_0003_01_000002 taskAttempt attempt_1399289015992_0003_m_000000_0
+2014-05-05 11:47:40,357 INFO [ContainerLauncher #8] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: KILLING attempt_1399289015992_0003_m_000000_0
+2014-05-05 11:47:40,360 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000000_0 TaskAttempt Transitioned from SUCCESS_CONTAINER_CLEANUP to SUCCEEDED
+2014-05-05 11:47:40,361 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: Task succeeded with attempt attempt_1399289015992_0003_m_000000_0
+2014-05-05 11:47:40,361 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: Issuing kill to other attempt attempt_1399289015992_0003_m_000000_1
+2014-05-05 11:47:40,361 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_m_000000 Task Transitioned from RUNNING to SUCCEEDED
+2014-05-05 11:47:40,362 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Num completed Tasks: 2
+2014-05-05 11:47:40,362 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000000_1 TaskAttempt Transitioned from RUNNING to KILL_CONTAINER_CLEANUP
+2014-05-05 11:47:40,365 INFO [ContainerLauncher #9] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_CLEANUP for container container_1399289015992_0003_01_000006 taskAttempt attempt_1399289015992_0003_m_000000_1
+2014-05-05 11:47:40,365 INFO [ContainerLauncher #9] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: KILLING attempt_1399289015992_0003_m_000000_1
+2014-05-05 11:47:40,371 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000000_1 TaskAttempt Transitioned from KILL_CONTAINER_CLEANUP to KILL_TASK_CLEANUP
+2014-05-05 11:47:40,372 INFO [CommitterEvent Processor #1] org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler: Processing the event EventType: TASK_ABORT
+2014-05-05 11:47:40,373 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000000_1 TaskAttempt Transitioned from KILL_TASK_CLEANUP to KILLED
+2014-05-05 11:47:41,067 INFO [IPC Server handler 20 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: MapCompletionEvents request from attempt_1399289015992_0003_r_000005_0. startIndex 1 maxEvents 10000
+2014-05-05 11:47:41,223 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:0 ScheduledMaps:0 ScheduledReds:6 AssignedMaps:4 AssignedReds:2 CompletedMaps:2 CompletedReds:0 ContAlloc:7 ContRel:0 HostLocal:5 RackLocal:0
+2014-05-05 11:47:41,757 INFO [IPC Server handler 21 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000001_0
+2014-05-05 11:47:41,758 INFO [IPC Server handler 21 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000001_0 is : 1.0
+2014-05-05 11:47:41,761 INFO [IPC Server handler 22 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Done acknowledgement from attempt_1399289015992_0003_m_000001_0
+2014-05-05 11:47:41,761 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000001_0 TaskAttempt Transitioned from RUNNING to SUCCESS_CONTAINER_CLEANUP
+2014-05-05 11:47:41,761 INFO [ContainerLauncher #2] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_CLEANUP for container container_1399289015992_0003_01_000003 taskAttempt attempt_1399289015992_0003_m_000001_0
+2014-05-05 11:47:41,761 INFO [ContainerLauncher #2] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: KILLING attempt_1399289015992_0003_m_000001_0
+2014-05-05 11:47:41,764 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000001_0 TaskAttempt Transitioned from SUCCESS_CONTAINER_CLEANUP to SUCCEEDED
+2014-05-05 11:47:41,764 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: Task succeeded with attempt attempt_1399289015992_0003_m_000001_0
+2014-05-05 11:47:41,764 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_m_000001 Task Transitioned from RUNNING to SUCCEEDED
+2014-05-05 11:47:41,765 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Num completed Tasks: 3
+2014-05-05 11:47:41,976 INFO [IPC Server handler 24 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_r_000005_0
+2014-05-05 11:47:41,976 INFO [IPC Server handler 24 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_r_000005_0 is : 0.16666667
+2014-05-05 11:47:42,069 INFO [IPC Server handler 25 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: MapCompletionEvents request from attempt_1399289015992_0003_r_000005_0. startIndex 2 maxEvents 10000
+2014-05-05 11:47:42,225 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:0 ScheduledMaps:0 ScheduledReds:6 AssignedMaps:4 AssignedReds:2 CompletedMaps:3 CompletedReds:0 ContAlloc:7 ContRel:0 HostLocal:5 RackLocal:0
+2014-05-05 11:47:42,226 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Received completed container container_1399289015992_0003_01_000002
+2014-05-05 11:47:42,227 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Received completed container container_1399289015992_0003_01_000006
+2014-05-05 11:47:42,227 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1399289015992_0003_m_000000_0: Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+
+2014-05-05 11:47:42,227 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:0 ScheduledMaps:0 ScheduledReds:6 AssignedMaps:2 AssignedReds:2 CompletedMaps:3 CompletedReds:0 ContAlloc:7 ContRel:0 HostLocal:5 RackLocal:0
+2014-05-05 11:47:42,227 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1399289015992_0003_m_000000_1: Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+
+2014-05-05 11:47:42,284 INFO [IPC Server handler 23 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_m_000002_0
+2014-05-05 11:47:42,285 INFO [IPC Server handler 23 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_m_000002_0 is : 1.0
+2014-05-05 11:47:42,294 INFO [IPC Server handler 26 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Done acknowledgement from attempt_1399289015992_0003_m_000002_0
+2014-05-05 11:47:42,295 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000002_0 TaskAttempt Transitioned from RUNNING to SUCCESS_CONTAINER_CLEANUP
+2014-05-05 11:47:42,295 INFO [ContainerLauncher #3] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_CLEANUP for container container_1399289015992_0003_01_000004 taskAttempt attempt_1399289015992_0003_m_000002_0
+2014-05-05 11:47:42,295 INFO [ContainerLauncher #3] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: KILLING attempt_1399289015992_0003_m_000002_0
+2014-05-05 11:47:42,297 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_m_000002_0 TaskAttempt Transitioned from SUCCESS_CONTAINER_CLEANUP to SUCCEEDED
+2014-05-05 11:47:42,297 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: Task succeeded with attempt attempt_1399289015992_0003_m_000002_0
+2014-05-05 11:47:42,298 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1399289015992_0003_m_000002 Task Transitioned from RUNNING to SUCCEEDED
+2014-05-05 11:47:42,298 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Num completed Tasks: 4
+2014-05-05 11:47:42,976 INFO [IPC Server handler 27 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: MapCompletionEvents request from attempt_1399289015992_0003_r_000004_0. startIndex 0 maxEvents 10000
+2014-05-05 11:47:43,071 INFO [IPC Server handler 28 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: MapCompletionEvents request from attempt_1399289015992_0003_r_000005_0. startIndex 3 maxEvents 10000
+2014-05-05 11:47:43,227 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:0 ScheduledMaps:0 ScheduledReds:6 AssignedMaps:2 AssignedReds:2 CompletedMaps:4 CompletedReds:0 ContAlloc:7 ContRel:0 HostLocal:5 RackLocal:0
+2014-05-05 11:47:43,229 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Received completed container container_1399289015992_0003_01_000003
+2014-05-05 11:47:43,230 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:0 ScheduledMaps:0 ScheduledReds:6 AssignedMaps:1 AssignedReds:2 CompletedMaps:4 CompletedReds:0 ContAlloc:7 ContRel:0 HostLocal:5 RackLocal:0
+2014-05-05 11:47:43,230 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1399289015992_0003_m_000001_0: Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+
+2014-05-05 11:47:43,258 INFO [IPC Server handler 29 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_r_000005_0
+2014-05-05 11:47:43,258 INFO [IPC Server handler 29 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_r_000005_0 is : 0.16666667
+2014-05-05 11:47:43,313 INFO [IPC Server handler 1 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_r_000004_0
+2014-05-05 11:47:43,313 INFO [IPC Server handler 1 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_r_000004_0 is : 0.0
+2014-05-05 11:47:43,754 INFO [IPC Server handler 0 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_r_000005_0
+2014-05-05 11:47:43,754 INFO [IPC Server handler 0 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_r_000005_0 is : 0.16666667
+2014-05-05 11:47:43,782 INFO [IPC Server handler 2 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_r_000004_0
+2014-05-05 11:47:43,782 INFO [IPC Server handler 2 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_r_000004_0 is : 0.0
+2014-05-05 11:47:44,232 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Received completed container container_1399289015992_0003_01_000004
+2014-05-05 11:47:44,232 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:0 ScheduledMaps:0 ScheduledReds:6 AssignedMaps:0 AssignedReds:2 CompletedMaps:4 CompletedReds:0 ContAlloc:7 ContRel:0 HostLocal:5 RackLocal:0
+2014-05-05 11:47:44,232 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1399289015992_0003_m_000002_0: Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+
+2014-05-05 11:47:45,021 INFO [IPC Server handler 3 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_r_000005_0
+2014-05-05 11:47:45,021 INFO [IPC Server handler 3 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_r_000005_0 is : 0.67058444
+2014-05-05 11:47:45,802 INFO [IPC Server handler 4 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1399289015992_0003_r_000004_0
+2014-05-05 11:47:48,050 INFO [IPC Server handler 5 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_r_000005_0
+2014-05-05 11:47:48,051 INFO [IPC Server handler 5 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_r_000005_0 is : 0.6924081
+2014-05-05 11:47:48,899 INFO [IPC Server handler 6 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_r_000004_0
+2014-05-05 11:47:48,899 INFO [IPC Server handler 6 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_r_000004_0 is : 0.6811714
+2014-05-05 11:47:51,071 INFO [IPC Server handler 7 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_r_000005_0
+2014-05-05 11:47:51,071 INFO [IPC Server handler 7 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_r_000005_0 is : 0.70911676
+2014-05-05 11:47:51,918 INFO [IPC Server handler 8 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_r_000004_0
+2014-05-05 11:47:51,918 INFO [IPC Server handler 8 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_r_000004_0 is : 0.7120962
+2014-05-05 11:47:54,096 INFO [IPC Server handler 9 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_r_000005_0
+2014-05-05 11:47:54,096 INFO [IPC Server handler 9 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_r_000005_0 is : 0.7280549
+2014-05-05 11:47:54,948 INFO [IPC Server handler 10 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_r_000004_0
+2014-05-05 11:47:54,948 INFO [IPC Server handler 10 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_r_000004_0 is : 0.7489168
+2014-05-05 11:47:57,116 INFO [IPC Server handler 11 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_r_000005_0
+2014-05-05 11:47:57,116 INFO [IPC Server handler 11 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_r_000005_0 is : 0.7492397
+2014-05-05 11:47:57,964 INFO [IPC Server handler 12 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_r_000004_0
+2014-05-05 11:47:57,964 INFO [IPC Server handler 12 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_r_000004_0 is : 0.7766692
+2014-05-05 11:48:00,137 INFO [IPC Server handler 13 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_r_000005_0
+2014-05-05 11:48:00,137 INFO [IPC Server handler 13 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_r_000005_0 is : 0.74929386
+2014-05-05 11:48:00,977 INFO [IPC Server handler 14 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_r_000004_0
+2014-05-05 11:48:00,977 INFO [IPC Server handler 14 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_r_000004_0 is : 0.7766692
+2014-05-05 11:48:01,232 INFO [IPC Server handler 15 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_r_000004_0
+2014-05-05 11:48:01,232 INFO [IPC Server handler 15 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_r_000004_0 is : 0.7766692
+2014-05-05 11:48:01,232 INFO [IPC Server handler 16 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1399289015992_0003_r_000005_0
+2014-05-05 11:48:01,232 INFO [IPC Server handler 16 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1399289015992_0003_r_000005_0 is : 0.74929386
+2014-05-05 11:48:01,235 FATAL [IPC Server handler 17 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1399289015992_0003_r_000004_0 - exited : java.io.IOException: TimedOutException(acknowledged_by:0)
+	at org.apache.cassandra.hadoop.cql3.CqlRecordWriter$RangeClient.run(CqlRecordWriter.java:284)
+Caused by: TimedOutException(acknowledged_by:0)
+	at org.apache.cassandra.thrift.Cassandra$execute_prepared_cql3_query_result$execute_prepared_cql3_query_resultStandardScheme.read(Cassandra.java:53671)
+	at org.apache.cassandra.thrift.Cassandra$execute_prepared_cql3_query_result$execute_prepared_cql3_query_resultStandardScheme.read(Cassandra.java:53630)
+	at org.apache.cassandra.thrift.Cassandra$execute_prepared_cql3_query_result.read(Cassandra.java:53545)
+	at org.apache.thrift.TServiceClient.receiveBase(TServiceClient.java:78)
+	at org.apache.cassandra.thrift.Cassandra$Client.recv_execute_prepared_cql3_query(Cassandra.java:1820)
+	at org.apache.cassandra.thrift.Cassandra$Client.execute_prepared_cql3_query(Cassandra.java:1805)
+	at org.apache.cassandra.hadoop.cql3.CqlRecordWriter$RangeClient.run(CqlRecordWriter.java:270)
+
+2014-05-05 11:48:01,236 INFO [IPC Server handler 17 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1399289015992_0003_r_000004_0: Error: java.io.IOException: TimedOutException(acknowledged_by:0)
+	at org.apache.cassandra.hadoop.cql3.CqlRecordWriter$RangeClient.run(CqlRecordWriter.java:284)
+Caused by: TimedOutException(acknowledged_by:0)
+	at org.apache.cassandra.thrift.Cassandra$execute_prepared_cql3_query_result$execute_prepared_cql3_query_resultStandardScheme.read(Cassandra.java:53671)
+	at org.apache.cassandra.thrift.Cassandra$execute_prepared_cql3_query_result$execute_prepared_cql3_query_resultStandardScheme.read(Cassandra.java:53630)
+	at org.apache.cassandra.thrift.Cassandra$execute_prepared_cql3_query_result.read(Cassandra.java:53545)
+	at org.apache.thrift.TServiceClient.receiveBase(TServiceClient.java:78)
+	at org.apache.cassandra.thrift.Cassandra$Client.recv_execute_prepared_cql3_query(Cassandra.java:1820)
+	at org.apache.cassandra.thrift.Cassandra$Client.execute_prepared_cql3_query(Cassandra.java:1805)
+	at org.apache.cassandra.hadoop.cql3.CqlRecordWriter$RangeClient.run(CqlRecordWriter.java:270)
+
+2014-05-05 11:48:01,236 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1399289015992_0003_r_000004_0: Error: java.io.IOException: TimedOutException(acknowledged_by:0)
+	at org.apache.cassandra.hadoop.cql3.CqlRecordWriter$RangeClient.run(CqlRecordWriter.java:284)
+Caused by: TimedOutException(acknowledged_by:0)
+	at org.apache.cassandra.thrift.Cassandra$execute_prepared_cql3_query_result$execute_prepared_cql3_query_resultStandardScheme.read(Cassandra.java:53671)
+	at org.apache.cassandra.thrift.Cassandra$execute_prepared_cql3_query_result$execute_prepared_cql3_query_resultStandardScheme.read(Cassandra.java:53630)
+	at org.apache.cassandra.thrift.Cassandra$execute_prepared_cql3_query_result.read(Cassandra.java:53545)
+	at org.apache.thrift.TServiceClient.receiveBase(TServiceClient.java:78)
+	at org.apache.cassandra.thrift.Cassandra$Client.recv_execute_prepared_cql3_query(Cassandra.java:1820)
+	at org.apache.cassandra.thrift.Cassandra$Client.execute_prepared_cql3_query(Cassandra.java:1805)
+	at org.apache.cassandra.hadoop.cql3.CqlRecordWriter$RangeClient.run(CqlRecordWriter.java:270)
+
+2014-05-05 11:48:01,237 FATAL [IPC Server handler 18 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1399289015992_0003_r_000005_0 - exited : java.io.IOException: TimedOutException(acknowledged_by:0)
+	at org.apache.cassandra.hadoop.cql3.CqlRecordWriter$RangeClient.run(CqlRecordWriter.java:284)
+Caused by: TimedOutException(acknowledged_by:0)
+	at org.apache.cassandra.thrift.Cassandra$execute_prepared_cql3_query_result$execute_prepared_cql3_query_resultStandardScheme.read(Cassandra.java:53671)
+	at org.apache.cassandra.thrift.Cassandra$execute_prepared_cql3_query_result$execute_prepared_cql3_query_resultStandardScheme.read(Cassandra.java:53630)
+	at org.apache.cassandra.thrift.Cassandra$execute_prepared_cql3_query_result.read(Cassandra.java:53545)
+	at org.apache.thrift.TServiceClient.receiveBase(TServiceClient.java:78)
+	at org.apache.cassandra.thrift.Cassandra$Client.recv_execute_prepared_cql3_query(Cassandra.java:1820)
+	at org.apache.cassandra.thrift.Cassandra$Client.execute_prepared_cql3_query(Cassandra.java:1805)
+	at org.apache.cassandra.hadoop.cql3.CqlRecordWriter$RangeClient.run(CqlRecordWriter.java:270)
+
+2014-05-05 11:48:01,237 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_r_000004_0 TaskAttempt Transitioned from RUNNING to FAIL_CONTAINER_CLEANUP
+2014-05-05 11:48:01,237 INFO [IPC Server handler 18 on 56991] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1399289015992_0003_r_000005_0: Error: java.io.IOException: TimedOutException(acknowledged_by:0)
+	at org.apache.cassandra.hadoop.cql3.CqlRecordWriter$RangeClient.run(CqlRecordWriter.java:284)
+Caused by: TimedOutException(acknowledged_by:0)
+	at org.apache.cassandra.thrift.Cassandra$execute_prepared_cql3_query_result$execute_prepared_cql3_query_resultStandardScheme.read(Cassandra.java:53671)
+	at org.apache.cassandra.thrift.Cassandra$execute_prepared_cql3_query_result$execute_prepared_cql3_query_resultStandardScheme.read(Cassandra.java:53630)
+	at org.apache.cassandra.thrift.Cassandra$execute_prepared_cql3_query_result.read(Cassandra.java:53545)
+	at org.apache.thrift.TServiceClient.receiveBase(TServiceClient.java:78)
+	at org.apache.cassandra.thrift.Cassandra$Client.recv_execute_prepared_cql3_query(Cassandra.java:1820)
+	at org.apache.cassandra.thrift.Cassandra$Client.execute_prepared_cql3_query(Cassandra.java:1805)
+	at org.apache.cassandra.hadoop.cql3.CqlRecordWriter$RangeClient.run(CqlRecordWriter.java:270)
+
+2014-05-05 11:48:01,238 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_CLEANUP for container container_1399289015992_0003_01_000008 taskAttempt attempt_1399289015992_0003_r_000004_0
+2014-05-05 11:48:01,238 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: KILLING attempt_1399289015992_0003_r_000004_0
+2014-05-05 11:48:01,239 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1399289015992_0003_r_000005_0: Error: java.io.IOException: TimedOutException(acknowledged_by:0)
+	at org.apache.cassandra.hadoop.cql3.CqlRecordWriter$RangeClient.run(CqlRecordWriter.java:284)
+Caused by: TimedOutException(acknowledged_by:0)
+	at org.apache.cassandra.thrift.Cassandra$execute_prepared_cql3_query_result$execute_prepared_cql3_query_resultStandardScheme.read(Cassandra.java:53671)
+	at org.apache.cassandra.thrift.Cassandra$execute_prepared_cql3_query_result$execute_prepared_cql3_query_resultStandardScheme.read(Cassandra.java:53630)
+	at org.apache.cassandra.thrift.Cassandra$execute_prepared_cql3_query_result.read(Cassandra.java:53545)
+	at org.apache.thrift.TServiceClient.receiveBase(TServiceClient.java:78)
+	at org.apache.cassandra.thrift.Cassandra$Client.recv_execute_prepared_cql3_query(Cassandra.java:1820)
+	at org.apache.cassandra.thrift.Cassandra$Client.execute_prepared_cql3_query(Cassandra.java:1805)
+	at org.apache.cassandra.hadoop.cql3.CqlRecordWriter$RangeClient.run(CqlRecordWriter.java:270)
+
+2014-05-05 11:48:01,240 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_r_000005_0 TaskAttempt Transitioned from RUNNING to FAIL_CONTAINER_CLEANUP
+2014-05-05 11:48:01,240 INFO [ContainerLauncher #1] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_CLEANUP for container container_1399289015992_0003_01_000007 taskAttempt attempt_1399289015992_0003_r_000005_0
+2014-05-05 11:48:01,240 INFO [ContainerLauncher #1] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: KILLING attempt_1399289015992_0003_r_000005_0
+2014-05-05 11:48:01,267 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_r_000005_0 TaskAttempt Transitioned from FAIL_CONTAINER_CLEANUP to FAIL_TASK_CLEANUP
+2014-05-05 11:48:01,268 INFO [CommitterEvent Processor #2] org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler: Processing the event EventType: TASK_ABORT
+2014-05-05 11:48:01,268 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_r_000005_0 TaskAttempt Transitioned from FAIL_TASK_CLEANUP to FAILED
+2014-05-05 11:48:01,270 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodea to /default-rack
+2014-05-05 11:48:01,270 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: 1 failures on node nodea
+2014-05-05 11:48:01,270 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_r_000005_1 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-05-05 11:48:02,260 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:6 AssignedMaps:0 AssignedReds:2 CompletedMaps:4 CompletedReds:0 ContAlloc:7 ContRel:0 HostLocal:5 RackLocal:0
+2014-05-05 11:48:02,263 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Received completed container container_1399289015992_0003_01_000007
+2014-05-05 11:48:02,263 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=62464
+2014-05-05 11:48:02,263 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: All maps assigned. Ramping up all remaining reduces:1
+2014-05-05 11:48:02,263 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1399289015992_0003_r_000005_0: Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+
+2014-05-05 11:48:02,263 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=* numContainers=7 #asks=0
+2014-05-05 11:48:02,263 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:0 ScheduledMaps:0 ScheduledReds:7 AssignedMaps:0 AssignedReds:1 CompletedMaps:4 CompletedReds:0 ContAlloc:7 ContRel:0 HostLocal:5 RackLocal:0
+2014-05-05 11:48:03,265 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1399289015992_0003: ask=1 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:62464, vCores:-1> knownNMs=8
+2014-05-05 11:48:03,631 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_r_000004_0 TaskAttempt Transitioned from FAIL_CONTAINER_CLEANUP to FAIL_TASK_CLEANUP
+2014-05-05 11:48:03,638 INFO [CommitterEvent Processor #3] org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler: Processing the event EventType: TASK_ABORT
+2014-05-05 11:48:03,638 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_r_000004_0 TaskAttempt Transitioned from FAIL_TASK_CLEANUP to FAILED
+2014-05-05 11:48:03,642 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved nodeb to /default-rack
+2014-05-05 11:48:03,642 INFO [Thread-48] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: 1 failures on node nodeb
+2014-05-05 11:48:03,642 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1399289015992_0003_r_000004_1 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-05-05 11:48:04,265 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:7 AssignedMaps:0 AssignedReds:1 CompletedMaps:4 CompletedReds:0 ContAlloc:7 ContRel:0 HostLocal:5 RackLocal:0
+2014-05-05 11:48:04,266 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=62464
+2014-05-05 11:48:04,266 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: All maps assigned. Ramping up all remaining reduces:1
+2014-05-05 11:48:04,266 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: addResourceRequest: applicationId=3 priority=10 resourceName=* numContainers=8 #asks=0
+2014-05-05 11:48:04,267 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:0 ScheduledMaps:0 ScheduledReds:8 AssignedMaps:0 AssignedReds:1 CompletedMaps:4 CompletedReds:0 ContAlloc:7 ContRel:0 HostLocal:5 RackLocal:0
+2014-05-05 11:48:05,268 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1399289015992_0003: ask=1 release= 0 newContainers=0 finishedContainers=1 resourcelimit=<memory:63488, vCores:0> knownNMs=8
+2014-05-05 11:48:05,268 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Received completed container container_1399289015992_0003_01_000008
+2014-05-05 11:48:05,269 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:0 ScheduledMaps:0 ScheduledReds:8 AssignedMaps:0 AssignedReds:0 CompletedMaps:4 CompletedReds:0 ContAlloc:7 ContRel:0 HostLocal:5 RackLocal:0
+2014-05-05 11:48:05,269 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1399289015992_0003_r_000004_0: 
+2014-05-05 11:52:25,407 WARN [ResponseProcessor for block BP-625903679-10.0.0.195-1399288960104:blk_1073741852_1028] org.apache.hadoop.hdfs.DFSClient: DFSOutputStream ResponseProcessor exception  for block BP-625903679-10.0.0.195-1399288960104:blk_1073741852_1028
+java.io.EOFException: Premature EOF: no length prefix available
+	at org.apache.hadoop.hdfs.protocolPB.PBHelper.vintPrefixed(PBHelper.java:1492)
+	at org.apache.hadoop.hdfs.protocol.datatransfer.PipelineAck.readFields(PipelineAck.java:116)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer$ResponseProcessor.run(DFSOutputStream.java:721)
+2014-05-05 11:52:25,409 WARN [DataStreamer for file /tmp/hadoop-yarn/staging/ubuntu/.staging/job_1399289015992_0003/job_1399289015992_0003_1.jhist block BP-625903679-10.0.0.195-1399288960104:blk_1073741852_1028] org.apache.hadoop.hdfs.DFSClient: Error Recovery for block BP-625903679-10.0.0.195-1399288960104:blk_1073741852_1028 in pipeline 10.0.0.195:50010, 10.0.0.199:50010, 10.0.0.196:50010, 10.0.0.198:50010: bad datanode 10.0.0.195:50010
+2014-05-05 11:52:25,415 WARN [DataStreamer for file /tmp/hadoop-yarn/staging/ubuntu/.staging/job_1399289015992_0003/job_1399289015992_0003_1.jhist block BP-625903679-10.0.0.195-1399288960104:blk_1073741852_1028] org.apache.hadoop.hdfs.DFSClient: DataStreamer Exception
+java.net.ConnectException: Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.getAdditionalDatanode(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.getAdditionalDatanode(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.getAdditionalDatanode(ClientNamenodeProtocolTranslatorPB.java:352)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.addDatanode2ExistingPipeline(DFSOutputStream.java:919)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.setupPipelineForAppendOrRecovery(DFSOutputStream.java:1031)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.processDatanodeError(DFSOutputStream.java:823)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:475)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 15 more
+2014-05-05 11:52:28,293 WARN [LeaseRenewer:ubuntu@ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_405020888_1] for 30 seconds.  Will retry shortly ...
+java.net.ConnectException: Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.renewLease(ClientNamenodeProtocolTranslatorPB.java:499)
+	at org.apache.hadoop.hdfs.DFSClient.renewLease(DFSClient.java:713)
+	at org.apache.hadoop.hdfs.LeaseRenewer.renew(LeaseRenewer.java:417)
+	at org.apache.hadoop.hdfs.LeaseRenewer.run(LeaseRenewer.java:442)
+	at org.apache.hadoop.hdfs.LeaseRenewer.access$700(LeaseRenewer.java:71)
+	at org.apache.hadoop.hdfs.LeaseRenewer$1.run(LeaseRenewer.java:298)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 17 more
+2014-05-05 11:52:29,295 WARN [LeaseRenewer:ubuntu@ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_405020888_1] for 31 seconds.  Will retry shortly ...
+java.net.ConnectException: Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.renewLease(ClientNamenodeProtocolTranslatorPB.java:499)
+	at org.apache.hadoop.hdfs.DFSClient.renewLease(DFSClient.java:713)
+	at org.apache.hadoop.hdfs.LeaseRenewer.renew(LeaseRenewer.java:417)
+	at org.apache.hadoop.hdfs.LeaseRenewer.run(LeaseRenewer.java:442)
+	at org.apache.hadoop.hdfs.LeaseRenewer.access$700(LeaseRenewer.java:71)
+	at org.apache.hadoop.hdfs.LeaseRenewer$1.run(LeaseRenewer.java:298)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 17 more
+2014-05-05 11:52:30,296 WARN [LeaseRenewer:ubuntu@ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_405020888_1] for 32 seconds.  Will retry shortly ...
+java.net.ConnectException: Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.renewLease(ClientNamenodeProtocolTranslatorPB.java:499)
+	at org.apache.hadoop.hdfs.DFSClient.renewLease(DFSClient.java:713)
+	at org.apache.hadoop.hdfs.LeaseRenewer.renew(LeaseRenewer.java:417)
+	at org.apache.hadoop.hdfs.LeaseRenewer.run(LeaseRenewer.java:442)
+	at org.apache.hadoop.hdfs.LeaseRenewer.access$700(LeaseRenewer.java:71)
+	at org.apache.hadoop.hdfs.LeaseRenewer$1.run(LeaseRenewer.java:298)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 17 more
+2014-05-05 11:52:31,299 WARN [LeaseRenewer:ubuntu@ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_405020888_1] for 33 seconds.  Will retry shortly ...
+java.net.ConnectException: Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.renewLease(ClientNamenodeProtocolTranslatorPB.java:499)
+	at org.apache.hadoop.hdfs.DFSClient.renewLease(DFSClient.java:713)
+	at org.apache.hadoop.hdfs.LeaseRenewer.renew(LeaseRenewer.java:417)
+	at org.apache.hadoop.hdfs.LeaseRenewer.run(LeaseRenewer.java:442)
+	at org.apache.hadoop.hdfs.LeaseRenewer.access$700(LeaseRenewer.java:71)
+	at org.apache.hadoop.hdfs.LeaseRenewer$1.run(LeaseRenewer.java:298)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 17 more
+2014-05-05 11:52:32,300 WARN [LeaseRenewer:ubuntu@ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_405020888_1] for 34 seconds.  Will retry shortly ...
+java.net.ConnectException: Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.renewLease(ClientNamenodeProtocolTranslatorPB.java:499)
+	at org.apache.hadoop.hdfs.DFSClient.renewLease(DFSClient.java:713)
+	at org.apache.hadoop.hdfs.LeaseRenewer.renew(LeaseRenewer.java:417)
+	at org.apache.hadoop.hdfs.LeaseRenewer.run(LeaseRenewer.java:442)
+	at org.apache.hadoop.hdfs.LeaseRenewer.access$700(LeaseRenewer.java:71)
+	at org.apache.hadoop.hdfs.LeaseRenewer$1.run(LeaseRenewer.java:298)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 17 more
+2014-05-05 11:52:33,302 WARN [LeaseRenewer:ubuntu@ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_405020888_1] for 35 seconds.  Will retry shortly ...
+java.net.ConnectException: Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.renewLease(ClientNamenodeProtocolTranslatorPB.java:499)
+	at org.apache.hadoop.hdfs.DFSClient.renewLease(DFSClient.java:713)
+	at org.apache.hadoop.hdfs.LeaseRenewer.renew(LeaseRenewer.java:417)
+	at org.apache.hadoop.hdfs.LeaseRenewer.run(LeaseRenewer.java:442)
+	at org.apache.hadoop.hdfs.LeaseRenewer.access$700(LeaseRenewer.java:71)
+	at org.apache.hadoop.hdfs.LeaseRenewer$1.run(LeaseRenewer.java:298)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 17 more
+2014-05-05 11:52:34,303 WARN [LeaseRenewer:ubuntu@ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_405020888_1] for 36 seconds.  Will retry shortly ...
+java.net.ConnectException: Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.renewLease(ClientNamenodeProtocolTranslatorPB.java:499)
+	at org.apache.hadoop.hdfs.DFSClient.renewLease(DFSClient.java:713)
+	at org.apache.hadoop.hdfs.LeaseRenewer.renew(LeaseRenewer.java:417)
+	at org.apache.hadoop.hdfs.LeaseRenewer.run(LeaseRenewer.java:442)
+	at org.apache.hadoop.hdfs.LeaseRenewer.access$700(LeaseRenewer.java:71)
+	at org.apache.hadoop.hdfs.LeaseRenewer$1.run(LeaseRenewer.java:298)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 16 more
+2014-05-05 11:52:35,304 WARN [LeaseRenewer:ubuntu@ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_405020888_1] for 37 seconds.  Will retry shortly ...
+java.net.ConnectException: Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.renewLease(ClientNamenodeProtocolTranslatorPB.java:499)
+	at org.apache.hadoop.hdfs.DFSClient.renewLease(DFSClient.java:713)
+	at org.apache.hadoop.hdfs.LeaseRenewer.renew(LeaseRenewer.java:417)
+	at org.apache.hadoop.hdfs.LeaseRenewer.run(LeaseRenewer.java:442)
+	at org.apache.hadoop.hdfs.LeaseRenewer.access$700(LeaseRenewer.java:71)
+	at org.apache.hadoop.hdfs.LeaseRenewer$1.run(LeaseRenewer.java:298)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 16 more
+2014-05-05 11:52:36,306 WARN [LeaseRenewer:ubuntu@ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_405020888_1] for 38 seconds.  Will retry shortly ...
+java.net.ConnectException: Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.renewLease(ClientNamenodeProtocolTranslatorPB.java:499)
+	at org.apache.hadoop.hdfs.DFSClient.renewLease(DFSClient.java:713)
+	at org.apache.hadoop.hdfs.LeaseRenewer.renew(LeaseRenewer.java:417)
+	at org.apache.hadoop.hdfs.LeaseRenewer.run(LeaseRenewer.java:442)
+	at org.apache.hadoop.hdfs.LeaseRenewer.access$700(LeaseRenewer.java:71)
+	at org.apache.hadoop.hdfs.LeaseRenewer$1.run(LeaseRenewer.java:298)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 16 more
+2014-05-05 11:52:37,308 WARN [LeaseRenewer:ubuntu@ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_405020888_1] for 39 seconds.  Will retry shortly ...
+java.net.ConnectException: Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.renewLease(ClientNamenodeProtocolTranslatorPB.java:499)
+	at org.apache.hadoop.hdfs.DFSClient.renewLease(DFSClient.java:713)
+	at org.apache.hadoop.hdfs.LeaseRenewer.renew(LeaseRenewer.java:417)
+	at org.apache.hadoop.hdfs.LeaseRenewer.run(LeaseRenewer.java:442)
+	at org.apache.hadoop.hdfs.LeaseRenewer.access$700(LeaseRenewer.java:71)
+	at org.apache.hadoop.hdfs.LeaseRenewer$1.run(LeaseRenewer.java:298)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 16 more
+2014-05-05 11:52:38,310 WARN [LeaseRenewer:ubuntu@ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_405020888_1] for 40 seconds.  Will retry shortly ...
+java.net.ConnectException: Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.renewLease(ClientNamenodeProtocolTranslatorPB.java:499)
+	at org.apache.hadoop.hdfs.DFSClient.renewLease(DFSClient.java:713)
+	at org.apache.hadoop.hdfs.LeaseRenewer.renew(LeaseRenewer.java:417)
+	at org.apache.hadoop.hdfs.LeaseRenewer.run(LeaseRenewer.java:442)
+	at org.apache.hadoop.hdfs.LeaseRenewer.access$700(LeaseRenewer.java:71)
+	at org.apache.hadoop.hdfs.LeaseRenewer$1.run(LeaseRenewer.java:298)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 16 more
+2014-05-05 11:52:39,311 WARN [LeaseRenewer:ubuntu@ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_405020888_1] for 41 seconds.  Will retry shortly ...
+java.net.ConnectException: Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.renewLease(ClientNamenodeProtocolTranslatorPB.java:499)
+	at org.apache.hadoop.hdfs.DFSClient.renewLease(DFSClient.java:713)
+	at org.apache.hadoop.hdfs.LeaseRenewer.renew(LeaseRenewer.java:417)
+	at org.apache.hadoop.hdfs.LeaseRenewer.run(LeaseRenewer.java:442)
+	at org.apache.hadoop.hdfs.LeaseRenewer.access$700(LeaseRenewer.java:71)
+	at org.apache.hadoop.hdfs.LeaseRenewer$1.run(LeaseRenewer.java:298)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 16 more
+2014-05-05 11:52:40,313 WARN [LeaseRenewer:ubuntu@ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_405020888_1] for 42 seconds.  Will retry shortly ...
+java.net.ConnectException: Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.renewLease(ClientNamenodeProtocolTranslatorPB.java:499)
+	at org.apache.hadoop.hdfs.DFSClient.renewLease(DFSClient.java:713)
+	at org.apache.hadoop.hdfs.LeaseRenewer.renew(LeaseRenewer.java:417)
+	at org.apache.hadoop.hdfs.LeaseRenewer.run(LeaseRenewer.java:442)
+	at org.apache.hadoop.hdfs.LeaseRenewer.access$700(LeaseRenewer.java:71)
+	at org.apache.hadoop.hdfs.LeaseRenewer$1.run(LeaseRenewer.java:298)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 16 more
+2014-05-05 11:52:41,315 WARN [LeaseRenewer:ubuntu@ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_405020888_1] for 43 seconds.  Will retry shortly ...
+java.net.ConnectException: Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.renewLease(ClientNamenodeProtocolTranslatorPB.java:499)
+	at org.apache.hadoop.hdfs.DFSClient.renewLease(DFSClient.java:713)
+	at org.apache.hadoop.hdfs.LeaseRenewer.renew(LeaseRenewer.java:417)
+	at org.apache.hadoop.hdfs.LeaseRenewer.run(LeaseRenewer.java:442)
+	at org.apache.hadoop.hdfs.LeaseRenewer.access$700(LeaseRenewer.java:71)
+	at org.apache.hadoop.hdfs.LeaseRenewer$1.run(LeaseRenewer.java:298)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 16 more
+2014-05-05 11:52:42,316 WARN [LeaseRenewer:ubuntu@ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_405020888_1] for 44 seconds.  Will retry shortly ...
+java.net.ConnectException: Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.renewLease(ClientNamenodeProtocolTranslatorPB.java:499)
+	at org.apache.hadoop.hdfs.DFSClient.renewLease(DFSClient.java:713)
+	at org.apache.hadoop.hdfs.LeaseRenewer.renew(LeaseRenewer.java:417)
+	at org.apache.hadoop.hdfs.LeaseRenewer.run(LeaseRenewer.java:442)
+	at org.apache.hadoop.hdfs.LeaseRenewer.access$700(LeaseRenewer.java:71)
+	at org.apache.hadoop.hdfs.LeaseRenewer$1.run(LeaseRenewer.java:298)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 16 more
+2014-05-05 11:52:43,317 WARN [LeaseRenewer:ubuntu@ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_405020888_1] for 45 seconds.  Will retry shortly ...
+java.net.ConnectException: Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.GeneratedConstructorAccessor43.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.renewLease(ClientNamenodeProtocolTranslatorPB.java:499)
+	at org.apache.hadoop.hdfs.DFSClient.renewLease(DFSClient.java:713)
+	at org.apache.hadoop.hdfs.LeaseRenewer.renew(LeaseRenewer.java:417)
+	at org.apache.hadoop.hdfs.LeaseRenewer.run(LeaseRenewer.java:442)
+	at org.apache.hadoop.hdfs.LeaseRenewer.access$700(LeaseRenewer.java:71)
+	at org.apache.hadoop.hdfs.LeaseRenewer$1.run(LeaseRenewer.java:298)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 16 more
+2014-05-05 11:52:44,318 WARN [LeaseRenewer:ubuntu@ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_405020888_1] for 46 seconds.  Will retry shortly ...
+java.net.ConnectException: Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.GeneratedConstructorAccessor43.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.renewLease(ClientNamenodeProtocolTranslatorPB.java:499)
+	at org.apache.hadoop.hdfs.DFSClient.renewLease(DFSClient.java:713)
+	at org.apache.hadoop.hdfs.LeaseRenewer.renew(LeaseRenewer.java:417)
+	at org.apache.hadoop.hdfs.LeaseRenewer.run(LeaseRenewer.java:442)
+	at org.apache.hadoop.hdfs.LeaseRenewer.access$700(LeaseRenewer.java:71)
+	at org.apache.hadoop.hdfs.LeaseRenewer$1.run(LeaseRenewer.java:298)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 16 more
+2014-05-05 11:52:45,319 WARN [LeaseRenewer:ubuntu@ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_405020888_1] for 47 seconds.  Will retry shortly ...
+java.net.ConnectException: Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.GeneratedConstructorAccessor43.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.renewLease(ClientNamenodeProtocolTranslatorPB.java:499)
+	at org.apache.hadoop.hdfs.DFSClient.renewLease(DFSClient.java:713)
+	at org.apache.hadoop.hdfs.LeaseRenewer.renew(LeaseRenewer.java:417)
+	at org.apache.hadoop.hdfs.LeaseRenewer.run(LeaseRenewer.java:442)
+	at org.apache.hadoop.hdfs.LeaseRenewer.access$700(LeaseRenewer.java:71)
+	at org.apache.hadoop.hdfs.LeaseRenewer$1.run(LeaseRenewer.java:298)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 16 more
+2014-05-05 11:52:46,265 INFO [Thread-1] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: MRAppMaster received a signal. Signaling RMCommunicator and JobHistoryEventHandler.
+2014-05-05 11:52:46,265 INFO [Thread-1] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: RMCommunicator notified that iSignalled is: true
+2014-05-05 11:52:46,265 INFO [Thread-1] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Notify RMCommunicator isAMLastRetry: false
+2014-05-05 11:52:46,265 INFO [Thread-1] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: RMCommunicator notified that shouldUnregistered is: false
+2014-05-05 11:52:46,265 INFO [Thread-1] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Notify JHEH isAMLastRetry: false
+2014-05-05 11:52:46,265 INFO [Thread-1] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: JobHistoryEventHandler notified that forceJobCompletion is false
+2014-05-05 11:52:46,265 INFO [Thread-1] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Stopping JobHistoryEventHandler. Size of the outstanding queue size is 0
+2014-05-05 11:52:46,272 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: EventQueue take interrupted. Returning
+2014-05-05 11:52:46,273 INFO [Thread-1] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Exception while closing file Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+2014-05-05 11:52:46,273 INFO [Thread-1] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Stopped JobHistoryEventHandler. super.stop()
+2014-05-05 11:52:46,275 WARN [RMCommunicator Allocator] org.apache.hadoop.util.ThreadUtil: interrupted while sleeping
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at org.apache.hadoop.util.ThreadUtil.sleepAtLeastIgnoreInterrupts(ThreadUtil.java:43)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:150)
+	at com.sun.proxy.$Proxy29.allocate(Unknown Source)
+	at org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor.makeRemoteRequest(RMContainerRequestor.java:161)
+	at org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator.getResources(RMContainerAllocator.java:561)
+	at org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator.heartbeat(RMContainerAllocator.java:219)
+	at org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator$1.run(RMCommunicator.java:263)
+	at java.lang.Thread.run(Thread.java:744)
+2014-05-05 11:52:46,322 WARN [LeaseRenewer:ubuntu@ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_405020888_1] for 48 seconds.  Will retry shortly ...
+java.net.ConnectException: Call From ip-10-0-0-195/10.0.0.195 to ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.GeneratedConstructorAccessor43.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy9.renewLease(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.renewLease(ClientNamenodeProtocolTranslatorPB.java:499)
+	at org.apache.hadoop.hdfs.DFSClient.renewLease(DFSClient.java:713)
+	at org.apache.hadoop.hdfs.LeaseRenewer.renew(LeaseRenewer.java:417)
+	at org.apache.hadoop.hdfs.LeaseRenewer.run(LeaseRenewer.java:442)
+	at org.apache.hadoop.hdfs.LeaseRenewer.access$700(LeaseRenewer.java:71)
+	at org.apache.hadoop.hdfs.LeaseRenewer$1.run(LeaseRenewer.java:298)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 16 more
