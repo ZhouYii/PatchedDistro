@@ -21,4 +21,8 @@
         <name>mapreduce.framework.name</name>
         <value>yarn</value>
     </property>
+    <property>
+	<name>mapreduce.child.java.opts</name>
+	<value>-Xmx4g</value>
+    </property>
 </configuration>

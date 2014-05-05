@@ -1,0 +1,79 @@
+2014-05-05 18:56:18,595 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-05-05 18:56:18,598 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-05-05 18:56:18,759 WARN [main] org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-05-05 18:56:18,980 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2014-05-05 18:56:19,066 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2014-05-05 18:56:19,066 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system started
+2014-05-05 18:56:19,077 INFO [main] org.apache.hadoop.mapred.YarnChild: Executing with tokens:
+2014-05-05 18:56:19,077 INFO [main] org.apache.hadoop.mapred.YarnChild: Kind: mapreduce.job, Service: job_1399315672071_0002, Ident: (org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier@169bb04a)
+2014-05-05 18:56:19,148 INFO [main] org.apache.hadoop.mapred.YarnChild: Sleeping for 0ms before retrying again. Got null now.
+2014-05-05 18:56:19,509 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-05-05 18:56:19,510 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-05-05 18:56:19,681 INFO [main] org.apache.hadoop.mapred.YarnChild: mapreduce.cluster.local.dir for child: /var/hadoop/tmp/nm-local-dir/usercache/ubuntu/appcache/application_1399315672071_0002
+2014-05-05 18:56:19,847 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-05-05 18:56:19,848 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-05-05 18:56:19,941 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+2014-05-05 18:56:19,941 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+2014-05-05 18:56:19,942 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+2014-05-05 18:56:19,943 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+2014-05-05 18:56:19,944 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.local.dir is deprecated. Instead, use mapreduce.cluster.local.dir
+2014-05-05 18:56:19,945 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: job.local.dir is deprecated. Instead, use mapreduce.job.local.dir
+2014-05-05 18:56:19,946 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+2014-05-05 18:56:20,235 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-05-05 18:56:20,577 INFO [main] org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-05-05 18:56:20,782 INFO [main] org.apache.hadoop.mapred.MapTask: Processing split: hdfs://ec2-54-186-230-200.us-west-2.compute.amazonaws.com:54310/5m/data:0+38888890
+2014-05-05 18:56:20,815 INFO [main] org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2014-05-05 18:56:20,928 INFO [main] org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2014-05-05 18:56:20,928 INFO [main] org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2014-05-05 18:56:20,929 INFO [main] org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2014-05-05 18:56:20,929 INFO [main] org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2014-05-05 18:56:20,929 INFO [main] org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2014-05-05 18:57:07,890 INFO [main] org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2014-05-05 18:57:07,890 INFO [main] org.apache.hadoop.mapred.MapTask: Spilling map output
+2014-05-05 18:57:07,890 INFO [main] org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 23799054; bufvoid = 104857600
+2014-05-05 18:57:07,890 INFO [main] org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 17911012(71644048); length = 8303385/6553600
+2014-05-05 18:57:10,288 INFO [communication thread] org.apache.hadoop.mapred.Task: Communication exception: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.io.BufferedReader.<init>(BufferedReader.java:98)
+	at java.io.BufferedReader.<init>(BufferedReader.java:109)
+	at org.apache.hadoop.yarn.util.ProcfsBasedProcessTree.constructProcessInfo(ProcfsBasedProcessTree.java:382)
+	at org.apache.hadoop.yarn.util.ProcfsBasedProcessTree.updateProcessTree(ProcfsBasedProcessTree.java:162)
+	at org.apache.hadoop.mapred.Task.updateResourceCounters(Task.java:839)
+	at org.apache.hadoop.mapred.Task.updateCounters(Task.java:978)
+	at org.apache.hadoop.mapred.Task.access$500(Task.java:77)
+	at org.apache.hadoop.mapred.Task$TaskReporter.run(Task.java:727)
+	at java.lang.Thread.run(Thread.java:744)
+
+2014-05-05 18:57:15,673 INFO [communication thread] org.apache.hadoop.mapred.Task: Communication exception: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.lang.String.substring(String.java:1913)
+	at java.lang.String.subSequence(String.java:1946)
+	at java.util.regex.Matcher.getSubSequence(Matcher.java:1245)
+	at java.util.regex.Matcher.group(Matcher.java:490)
+	at org.apache.hadoop.yarn.util.ProcfsBasedProcessTree.constructProcessInfo(ProcfsBasedProcessTree.java:395)
+	at org.apache.hadoop.yarn.util.ProcfsBasedProcessTree.updateProcessTree(ProcfsBasedProcessTree.java:162)
+	at org.apache.hadoop.mapred.Task.updateResourceCounters(Task.java:839)
+	at org.apache.hadoop.mapred.Task.updateCounters(Task.java:978)
+	at org.apache.hadoop.mapred.Task.access$500(Task.java:77)
+	at org.apache.hadoop.mapred.Task$TaskReporter.run(Task.java:727)
+	at java.lang.Thread.run(Thread.java:744)
+
+2014-05-05 18:57:16,136 INFO [main] org.apache.hadoop.mapred.MapTask: Finished spill 0
+2014-05-05 18:57:16,515 FATAL [main] org.apache.hadoop.mapred.YarnChild: Error running child : java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.nio.ByteBuffer.wrap(ByteBuffer.java:369)
+	at org.apache.hadoop.io.Text.decode(Text.java:382)
+	at org.apache.hadoop.io.Text.toString(Text.java:280)
+	at CustomPartitioner.getPartition(CustomPartitioner.java:77)
+	at CustomPartitioner.getPartition(CustomPartitioner.java:1)
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.write(MapTask.java:691)
+	at org.apache.hadoop.mapreduce.task.TaskInputOutputContextImpl.write(TaskInputOutputContextImpl.java:89)
+	at org.apache.hadoop.mapreduce.lib.map.WrappedMapper$Context.write(WrappedMapper.java:112)
+	at WordCount$map.map(WordCount.java:183)
+	at WordCount$map.map(WordCount.java:1)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:763)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:339)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:162)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:157)
+
